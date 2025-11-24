@@ -15,3 +15,8 @@
 ...
 2. Software:
 ...
+
+### Profiles
+
+- [CCM Research Subject](StructureDefinition-CcmResearchSubject.html)
+- [CCM Research Study](StructureDefinition-CcmResearchStudy.html)
