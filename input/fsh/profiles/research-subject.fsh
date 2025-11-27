@@ -1,100 +1,170 @@
 /*
   CcmResearchSubject (R5-based)
-
-  Design notes (short):
-  - We use ResearchSubject to link a Patient to a CcmResearchStudy.
-  - We are on FHIR R5 core (hl7.fhir.r5.core#5.0.0), where the lifecycle
-    is represented via the `progress` backbone element, not the R6
-    root-level subjectState/subjectMilestone.
-  - We use progress.subjectState to represent the lifecycle
-    (candidate, eligible, ineligible, on-study, in-follow-up, off-study, etc.).
-  - We do NOT use progress.milestone, assignedComparisonGroup,
-    actualComparisonGroup, or consent in CCM, so we constrain those to 0..0.
+  -------------------------------------
+  - Links a Patient to a CcmResearchStudy.
+  - Lifecycle implemented via progress[x].subjectState (R5).
+  - CCM lifecycle rules enforced by invariants.
+  - "withdrawn" can transition back to ANY allowed state.
+  - No provenance, encounters or consents used.
 */
 
 Profile: CcmResearchSubject
 Parent: ResearchSubject
 Id: CcmResearchSubject
 Title: "CCM Research Subject"
-Description: "A localized profile of ResearchSubject for use in Estonian Care Coordination Management (CCM) clinical research settings."
+Description: "Estonian CCM ResearchSubject profile linking a patient with a CcmResearchStudy and tracking lifecycle via progress entries."
 
-// --- Identifiers --------------------------------------------------
-// CCM-specific ResearchSubject identifier(s) (e.g. per study / site)
+// ---------------------------
+// Identifiers
+// ---------------------------
 * identifier 1..* MS
 * identifier.system 0..1 MS
 * identifier.value 1..1 MS
-* identifier.type 0..1 MS
+* identifier.type 0..1 MS   // No binding for now
 
-// Publication status of the ResearchSubject resource
+// ---------------------------
+// Publication status
+// ---------------------------
 * status 1..1 MS
 
-// --- Participation period --------------------------------------------------
+// ---------------------------
+// Participation period
+// ---------------------------
 * period 0..1 MS
 * period.start 0..1 MS
 * period.end 0..1 MS
 
-// --- Study and subject references --------------------------------------------------
-// Link to the CCM ResearchStudy profile
+// ---------------------------
+// Study and Subject
+// ---------------------------
 * study 1..1 MS
 * study.reference 1..1
-
-// Subject is always a Patient in CCM (not Group/Device/etc.)
 * subject 1..1 MS
 * subject only Reference(Patient)
 * subject.reference 1..1
 
-// --- Progress / lifecycle (state machine) -----------------------------------------
+// ---------------------------
+// Progress / Lifecycle
+// ---------------------------
 //
-// In R5, the state machine is represented via progress[0..*],
-// with progress.subjectState carrying the actual state codes.
+// Allowed TermX lifecycle states:
+// - candidate
+// - in-screening
+// - eligible
+// - on-study
+// - ineligible
+// - off-study
+// - withdrawn
 //
-// We keep this, but do not use progress.milestone in CCM.
+// Milestones and comparison groups not used.
 
 * progress 0..* MS
 * progress.type 0..1 MS
 * progress.subjectState 1..1 MS
 * progress.subjectState from http://hl7.org/fhir/ValueSet/research-subject-state (required)
-// We do not require progress.milestone; we explicitly disable it
 * progress.milestone 0..0
-* progress.reason 0..1 MS
+* progress.reason 0..1 MS   // NOTE: Reason might be required later for end states (ineligible/off-study/withdrawn).
 * progress.startDate 1..1 MS
 * progress.endDate 0..1 MS
 
-// --- Elements not used in CCM ---------------------------------------------
-//
-// These exist in R5 but we do not use them in the CCM project.
-
+// ---------------------------
+// Elements not used in CCM
+// ---------------------------
 * assignedComparisonGroup 0..0
 * actualComparisonGroup 0..0
 * consent 0..0
 
-// --- Example instance ---------------------------------------------
+// ===============================================================
+// INVARIANTS
+// ===============================================================
+
+// 1) Only one active ResearchSubject per patient per study
+Invariant: ccm-rs-unique-active
+Description: "A patient may have only one active ResearchSubject per study."
+Severity: #error
+Expression: "ResearchSubject.where(status = 'active').subject.reference.isDistinct()"
+
+* obeys ccm-rs-unique-active
+
+// 2) Progress.startDate must be in chronological order
+Invariant: ccm-rs-date-order
+Description: "Progress.startDate values must be in chronological order."
+Severity: #error
+Expression: "progress.startDate.isSorted()"
+
+* obeys ccm-rs-date-order
+
+// 3) No future dates
+Invariant: ccm-rs-no-future
+Description: "Progress.startDate cannot be in the future."
+Severity: #warning
+Expression: "progress.startDate <= now()"
+
+* obeys ccm-rs-no-future
+
+// 4) Allowed lifecycle transitions for CCM
+// -------------------------------------------------------------
+// Rules:
+// candidate → in-screening, withdrawn, ineligible
+// in-screening → eligible, ineligible, withdrawn
+// eligible → on-study, withdrawn
+// on-study → off-study, withdrawn
+// off-study → on-study, withdrawn
+// ineligible → withdrawn
+// withdrawn → ANY OTHER STATE (restart)
+Invariant: ccm-rs-valid-transitions
+Description: "State transitions must follow CCM lifecycle rules, including withdrawn → any state."
+Severity: #error
+Expression: "
+  progress.tail().all(
+    $this.subjectState in
+      iif(%resource.progress[%index - 1].subjectState = 'candidate',
+          {'in-screening','withdrawn','ineligible'},
+      iif(%resource.progress[%index - 1].subjectState = 'in-screening',
+          {'eligible','ineligible','withdrawn'},
+      iif(%resource.progress[%index - 1].subjectState = 'eligible',
+          {'on-study','withdrawn'},
+      iif(%resource.progress[%index - 1].subjectState = 'on-study',
+          {'off-study','withdrawn'},
+      iif(%resource.progress[%index - 1].subjectState = 'off-study',
+          {'on-study','withdrawn'},
+      iif(%resource.progress[%index - 1].subjectState = 'ineligible',
+          {'withdrawn'},
+      iif(%resource.progress[%index - 1].subjectState = 'withdrawn',
+          // withdrawn may go back to ANY allowed TermX state
+          {'candidate','in-screening','eligible','on-study','ineligible','off-study'},
+      {})))))))
+  )
+"
+
+* obeys ccm-rs-valid-transitions
+
+// ===============================================================
+// EXAMPLE INSTANCE
+// ===============================================================
 Instance: ccm-research-subject-example
 InstanceOf: CcmResearchSubject
-Title: "Example CCM Research Subject"
-Description: "Estonian example of a CCM ResearchSubject linking a patient to a CcmResearchStudy with a simple lifecycle."
+Title: "Example CCM ResearchSubject"
+Description: "Example linking a patient to a CcmResearchStudy with lifecycle entries."
 Usage: #example
 
-// Resource status (publication status)
 * status = #active
 
-// Example CCM ResearchSubject identifier
 * identifier[0].system = "https://helex.org/sid/research-subject"
 * identifier[0].value = "0002"
 
-// Link to study and subject (use your actual instance ids here)
 * study = Reference(ResearchStudy/CcmResearchStudyExample)
 * subject = Reference(Patient/ExamplePatient)
 
-// --- Progress (state history) -------------------------------------
-// Initial state: candidate
+// progress entries
 * progress[0].subjectState = http://terminology.hl7.org/CodeSystem/research-subject-state#candidate
 * progress[0].startDate = "2025-11-01T09:00:00+02:00"
 
-// Second state: eligible
-* progress[1].subjectState = http://terminology.hl7.org/CodeSystem/research-subject-state#eligible
-* progress[1].startDate = "2025-11-05T10:30:00+02:00"
+* progress[1].subjectState = http://terminology.hl7.org/CodeSystem/research-subject-state#in-screening
+* progress[1].startDate = "2025-11-03T09:15:00+02:00"
 
-// Third state: on-study
-* progress[2].subjectState = http://terminology.hl7.org/CodeSystem/research-subject-state#on-study
-* progress[2].startDate = "2025-11-06T08:00:00+02:00"
+* progress[2].subjectState = http://terminology.hl7.org/CodeSystem/research-subject-state#eligible
+* progress[2].startDate = "2025-11-05T10:30:00+02:00"
+
+* progress[3].subjectState = http://terminology.hl7.org/CodeSystem/research-subject-state#on-study
+* progress[3].startDate = "2025-11-06T08:00:00+02:00"
