@@ -1,7 +1,7 @@
 Profile: CareTeamCcm
 Parent: CareTeam
 Id: care-team-ccm
-Title: "Care Team CCM"
+Title: "CareTeamCcm"
 Description: "CCM CareTeam profile linking a patient with a ResearchStudy and tracking lifecycle via progress entries."
 * subject 1..1 MS
 * subject only Reference(PatientCcm)

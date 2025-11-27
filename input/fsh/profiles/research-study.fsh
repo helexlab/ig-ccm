@@ -1,7 +1,7 @@
 Profile: ResearchStudyCcm
 Parent: ResearchStudy
 Id: research-study-ccm
-Title: "Research Study CCM"
+Title: "ResearchStudyCcm"
 Description: "A localized profile of ResearchStudy for use in Estonian clinical research settings."
 
 //* status from http://hl7.org/fhir/ValueSet/research-study-status (required)
@@ -46,8 +46,8 @@ Description: "A localized profile of ResearchStudy for use in Estonian clinical 
 
 Instance: research-study-ccm-example
 InstanceOf: ResearchStudyCcm
-Title: "Example Research Study definition"
-Description: "A sample research study instance conforming to the Estonian localized profile."
+Title: "Example of CCM Research Study definition"
+Description: "A sample research study instance conforming to the CCM localized profile."
 Usage: #example
 
 * status = #active

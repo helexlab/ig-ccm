@@ -1,7 +1,7 @@
 Profile: ResearchSubjectCcm
 Parent: ResearchSubject
 Id: research-subject-ccm
-Title: "Research Subject CCM"
+Title: "ResearchSubjectCcm"
 Description: "CCM ResearchSubject profile linking a patient with a ResearchStudy and tracking lifecycle via progress entries."
 
 * study 1..1 MS
