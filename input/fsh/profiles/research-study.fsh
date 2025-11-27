@@ -1,7 +1,7 @@
-Profile: CcmResearchStudy
+Profile: ResearchStudyCcm
 Parent: ResearchStudy
-Id: CcmResearchStudy
-Title: "Ccm Research Study"
+Id: research-study-ccm
+Title: "Research Study CCM"
 Description: "A localized profile of ResearchStudy for use in Estonian clinical research settings."
 
 //* status from http://hl7.org/fhir/ValueSet/research-study-status (required)
@@ -44,14 +44,14 @@ Description: "A localized profile of ResearchStudy for use in Estonian clinical 
 
 * extension contains https://fhir.ee/base/StructureDefinition/ee-ads-adr-id named location 0..*
 
-Instance: ccm-research-study-example
-InstanceOf: CcmResearchStudy
-Title: "Example Estonian Research Study"
+Instance: research-study-ccm-example
+InstanceOf: ResearchStudyCcm
+Title: "Example Research Study definition"
 Description: "A sample research study instance conforming to the Estonian localized profile."
 Usage: #example
 
 * status = #active
-* identifier[0].system = "https://helex.org/sid/research-study"
+* identifier[0].system = "https://helex.org/sid/ccm-research-study"
 * identifier[0].value = "ccm-ahtme"
 * language = #et
 * title = "Hoolduskoordinatsiooni programm (Ahtme)"
