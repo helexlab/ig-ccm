@@ -40,3 +40,4 @@ Usage: #example
 * performer.actor = Reference(Practitioner/practitioner-ccm-example)
 * outcome.text = "The procedure was successful without complications."  
 * note.text = "Patient tolerated the procedure well."
+* supportingInfo = Reference(ResearchSubject/research-subject-ccm-example)
