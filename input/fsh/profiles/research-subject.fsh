@@ -30,9 +30,10 @@ Description: "CCM ResearchSubject profile linking a patient with a ResearchStudy
 //
 // Milestones and comparison groups not used.
 
-* consent 0..1 MS
+* consent MS
 * progress 0..* MS
-* progress.type 0..0
+* progress.type 1..1 MS
+* progress.type = #state
 * progress.subjectState 1..1 MS
 * progress.subjectState from http://hl7.org/fhir/ValueSet/research-subject-state (required)
 * progress.milestone 0..0
@@ -59,10 +60,9 @@ Usage: #example
 
 // Publication status of the resource
 * status = #active
-
-// Identifier example
-* identifier[0].system = "https://helex.org/sid/research-subject"
-* identifier[0].value = "0002"
+* identifier
+  * system = "https://helex.org/sid/ccm-research-subject"
+  * value = "0002"
 
 // Study and subject references (replace with actual instance ids)
 * study = Reference(ResearchStudyCcm/research-study-ccm-example)

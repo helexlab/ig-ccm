@@ -5,9 +5,11 @@ Title: "ProcedureCcm"
 Description: "A localized profile of Procedure for use in CCM."
 
 * subject 1..1 MS
+* subject only Reference(PatientCcm)
 * code 1..1 MS
 * code from https://dev.termx.org/api/fhir/ValueSet/ccm-task-type--1.0.0
-* focus 0..1 MS
+* supportingInfo 0..1 MS
+* supportingInfo only Reference(ResearchSubjectCcm)
 * status 1..1 MS
 * occurrenceDateTime 1..1 MS
 * performer 1..1 MS
