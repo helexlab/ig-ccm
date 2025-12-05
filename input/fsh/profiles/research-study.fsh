@@ -6,7 +6,8 @@ Description: "A localized profile of ResearchStudy for use in Estonian clinical 
 
 //* status from http://hl7.org/fhir/ValueSet/research-study-status (required)
 * identifier 1..* MS
-* title 1..1 MS
+//* title 1..1 MS
+* insert MultilingualName(title, ResearchStudy)
 * associatedParty 0..* MS
   * party only Reference(Practitioner)
   * party 1..1 MS
@@ -50,11 +51,17 @@ Title: "Example of CCM Research Study definition"
 Description: "A sample research study instance conforming to the CCM localized profile."
 Usage: #example
 
+* language = #et
 * status = #active
 * identifier[0].system = "https://helex.org/sid/ccm-research-study"
 * identifier[0].value = "ccm-ahtme"
 * language = #et
 * title = "Hoolduskoordinatsiooni programm (Ahtme)"
+  * extension[translation][0]
+    * extension[lang][0]
+      * valueCode = #en
+    * extension[content][+]
+      * valueString = "Care Coordination Program (Ahtme)"
 * associatedParty[0].party.reference = "https://your.fhir.server/fhir/Practitioner/456"
 * associatedParty[0].party.type = "Practitioner"
 * associatedParty[0].role = http://hl7.org/fhir/research-study-party-role#study-chair "Study chair"
