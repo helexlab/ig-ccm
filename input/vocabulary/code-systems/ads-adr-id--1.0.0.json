@@ -1,0 +1,137 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "ads-adr-id--1.0.0",
+  "language" : "en",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem ads-adr-id</b></p><a name=\"ads-adr-id\"> </a><a name=\"hcads-adr-id\"> </a><p>This case-insensitive code system <code>https://fhir.ee/CodeSystem/ads-adr-id</code> provides <b>a fragment</b> that includes following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">2103553<a name=\"ads-adr-id-2103553\"> </a></td><td>Harju maakond, Tallinn</td></tr><tr><td style=\"white-space:nowrap\">2103556<a name=\"ads-adr-id-2103556\"> </a></td><td>Harju maakond, Tallinn, Lasnamäe linnaosa</td></tr><tr><td style=\"white-space:nowrap\">2280361<a name=\"ads-adr-id-2280361\"> </a></td><td>Harju maakond, Tallinn, Lasnamäe linnaosa, Valukoja tn 10</td></tr><tr><td style=\"white-space:nowrap\">3020414<a name=\"ads-adr-id-3020414\"> </a></td><td>Tartu maakond, Tartu linn</td></tr><tr><td style=\"white-space:nowrap\">3066282<a name=\"ads-adr-id-3066282\"> </a></td><td>Tartu maakond, Tartu linn, Tartu linn, K. Veeberi tn 4</td></tr><tr><td style=\"white-space:nowrap\">3020415<a name=\"ads-adr-id-3020415\"> </a></td><td>Tartu maakond, Tartu linn, Tähtvere küla</td></tr></table></div>"
+  },
+  "extension" : [ {
+    "url" : "http://hl7.org/fhir/StructureDefinition/cqf-knowledgeRepresentationLevel",
+    "valueCode" : "executable"
+  } ],
+  "url" : "https://fhir.ee/CodeSystem/ads-adr-id",
+  "version" : "1.0.0",
+  "name" : "EEAdsAdrId",
+  "title" : "ADS AdrId",
+  "status" : "draft",
+  "experimental" : true,
+  "date" : "2025-10-29T07:07:57.732318Z",
+  "publisher" : "HL7 Estonia",
+  "contact" : [ {
+    "name" : "HL7 Estonia",
+    "telecom" : [ {
+      "system" : "url",
+      "value" : "https://www.hl7.ee"
+    } ]
+  } ],
+  "description" : "Address identifiers in the Estonian Address.",
+  "effectivePeriod" : {
+    "start" : "2025-08-18T00:00:00Z"
+  },
+  "caseSensitive" : false,
+  "content" : "fragment",
+  "concept" : [ {
+    "code" : "2103553",
+    "display" : "Harju county, Tallinn",
+    "designation" : [ {
+      "language" : "et",
+      "use" : {
+        "code" : "display"
+      },
+      "value" : "Harju maakond, Tallinn"
+    } ]
+  }, {
+    "code" : "2103556",
+    "display" : "Harju maakond, Tallinn, Lasnamäe linnaosa"
+  }, {
+    "code" : "2280361",
+    "display" : "Harju maakond, Tallinn, Lasnamäe linnaosa, Valukoja tn 10"
+  }, {
+    "code" : "2591895",
+    "display" : "Toila county",
+    "designation" : [ {
+      "language" : "et",
+      "use" : {
+        "code" : "display"
+      },
+      "value" : "Toila vald"
+    } ]
+  }, {
+    "code" : "2738347",
+    "display" : "Kohtla-Järve",
+    "designation" : [ {
+      "language" : "et",
+      "use" : {
+        "code" : "display"
+      },
+      "value" : "Kohtla-Järve"
+    } ]
+  }, {
+    "code" : "2738348",
+    "display" : "Ahtme",
+    "designation" : [ {
+      "language" : "et",
+      "use" : {
+        "code" : "display"
+      },
+      "value" : "Ahtme"
+    } ]
+  }, {
+    "code" : "2822790",
+    "display" : "Narva",
+    "designation" : [ {
+      "language" : "et",
+      "use" : {
+        "code" : "display"
+      },
+      "value" : "Narva"
+    } ]
+  }, {
+    "code" : "3020414",
+    "display" : "Tartu",
+    "designation" : [ {
+      "language" : "et",
+      "use" : {
+        "code" : "display"
+      },
+      "value" : "Tartu"
+    } ]
+  }, {
+    "code" : "3020415",
+    "display" : "Tartu maakond, Tartu linn, Tähtvere küla"
+  }, {
+    "code" : "3066282",
+    "display" : "Tartu maakond, Tartu linn, Tartu linn, K. Veeberi tn 4"
+  }, {
+    "code" : "3302167",
+    "display" : "Jõhvi",
+    "designation" : [ {
+      "language" : "et",
+      "use" : {
+        "code" : "display"
+      },
+      "value" : "Jõhvi"
+    } ]
+  }, {
+    "code" : "3658119",
+    "display" : "Narva-Jõesuu",
+    "designation" : [ {
+      "language" : "et",
+      "use" : {
+        "code" : "display"
+      },
+      "value" : "Narva-Jõesuu"
+    } ]
+  }, {
+    "code" : "3658120",
+    "display" : "Sillamäe",
+    "designation" : [ {
+      "language" : "et",
+      "use" : {
+        "code" : "display"
+      },
+      "value" : "Sillamäe"
+    } ]
+  } ]
+}

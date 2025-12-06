@@ -1,0 +1,45 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "event-status--6.0.0",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet event-status</b></p><a name=\"event-status\"> </a><a name=\"hcevent-status\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"shareablevalueset.html\">Shareable ValueSet</a></p></div><ul><li>Include all codes defined in <a href=\"codesystem-event-status.html\"><code>http://hl7.org/fhir/event-status</code></a></li></ul></div>"
+  },
+  "url" : "http://hl7.org/fhir/ValueSet/event-status",
+  "identifier" : [ {
+    "system" : "urn:ietf:rfc:3986",
+    "value" : "urn:oid:2.16.840.1.113883.4.642.3.109"
+  } ],
+  "version" : "6.0.0",
+  "name" : "EventStatus",
+  "title" : "EventStatus",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2025-11-29T21:55:18.001745Z",
+  "publisher" : "HL7 International / FHIR Infrastructure",
+  "contact" : [ {
+    "telecom" : [ {
+      "system" : "url",
+      "value" : "http://hl7.org/fhir"
+    }, {
+      "system" : "email",
+      "value" : "fhir@lists.hl7.org"
+    } ]
+  }, {
+    "telecom" : [ {
+      "system" : "url",
+      "value" : "http://www.hl7.org/Special/committees/fiwg"
+    } ]
+  } ],
+  "description" : "Codes identifying the lifecycle stage of an event.",
+  "effectivePeriod" : {
+    "start" : "2025-08-18T00:00:00Z"
+  },
+  "compose" : {
+    "inactive" : false,
+    "include" : [ {
+      "system" : "http://hl7.org/fhir/event-status",
+      "version" : "6.0.0"
+    } ]
+  }
+}

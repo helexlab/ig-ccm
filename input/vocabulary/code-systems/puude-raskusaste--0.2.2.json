@@ -1,0 +1,76 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "puude-raskusaste--0.2.2",
+  "language" : "en",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem puude-raskusaste</b></p><a name=\"puude-raskusaste\"> </a><a name=\"hcpuude-raskusaste\"> </a><a name=\"puude-raskusaste-en-US\"> </a><p>This case-insensitive code system <code>https://fhir.ee/CodeSystem/puude-raskusaste</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Estonian (et)</b></td></tr><tr><td style=\"white-space:nowrap\">keskmine<a name=\"puude-raskusaste-keskmine\"> </a></td><td>Keskmine puue</td><td>KESKMINE_PUUE</td></tr><tr><td style=\"white-space:nowrap\">raske<a name=\"puude-raskusaste-raske\"> </a></td><td>Raske puue</td><td>RASKE_PUUE</td></tr><tr><td style=\"white-space:nowrap\">sygav<a name=\"puude-raskusaste-sygav\"> </a></td><td>Sügav puue</td><td>SYGAV_PUUE</td></tr></table></div>"
+  },
+  "extension" : [ {
+    "url" : "http://hl7.org/fhir/StructureDefinition/cqf-knowledgeRepresentationLevel",
+    "valueCode" : "executable"
+  } ],
+  "url" : "https://fhir.ee/CodeSystem/puude-raskusaste",
+  "version" : "0.2.2",
+  "name" : "DisabilityLevel",
+  "title" : "Disability Level",
+  "_title" : {
+    "extension" : [ {
+      "extension" : [ {
+        "url" : "lang",
+        "valueCode" : "et"
+      }, {
+        "url" : "content",
+        "valueString" : "Puude raskusaste"
+      } ],
+      "url" : "http://hl7.org/fhir/StructureDefinition/translation"
+    } ]
+  },
+  "status" : "active",
+  "experimental" : false,
+  "publisher" : "HL7 Estonia",
+  "contact" : [ {
+    "name" : "HL7 Estonia",
+    "telecom" : [ {
+      "system" : "url",
+      "value" : "https://www.hl7.ee"
+    } ]
+  } ],
+  "description" : "Puude raskusaste",
+  "effectivePeriod" : {
+    "start" : "2025-09-27T00:00:00Z"
+  },
+  "caseSensitive" : false,
+  "content" : "complete",
+  "concept" : [ {
+    "code" : "keskmine",
+    "display" : "Keskmine puue",
+    "designation" : [ {
+      "language" : "et",
+      "use" : {
+        "code" : "display"
+      },
+      "value" : "KESKMINE_PUUE"
+    } ]
+  }, {
+    "code" : "raske",
+    "display" : "Raske puue",
+    "designation" : [ {
+      "language" : "et",
+      "use" : {
+        "code" : "display"
+      },
+      "value" : "RASKE_PUUE"
+    } ]
+  }, {
+    "code" : "sygav",
+    "display" : "Sügav puue",
+    "designation" : [ {
+      "language" : "et",
+      "use" : {
+        "code" : "display"
+      },
+      "value" : "SYGAV_PUUE"
+    } ]
+  } ]
+}

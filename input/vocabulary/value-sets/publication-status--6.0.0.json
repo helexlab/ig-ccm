@@ -1,0 +1,37 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "publication-status--6.0.0",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet publication-status</b></p><a name=\"publication-status\"> </a><a name=\"hcpublication-status\"> </a><a name=\"publication-status-en-US\"> </a><ul><li>Include all codes defined in <a href=\"codesystem-publication-status.html\"><code>http://hl7.org/fhir/publication-status</code></a></li></ul></div>"
+  },
+  "url" : "http://hl7.org/fhir/ValueSet/publication-status",
+  "identifier" : [ {
+    "system" : "urn:ietf:rfc:3986",
+    "value" : "urn:oid:2.16.840.1.113883.4.642.3.3"
+  } ],
+  "version" : "6.0.0",
+  "name" : "PublicationStatus",
+  "title" : "PublicationStatus",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2025-10-29T08:01:46.819896Z",
+  "publisher" : "HL7 International / FHIR Infrastructure",
+  "contact" : [ {
+    "telecom" : [ {
+      "system" : "url",
+      "value" : "http://www.hl7.org/Special/committees/fiwg"
+    } ]
+  } ],
+  "description" : "The lifecycle status of an artifact.",
+  "effectivePeriod" : {
+    "start" : "2024-12-01T00:00:00Z"
+  },
+  "compose" : {
+    "inactive" : false,
+    "include" : [ {
+      "system" : "http://hl7.org/fhir/publication-status",
+      "version" : "6.0.0"
+    } ]
+  }
+}

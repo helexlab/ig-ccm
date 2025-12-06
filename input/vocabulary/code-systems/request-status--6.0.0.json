@@ -1,0 +1,139 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "request-status--6.0.0",
+  "language" : "en",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem request-status</b></p><a name=\"request-status\"> </a><a name=\"hcrequest-status\"> </a><p>This case-sensitive code system <code>http://hl7.org/fhir/request-status</code> defines the following codes in an undefined hierarchy:</p><table class=\"codes\"><tr><td><b>Lvl</b></td><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td>1</td><td style=\"white-space:nowrap\">draft<a name=\"request-status-draft\"> </a></td><td>Draft</td><td>The request has been created but is not yet complete or ready for action.</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">active<a name=\"request-status-active\"> </a></td><td>Active</td><td>The request is in force and ready to be acted upon.</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">on-hold<a name=\"request-status-on-hold\"> </a></td><td>On Hold</td><td>The request (and any implicit authorization to act) has been temporarily withdrawn but is expected to resume in the future.</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">entered-in-error<a name=\"request-status-entered-in-error\"> </a></td><td>Entered in Error</td><td>This request should never have existed and should be considered 'void'.  (It is possible that real-world decisions were based on it.  If real-world activity has occurred, the status should be &quot;revoked&quot; rather than &quot;entered-in-error&quot;.).</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">ended<a name=\"request-status-ended\"> </a></td><td>Ended</td><td>This request is no longer to be acted upon. This status does not differentiate what degree of action (if any) has already been undertaken against the request.</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  completed<a name=\"request-status-completed\"> </a></td><td>Completed</td><td>The activity described by the request has been fully performed.  No further activity will occur.</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  revoked<a name=\"request-status-revoked\"> </a></td><td>Revoked</td><td>The request (and any implicit authorization to act) has been terminated prior to the known full completion of the intended actions.  No further activity should occur.</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">unknown<a name=\"request-status-unknown\"> </a></td><td>Unknown</td><td>The authoring/source system does not know which of the status values currently applies for this request.  Note: This concept is not to be used for &quot;other&quot; - one of the listed statuses is presumed to apply,  but the authoring/source system does not know which.</td></tr></table></div>"
+  },
+  "extension" : [ {
+    "url" : "http://hl7.org/fhir/StructureDefinition/cqf-knowledgeRepresentationLevel",
+    "valueCode" : "executable"
+  } ],
+  "url" : "http://hl7.org/fhir/request-status",
+  "identifier" : [ {
+    "system" : "urn:ietf:rfc:3986",
+    "value" : "urn:oid:2.16.840.1.113883.4.642.4.112"
+  } ],
+  "version" : "6.0.0",
+  "name" : "RequestStatus",
+  "title" : "RequestStatus",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2025-11-01T13:25:45.681889Z",
+  "publisher" : "HL7 International / Patient Care",
+  "contact" : [ {
+    "telecom" : [ {
+      "system" : "url",
+      "value" : "http://hl7.org/fhir"
+    }, {
+      "system" : "email",
+      "value" : "fhir@lists.hl7.org"
+    } ]
+  }, {
+    "telecom" : [ {
+      "system" : "url",
+      "value" : "http://www.hl7.org/Special/committees/fiwg"
+    } ]
+  }, {
+    "telecom" : [ {
+      "system" : "url",
+      "value" : "http://www.hl7.org/Special/committees/patientcare"
+    } ]
+  } ],
+  "description" : "Codes identifying the lifecycle stage of a request.",
+  "effectivePeriod" : {
+    "start" : "2025-10-07T00:00:00Z"
+  },
+  "caseSensitive" : true,
+  "content" : "complete",
+  "concept" : [ {
+    "code" : "active",
+    "display" : "Active",
+    "definition" : "The request is in force and ready to be acted upon.",
+    "designation" : [ {
+      "language" : "et",
+      "use" : {
+        "code" : "display"
+      },
+      "value" : "Aktiivne"
+    } ]
+  }, {
+    "code" : "completed",
+    "display" : "Completed",
+    "definition" : "The activity described by the request has been fully performed.  No further activity will occur.",
+    "designation" : [ {
+      "language" : "et",
+      "use" : {
+        "code" : "display"
+      },
+      "value" : "Lõpetatud"
+    } ]
+  }, {
+    "code" : "draft",
+    "display" : "Draft",
+    "definition" : "The request has been created but is not yet complete or ready for action.",
+    "designation" : [ {
+      "language" : "et",
+      "use" : {
+        "code" : "display"
+      },
+      "value" : "Mustand"
+    } ]
+  }, {
+    "code" : "ended",
+    "display" : "Ended",
+    "definition" : "This request is no longer to be acted upon. This status does not differentiate what degree of action (if any) has already been undertaken against the request.",
+    "designation" : [ {
+      "language" : "et",
+      "use" : {
+        "code" : "display"
+      },
+      "value" : "Lõppenud"
+    } ]
+  }, {
+    "code" : "entered-in-error",
+    "display" : "Entered in Error",
+    "definition" : "This request should never have existed and should be considered 'void'.  (It is possible that real-world decisions were based on it.  If real-world activity has occurred, the status should be \"revoked\" rather than \"entered-in-error\".).",
+    "designation" : [ {
+      "language" : "et",
+      "use" : {
+        "code" : "display"
+      },
+      "value" : "Vigane kanne"
+    } ]
+  }, {
+    "code" : "on-hold",
+    "display" : "On Hold",
+    "definition" : "The request (and any implicit authorization to act) has been temporarily withdrawn but is expected to resume in the future.",
+    "designation" : [ {
+      "language" : "et",
+      "use" : {
+        "code" : "display"
+      },
+      "value" : "Ootel"
+    } ]
+  }, {
+    "code" : "revoked",
+    "display" : "Revoked",
+    "definition" : "The request (and any implicit authorization to act) has been terminated prior to the known full completion of the intended actions.  No further activity should occur.",
+    "designation" : [ {
+      "language" : "et",
+      "use" : {
+        "code" : "display"
+      },
+      "value" : "Tühistatud"
+    } ]
+  }, {
+    "code" : "unknown",
+    "display" : "Unknown",
+    "definition" : "The authoring/source system does not know which of the status values currently applies for this request.  Note: This concept is not to be used for \"other\" - one of the listed statuses is presumed to apply,  but the authoring/source system does not know which.",
+    "designation" : [ {
+      "language" : "et",
+      "use" : {
+        "code" : "display"
+      },
+      "value" : "Teadmata"
+    } ]
+  } ]
+}

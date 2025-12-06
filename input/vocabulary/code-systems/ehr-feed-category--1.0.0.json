@@ -1,0 +1,329 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "ehr-feed-category--1.0.0",
+  "language" : "et",
+  "extension" : [ {
+    "url" : "http://hl7.org/fhir/StructureDefinition/cqf-knowledgeRepresentationLevel",
+    "valueCode" : "executable"
+  } ],
+  "url" : "https://helex.org/fhir/CodeSystem/ehr-feed-category",
+  "version" : "1.0.0",
+  "versionAlgorithmString" : "semver",
+  "name" : "EHRFeedCategory",
+  "title" : "Andmevoo kategooria",
+  "_title" : {
+    "extension" : [ {
+      "extension" : [ {
+        "url" : "lang",
+        "valueCode" : "en"
+      }, {
+        "url" : "content",
+        "valueString" : "EHR feed category"
+      } ],
+      "url" : "http://hl7.org/fhir/StructureDefinition/translation"
+    } ]
+  },
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2025-11-30T20:29:52.754795Z",
+  "publisher" : "HELEX",
+  "effectivePeriod" : {
+    "start" : "2025-09-26T00:00:00Z"
+  },
+  "caseSensitive" : false,
+  "content" : "complete",
+  "property" : [ {
+    "code" : "careplan-printout",
+    "description" : "Kas kasutada heaoluplaani väljatrükil?",
+    "type" : "boolean"
+  }, {
+    "code" : "codesystem",
+    "description" : "CodeSystem URL",
+    "type" : "string"
+  }, {
+    "code" : "conceptOrder",
+    "uri" : "http://hl7.org/fhir/StructureDefinition/codesystem-conceptOrder",
+    "description" : "Concept Order",
+    "type" : "integer"
+  }, {
+    "code" : "observations",
+    "description" : "Observations",
+    "type" : "string"
+  }, {
+    "code" : "ui-component",
+    "description" : "UI component for CS or VS",
+    "type" : "string"
+  }, {
+    "code" : "usage",
+    "description" : "Usage",
+    "type" : "string"
+  }, {
+    "code" : "valueset",
+    "description" : "ValueSet URL",
+    "type" : "string"
+  } ],
+  "concept" : [ {
+    "code" : "allergy",
+    "display" : "Allergia",
+    "designation" : [ {
+      "language" : "en",
+      "use" : {
+        "code" : "display"
+      },
+      "value" : "Allergy"
+    } ],
+    "property" : [ {
+      "code" : "careplan-printout",
+      "valueBoolean" : true
+    }, {
+      "code" : "ui-component",
+      "valueString" : "select"
+    }, {
+      "code" : "usage",
+      "valueString" : "clinical"
+    }, {
+      "code" : "valueset",
+      "valueString" : "https://fhir.ee/ValueSet/allergy"
+    } ]
+  }, {
+    "code" : "assessed-summary",
+    "display" : "Kokkuvõte hinnatud vajadusest",
+    "designation" : [ {
+      "language" : "en",
+      "use" : {
+        "code" : "display"
+      },
+      "value" : "Summary of assessed need"
+    } ],
+    "property" : [ {
+      "code" : "careplan-printout",
+      "valueBoolean" : false
+    }, {
+      "code" : "usage",
+      "valueString" : "clinical"
+    } ]
+  }, {
+    "code" : "diagnosis",
+    "display" : "Diagnoos",
+    "designation" : [ {
+      "language" : "en",
+      "use" : {
+        "code" : "display"
+      },
+      "value" : "Diagnosis"
+    }, {
+      "language" : "ru",
+      "use" : {
+        "code" : "display"
+      },
+      "value" : "Диагноз"
+    } ],
+    "property" : [ {
+      "code" : "careplan-printout",
+      "valueBoolean" : true
+    }, {
+      "code" : "codesystem",
+      "valueString" : "https://fhir.ee/CodeSystem/rhk10"
+    }, {
+      "code" : "conceptOrder",
+      "valueInteger" : 10
+    }, {
+      "code" : "ui-component",
+      "valueString" : "overlay"
+    }, {
+      "code" : "usage",
+      "valueString" : "clinical"
+    }, {
+      "code" : "valueset",
+      "valueString" : "https://fhir.ee/ValueSet/rhk10"
+    } ]
+  }, {
+    "code" : "disability",
+    "display" : "Puude raskusaste",
+    "designation" : [ {
+      "language" : "en",
+      "use" : {
+        "code" : "display"
+      },
+      "value" : "Disability level"
+    }, {
+      "language" : "ru",
+      "use" : {
+        "code" : "display"
+      },
+      "value" : "Инвалидность"
+    } ],
+    "property" : [ {
+      "code" : "careplan-printout",
+      "valueBoolean" : true
+    }, {
+      "code" : "codesystem",
+      "valueString" : "https://fhir.ee/CodeSystem/puude-raskusaste"
+    }, {
+      "code" : "conceptOrder",
+      "valueInteger" : 20
+    }, {
+      "code" : "ui-component",
+      "valueString" : "select"
+    }, {
+      "code" : "usage",
+      "valueString" : "clinical"
+    }, {
+      "code" : "valueset",
+      "valueString" : "https://fhir.ee/ValueSet/puude-raskusaste"
+    } ]
+  }, {
+    "code" : "immunization",
+    "display" : "Vaktsiin",
+    "designation" : [ {
+      "language" : "en",
+      "use" : {
+        "code" : "display"
+      },
+      "value" : "Vaccination"
+    } ],
+    "property" : [ {
+      "code" : "careplan-printout",
+      "valueBoolean" : true
+    }, {
+      "code" : "codesystem",
+      "valueString" : "https://fhir.ee/CodeSystem/vaktsiinvalditavad-haigused"
+    }, {
+      "code" : "ui-component",
+      "valueString" : "select"
+    }, {
+      "code" : "usage",
+      "valueString" : "clinical"
+    }, {
+      "code" : "valueset",
+      "valueString" : "https://fhir.ee/ValueSet/vaktsiinvalditavad-haigused"
+    } ]
+  }, {
+    "code" : "limitation",
+    "display" : "Piirangud",
+    "designation" : [ {
+      "language" : "en",
+      "use" : {
+        "code" : "display"
+      },
+      "value" : "Limitations"
+    } ],
+    "property" : [ {
+      "code" : "careplan-printout",
+      "valueBoolean" : true
+    }, {
+      "code" : "codesystem",
+      "valueString" : "https://fhir.ee/CodeSystem/limitations"
+    }, {
+      "code" : "conceptOrder",
+      "valueInteger" : 50
+    }, {
+      "code" : "ui-component",
+      "valueString" : "select"
+    }, {
+      "code" : "usage",
+      "valueString" : "clinical"
+    } ]
+  }, {
+    "code" : "procedure",
+    "display" : "Protseduur/uuring",
+    "designation" : [ {
+      "language" : "en",
+      "use" : {
+        "code" : "display"
+      },
+      "value" : "Procedure"
+    }, {
+      "language" : "ru",
+      "use" : {
+        "code" : "display"
+      },
+      "value" : "Процедура"
+    } ],
+    "property" : [ {
+      "code" : "careplan-printout",
+      "valueBoolean" : false
+    }, {
+      "code" : "conceptOrder",
+      "valueInteger" : 30
+    }, {
+      "code" : "ui-component",
+      "valueString" : "select"
+    }, {
+      "code" : "usage",
+      "valueString" : "clinical"
+    }, {
+      "code" : "valueset",
+      "valueString" : "https://helex.org/fhir/ValueSet/ccm-procedure"
+    } ]
+  }, {
+    "code" : "risk-group",
+    "display" : "Riskirühm ja raviteekond",
+    "designation" : [ {
+      "language" : "en",
+      "use" : {
+        "code" : "display"
+      },
+      "value" : "Risk group and care pathway"
+    } ],
+    "property" : [ {
+      "code" : "careplan-printout",
+      "valueBoolean" : false
+    }, {
+      "code" : "ui-component",
+      "valueString" : "select"
+    }, {
+      "code" : "usage",
+      "valueString" : "clinical"
+    }, {
+      "code" : "valueset",
+      "valueString" : "https://helex.org/fhir/ValueSet/belonging-to-a-risk-group"
+    } ]
+  }, {
+    "code" : "situation-description",
+    "display" : "Olukorra kirjeldus",
+    "designation" : [ {
+      "language" : "en",
+      "use" : {
+        "code" : "display"
+      },
+      "value" : "Situation summary"
+    } ],
+    "property" : [ {
+      "code" : "careplan-printout",
+      "valueBoolean" : false
+    }, {
+      "code" : "usage",
+      "valueString" : "clinical"
+    } ]
+  }, {
+    "code" : "vital-signs",
+    "display" : "Elulised näitajad",
+    "designation" : [ {
+      "language" : "en",
+      "use" : {
+        "code" : "display"
+      },
+      "value" : "Vital signs"
+    }, {
+      "language" : "ru",
+      "use" : {
+        "code" : "display"
+      },
+      "value" : "Жизненно важные показатели"
+    } ],
+    "property" : [ {
+      "code" : "careplan-printout",
+      "valueBoolean" : false
+    }, {
+      "code" : "conceptOrder",
+      "valueInteger" : 90
+    }, {
+      "code" : "observations",
+      "valueString" : "bp, pulse, respiratory-rate, spo2, body-weight, body-height, bmi, cB-GlucPOCT"
+    }, {
+      "code" : "usage",
+      "valueString" : "clinical"
+    } ]
+  } ]
+}

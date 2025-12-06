@@ -1,0 +1,82 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "patient-identifier-domain--1.0.0",
+  "language" : "et",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet patient-identifier-domain</b></p><a name=\"patient-identifier-domain\"> </a><a name=\"hcpatient-identifier-domain\"> </a><ul><li>Include codes from<a href=\"CodeSystem-identifier-domain.html\"><code>https://fhir.ee/CodeSystem/identifier-domain</code></a> where concept  is-a <a href=\"CodeSystem-identifier-domain.html#identifier-domain-https.58.47.47fhir.46ee.47sid.47pid\">https://fhir.ee/sid/pid</a> and notSelectable  = false</li></ul></div>"
+  },
+  "url" : "https://fhir.ee/ValueSet/patient-identifier-domain",
+  "version" : "1.0.0",
+  "name" : "EEBasePatientIdentifierDomain",
+  "title" : "Patient Identifier Domain",
+  "_title" : {
+    "extension" : [ {
+      "extension" : [ {
+        "url" : "lang",
+        "valueCode" : "en"
+      }, {
+        "url" : "content",
+        "valueString" : "Patient Identifier Domain"
+      } ],
+      "url" : "http://hl7.org/fhir/StructureDefinition/translation"
+    } ]
+  },
+  "status" : "draft",
+  "experimental" : false,
+  "date" : "2025-11-17T10:07:20.867078Z",
+  "publisher" : "HL7 Estonia",
+  "contact" : [ {
+    "name" : "HL7 Estonia",
+    "telecom" : [ {
+      "system" : "url",
+      "value" : "https://www.hl7.ee"
+    } ]
+  } ],
+  "description" : "Identity systems acceptable for patient identification",
+  "_description" : {
+    "extension" : [ {
+      "extension" : [ {
+        "url" : "lang",
+        "valueCode" : "en"
+      }, {
+        "url" : "content",
+        "valueString" : "Identity systems acceptable for patient identification"
+      } ],
+      "url" : "http://hl7.org/fhir/StructureDefinition/translation"
+    } ]
+  },
+  "effectivePeriod" : {
+    "start" : "2025-08-13T00:00:00Z"
+  },
+  "compose" : {
+    "inactive" : true,
+    "include" : [ {
+      "system" : "https://fhir.ee/CodeSystem/identifier-domain",
+      "version" : "1.0.0",
+      "concept" : [ {
+        "extension" : [ {
+          "url" : "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
+          "valueInteger" : 10
+        } ],
+        "code" : "https://fhir.ee/sid/pid/est/ni",
+        "display" : "Estonian ID",
+        "designation" : [ {
+          "language" : "et",
+          "value" : "Eesti isikukood"
+        } ]
+      }, {
+        "extension" : [ {
+          "url" : "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
+          "valueInteger" : 20
+        } ],
+        "code" : "https://fhir.ee/sid/pid/rus/ppn",
+        "display" : "Russian Passport number",
+        "designation" : [ {
+          "language" : "et",
+          "value" : "Vene passi number"
+        } ]
+      } ]
+    } ]
+  }
+}

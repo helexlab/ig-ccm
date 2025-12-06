@@ -1,0 +1,197 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "ccm-practitioner-role--1.0.0",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet practitioner-role</b></p><a name=\"practitioner-role\"> </a><a name=\"hcpractitioner-role\"> </a><ul><li>Include all codes defined in <a href=\"http://terminology.hl7.org/6.4.0/CodeSystem-practitioner-role.html\"><code>http://terminology.hl7.org/CodeSystem/practitioner-role</code></a></li></ul></div>"
+  },
+  "url" : "https://helex.org/fhir/ValueSet/ccm-practitioner-role",
+  "version" : "1.0.0",
+  "name" : "CCMPractitionerRole",
+  "title" : "CCM Practitioner Role",
+  "_title" : {
+    "extension" : [ {
+      "extension" : [ {
+        "url" : "lang",
+        "valueCode" : "et"
+      }, {
+        "url" : "content",
+        "valueString" : "CCM Töötajate rollid"
+      } ],
+      "url" : "http://hl7.org/fhir/StructureDefinition/translation"
+    } ]
+  },
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2025-11-13T21:00:50.495665Z",
+  "publisher" : "HELEX",
+  "contact" : [ {
+    "name" : "HL7 Estonia",
+    "telecom" : [ {
+      "system" : "url",
+      "value" : "https://www.hl7.ee"
+    } ]
+  } ],
+  "description" : "The role of practitioner in the healthcare facility.",
+  "effectivePeriod" : {
+    "start" : "2025-11-07T00:00:00Z"
+  },
+  "compose" : {
+    "inactive" : true,
+    "include" : [ {
+      "system" : "https://fhir.ee/CodeSystem/ametite-klassifikaator",
+      "version" : "2025-03-27",
+      "concept" : [ {
+        "code" : "26350009",
+        "display" : "Social worker",
+        "designation" : [ {
+          "language" : "et",
+          "value" : "Sotsiaaltöötaja"
+        }, {
+          "language" : "ru",
+          "value" : "Социальный работник"
+        } ]
+      }, {
+        "code" : "22110201",
+        "display" : "General Practitioner",
+        "designation" : [ {
+          "language" : "et",
+          "value" : "Perearst"
+        }, {
+          "language" : "ru",
+          "value" : "Семейный врач"
+        } ]
+      }, {
+        "code" : "22211901",
+        "display" : "Family nurse",
+        "designation" : [ {
+          "language" : "et",
+          "value" : "Pereõde"
+        }, {
+          "language" : "ru",
+          "value" : "Семейная медсестра"
+        } ]
+      }, {
+        "code" : "2212",
+        "display" : "Healthcare specialist",
+        "designation" : [ {
+          "language" : "et",
+          "value" : "Eriarst"
+        }, {
+          "language" : "ru",
+          "value" : "Специалист"
+        } ]
+      }, {
+        "code" : "22210502",
+        "display" : "Nurse",
+        "designation" : [ {
+          "language" : "et",
+          "value" : "Õde"
+        }, {
+          "language" : "ru",
+          "value" : "Медсестра"
+        } ]
+      }, {
+        "code" : "32550101",
+        "display" : "Physiotherapy technician",
+        "designation" : [ {
+          "language" : "ru",
+          "value" : "Техник-физиотерапевт"
+        }, {
+          "language" : "et",
+          "value" : "Füsioterapeut"
+        } ]
+      }, {
+        "code" : "24110001",
+        "display" : "Auditor",
+        "designation" : [ {
+          "language" : "et",
+          "value" : "Audiitor"
+        }, {
+          "language" : "ru",
+          "value" : "Аудитор"
+        } ]
+      }, {
+        "code" : "2262",
+        "display" : "Pharmacists",
+        "designation" : [ {
+          "language" : "et",
+          "value" : "Proviisorid ja farmatseudid"
+        }, {
+          "language" : "ru",
+          "value" : "Фармацевты"
+        } ]
+      }, {
+        "code" : "5329",
+        "display" : "Personal Care Workers in Health Services",
+        "designation" : [ {
+          "language" : "et",
+          "value" : "Tervishoiu hooldustöötajad"
+        }, {
+          "language" : "ru",
+          "value" : "Работники, оказывающие индивидуальные услуги по уходу за больными, не входящие в другие группы"
+        } ]
+      }, {
+        "code" : "22120401",
+        "display" : "Emergency medicine physician",
+        "designation" : [ {
+          "language" : "ru",
+          "value" : "Врач экстренной медицины"
+        }, {
+          "language" : "et",
+          "value" : "Erakorralise meditsiini arst"
+        } ]
+      }, {
+        "code" : "32589900",
+        "display" : "Ambulance workers n.e.c.",
+        "designation" : [ {
+          "language" : "ru",
+          "value" : "Неклассифицированные в других категориях/источниках техники службы скорой помощи"
+        }, {
+          "language" : "et",
+          "value" : "Mujal liigitamata kiirabitehnikud"
+        } ]
+      }, {
+        "code" : "2635",
+        "display" : "Social Work and Councelling Professionals",
+        "designation" : [ {
+          "language" : "et",
+          "value" : "Sotsiaaltöötajad ja nõustajad"
+        }, {
+          "language" : "ru",
+          "value" : "Специалисты-профессионалы в области организации и ведения социальной работы"
+        } ]
+      }, {
+        "code" : "22211601",
+        "display" : "Home care nurse",
+        "designation" : [ {
+          "language" : "et",
+          "value" : "Koduõde"
+        }, {
+          "language" : "ru",
+          "value" : "Домашняя медсестра"
+        } ]
+      }, {
+        "code" : "2221",
+        "display" : "Nursing Professionals",
+        "designation" : [ {
+          "language" : "et",
+          "value" : "Õenduse tippspetsialistid"
+        }, {
+          "language" : "ru",
+          "value" : "Специалисты-профессионалы по медицинскому уходу"
+        } ]
+      }, {
+        "code" : "2511",
+        "display" : "System Analysts",
+        "designation" : [ {
+          "language" : "et",
+          "value" : "Süsteemianalüütikud"
+        }, {
+          "language" : "ru",
+          "value" : "Системные аналитики"
+        } ]
+      } ]
+    } ]
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "immunization--1.0.0",
+  "extension" : [ {
+    "url" : "http://hl7.org/fhir/StructureDefinition/cqf-knowledgeRepresentationLevel",
+    "valueCode" : "executable"
+  } ],
+  "url" : "http://fhir.ee/CodeSystem/immunization",
+  "version" : "1.0.0",
+  "versionAlgorithmString" : "semver",
+  "name" : "Immunization",
+  "title" : "Immunization",
+  "_title" : {
+    "extension" : [ {
+      "extension" : [ {
+        "url" : "lang",
+        "valueCode" : "et"
+      }, {
+        "url" : "content",
+        "valueString" : "Vaktsineerimine"
+      } ],
+      "url" : "http://hl7.org/fhir/StructureDefinition/translation"
+    } ]
+  },
+  "status" : "draft",
+  "experimental" : false,
+  "date" : "2025-11-21T08:26:04.095914Z",
+  "publisher" : "HL7 Estonia",
+  "effectivePeriod" : {
+    "start" : "2025-11-21T00:00:00Z"
+  },
+  "caseSensitive" : false,
+  "content" : "complete"
+}

@@ -1,0 +1,36 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "ccm-communication-topic--1.0.0",
+  "language" : "et",
+  "url" : "https://helex.org/fhir/ValueSet/ccm-communication-topic",
+  "version" : "1.0.0",
+  "versionAlgorithmString" : "semver",
+  "name" : "CCMCommunicationTopic",
+  "title" : "CCM Communication Topic",
+  "_title" : {
+    "extension" : [ {
+      "extension" : [ {
+        "url" : "lang",
+        "valueCode" : "en"
+      }, {
+        "url" : "content",
+        "valueString" : "CCM Communication Topic"
+      } ],
+      "url" : "http://hl7.org/fhir/StructureDefinition/translation"
+    } ]
+  },
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2025-12-04T15:21:08.544689Z",
+  "publisher" : "HELEX",
+  "effectivePeriod" : {
+    "start" : "2025-10-21T00:00:00Z"
+  },
+  "compose" : {
+    "inactive" : false,
+    "include" : [ {
+      "system" : "https://helex.org/fhir/CodeSystem/ccm-communication-topic",
+      "version" : "1.0.0"
+    } ]
+  }
+}

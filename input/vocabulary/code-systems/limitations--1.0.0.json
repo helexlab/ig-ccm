@@ -1,0 +1,44 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "limitations--1.0.0",
+  "extension" : [ {
+    "url" : "http://hl7.org/fhir/StructureDefinition/cqf-knowledgeRepresentationLevel",
+    "valueCode" : "executable"
+  } ],
+  "url" : "https://fhir.ee/CodeSystem/limitations",
+  "version" : "1.0.0",
+  "versionAlgorithmString" : "semver",
+  "title" : "Limitations",
+  "_title" : {
+    "extension" : [ {
+      "extension" : [ {
+        "url" : "lang",
+        "valueCode" : "et"
+      }, {
+        "url" : "content",
+        "valueString" : "Piirangud"
+      } ],
+      "url" : "http://hl7.org/fhir/StructureDefinition/translation"
+    } ]
+  },
+  "status" : "retired",
+  "experimental" : false,
+  "date" : "2025-11-30T13:57:19.636554Z",
+  "publisher" : "HELEX",
+  "effectivePeriod" : {
+    "start" : "2025-11-21T00:00:00Z"
+  },
+  "caseSensitive" : false,
+  "content" : "complete",
+  "concept" : [ {
+    "code" : "physical",
+    "display" : "Füüsilised piirangud",
+    "designation" : [ {
+      "language" : "en",
+      "use" : {
+        "code" : "display"
+      },
+      "value" : "Physical limitations"
+    } ]
+  } ]
+}

@@ -1,0 +1,93 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "allergy--1.0.0",
+  "url" : "https://fhir.ee/ValueSet/allergy",
+  "version" : "1.0.0",
+  "versionAlgorithmString" : "semver",
+  "title" : "Allergy",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2025-11-21T20:18:38.075543Z",
+  "publisher" : "HELEX",
+  "effectivePeriod" : {
+    "start" : "2025-11-21T00:00:00Z"
+  },
+  "compose" : {
+    "inactive" : false,
+    "include" : [ {
+      "system" : "http://snomed.info/sct",
+      "version" : "international-edition",
+      "concept" : [ {
+        "code" : "1269425007",
+        "display" : "Allergy to gluten",
+        "designation" : [ {
+          "language" : "et",
+          "value" : "Gluteeni allergia"
+        } ]
+      }, {
+        "code" : "782555009",
+        "display" : "Allergy to cow's milk protein",
+        "designation" : [ {
+          "language" : "et",
+          "value" : "Piima allergia"
+        } ]
+      }, {
+        "code" : "417532002",
+        "display" : "Allergy to fish",
+        "designation" : [ {
+          "language" : "et",
+          "value" : "Kala allergia"
+        } ]
+      }, {
+        "code" : "213020009",
+        "display" : "Egg protein allergy",
+        "designation" : [ {
+          "language" : "et",
+          "value" : "Muna allergia"
+        } ]
+      }, {
+        "code" : "300913006",
+        "display" : "Allergy to shellfish",
+        "designation" : [ {
+          "language" : "et",
+          "value" : "Kooriklooma-allergia"
+        } ]
+      }, {
+        "code" : "91934008",
+        "display" : "Allergy to nut",
+        "designation" : [ {
+          "language" : "et",
+          "value" : "Pähkli-allergia"
+        } ]
+      }, {
+        "code" : "782594005",
+        "display" : "Allergy to soy protein",
+        "designation" : [ {
+          "language" : "et",
+          "value" : "Soja-allergia"
+        } ]
+      }, {
+        "code" : "21191000122102",
+        "display" : "Allergy to mustard",
+        "designation" : [ {
+          "language" : "et",
+          "value" : "Sinepi allergia"
+        } ]
+      }, {
+        "code" : "300910009",
+        "display" : "Allergy to pollen",
+        "designation" : [ {
+          "language" : "et",
+          "value" : "Õietolmu allergia"
+        } ]
+      }, {
+        "code" : "609328004",
+        "display" : "Other",
+        "designation" : [ {
+          "language" : "et",
+          "value" : "Muu allergia"
+        } ]
+      } ]
+    } ]
+  }
+}

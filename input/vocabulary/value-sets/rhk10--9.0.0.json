@@ -1,0 +1,37 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "rhk10--9.0.0",
+  "language" : "et",
+  "url" : "http://fhir.ee/ValueSet/rhk10",
+  "version" : "9.0.0",
+  "versionAlgorithmString" : "semver",
+  "name" : "RHK10",
+  "title" : "RHK-10",
+  "_title" : {
+    "extension" : [ {
+      "extension" : [ {
+        "url" : "lang",
+        "valueCode" : "en"
+      }, {
+        "url" : "content",
+        "valueString" : "ICD-10 Estonian Edition"
+      } ],
+      "url" : "http://hl7.org/fhir/StructureDefinition/translation"
+    } ]
+  },
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2025-09-27T08:51:53.199729Z",
+  "publisher" : "HL7 Estonia",
+  "effectivePeriod" : {
+    "start" : "2025-09-27T00:00:00Z"
+  },
+  "compose" : {
+    "inactive" : true,
+    "include" : [ {
+      "system" : "https://fhir.ee/CodeSystem/rhk10",
+      "version" : "9.0.0"
+    } ],
+    "property" : [ "display", "definition" ]
+  }
+}

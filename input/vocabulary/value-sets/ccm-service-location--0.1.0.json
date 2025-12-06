@@ -1,0 +1,112 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "ccm-service-location--0.1.0",
+  "url" : "https://helex.org/fhir/ValueSet/ccm-service-location",
+  "version" : "0.1.0",
+  "name" : "ServiceLocation",
+  "title" : "Service Location",
+  "_title" : {
+    "extension" : [ {
+      "extension" : [ {
+        "url" : "lang",
+        "valueCode" : "et"
+      }, {
+        "url" : "content",
+        "valueString" : "Teenuse asukoht"
+      } ],
+      "url" : "http://hl7.org/fhir/StructureDefinition/translation"
+    } ]
+  },
+  "status" : "draft",
+  "experimental" : true,
+  "date" : "2025-10-29T07:09:36.253305Z",
+  "publisher" : "HELEX",
+  "contact" : [ {
+    "telecom" : [ {
+      "system" : "url",
+      "value" : "http://helex.org/fhir"
+    }, {
+      "system" : "email",
+      "value" : "fhir@helex.org"
+    } ]
+  } ],
+  "description" : "Indicates the geographic location of a service.",
+  "_description" : {
+    "extension" : [ {
+      "extension" : [ {
+        "url" : "lang",
+        "valueCode" : "et"
+      }, {
+        "url" : "content",
+        "valueString" : "Teenuse geograafiline asukoht."
+      } ],
+      "url" : "http://hl7.org/fhir/StructureDefinition/translation"
+    } ]
+  },
+  "effectivePeriod" : {
+    "start" : "2025-08-18T00:00:00Z"
+  },
+  "compose" : {
+    "inactive" : true,
+    "include" : [ {
+      "system" : "https://fhir.ee/CodeSystem/ads-adr-id",
+      "version" : "1.0.0",
+      "concept" : [ {
+        "code" : "2103553",
+        "display" : "Tallinn"
+      }, {
+        "code" : "3020414",
+        "display" : "Tartu"
+      }, {
+        "code" : "2738347",
+        "display" : "Kohtla-Järve",
+        "designation" : [ {
+          "language" : "en",
+          "value" : "Kohtla-Järve"
+        } ]
+      }, {
+        "code" : "2822790",
+        "display" : "Narva",
+        "designation" : [ {
+          "language" : "et",
+          "value" : "Narva"
+        } ]
+      }, {
+        "code" : "3658120",
+        "display" : "Sillamäe",
+        "designation" : [ {
+          "language" : "et",
+          "value" : "Sillamäe"
+        } ]
+      }, {
+        "code" : "2738348",
+        "display" : "Ahtme",
+        "designation" : [ {
+          "language" : "et",
+          "value" : "Ahtme"
+        } ]
+      }, {
+        "code" : "3302167",
+        "display" : "Jõhvi",
+        "designation" : [ {
+          "language" : "en",
+          "value" : "Jõhvi"
+        } ]
+      }, {
+        "code" : "3658119",
+        "display" : "Narva-Jõesuu",
+        "designation" : [ {
+          "language" : "en",
+          "value" : "Narva-Jõesuu"
+        } ]
+      }, {
+        "code" : "2591895",
+        "display" : "Toila vald",
+        "designation" : [ {
+          "language" : "en",
+          "value" : "Toila county"
+        } ]
+      } ]
+    } ]
+  }
+}

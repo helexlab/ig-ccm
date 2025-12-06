@@ -1,0 +1,112 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "ccm-meds-reason--1.0.0",
+  "language" : "et",
+  "extension" : [ {
+    "url" : "http://hl7.org/fhir/StructureDefinition/cqf-knowledgeRepresentationLevel",
+    "valueCode" : "executable"
+  } ],
+  "url" : "https://helex.org/fhir/CodeSystem/ccm-meds-reasons",
+  "version" : "1.0.0",
+  "versionAlgorithmString" : "semver",
+  "name" : "CcmMedsReason",
+  "title" : "CCM ravimi võtmise põhjus",
+  "_title" : {
+    "extension" : [ {
+      "extension" : [ {
+        "url" : "lang",
+        "valueCode" : "en"
+      }, {
+        "url" : "content",
+        "valueString" : "CCM reasons for the medication intake"
+      } ],
+      "url" : "http://hl7.org/fhir/StructureDefinition/translation"
+    } ]
+  },
+  "status" : "draft",
+  "experimental" : false,
+  "date" : "2025-10-31T16:09:56.15561Z",
+  "publisher" : "HELEX",
+  "effectivePeriod" : {
+    "start" : "2025-09-20T00:00:00Z"
+  },
+  "caseSensitive" : false,
+  "content" : "complete",
+  "property" : [ {
+    "code" : "conceptOrder",
+    "uri" : "http://hl7.org/fhir/StructureDefinition/codesystem-conceptOrder",
+    "description" : "Concept Order",
+    "type" : "integer"
+  } ],
+  "concept" : [ {
+    "code" : "392570002",
+    "display" : "Vererõhk",
+    "designation" : [ {
+      "language" : "en",
+      "use" : {
+        "code" : "display"
+      },
+      "value" : "Blood pressure"
+    } ],
+    "property" : [ {
+      "code" : "conceptOrder",
+      "valueInteger" : 10
+    } ]
+  }, {
+    "code" : "56265001",
+    "display" : "Südame haigus",
+    "designation" : [ {
+      "language" : "en",
+      "use" : {
+        "code" : "display"
+      },
+      "value" : "Heart disease"
+    } ],
+    "property" : [ {
+      "code" : "conceptOrder",
+      "valueInteger" : 20
+    } ]
+  }, {
+    "code" : "609328004",
+    "display" : "Allergia",
+    "designation" : [ {
+      "language" : "en",
+      "use" : {
+        "code" : "display"
+      },
+      "value" : "Allergy"
+    } ],
+    "property" : [ {
+      "code" : "conceptOrder",
+      "valueInteger" : 30
+    } ]
+  }, {
+    "code" : "73211009",
+    "display" : "Diabeet",
+    "designation" : [ {
+      "language" : "en",
+      "use" : {
+        "code" : "display"
+      },
+      "value" : "Diabetes mellitus"
+    } ],
+    "property" : [ {
+      "code" : "conceptOrder",
+      "valueInteger" : 40
+    } ]
+  }, {
+    "code" : "other",
+    "display" : "Muu",
+    "designation" : [ {
+      "language" : "en",
+      "use" : {
+        "code" : "display"
+      },
+      "value" : "Other"
+    } ],
+    "property" : [ {
+      "code" : "conceptOrder",
+      "valueInteger" : 9999
+    } ]
+  } ]
+}

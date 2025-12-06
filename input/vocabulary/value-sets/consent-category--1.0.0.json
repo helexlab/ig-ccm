@@ -1,0 +1,56 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "consent-category--1.0.0",
+  "url" : "https://termx.org/ValueSet/consent-category",
+  "version" : "1.0.0",
+  "versionAlgorithmString" : "semver",
+  "name" : "ConsentCategory",
+  "title" : "Consent Category",
+  "_title" : {
+    "extension" : [ {
+      "extension" : [ {
+        "url" : "lang",
+        "valueCode" : "et"
+      }, {
+        "url" : "content",
+        "valueString" : "Nõusoleku kategooria"
+      } ],
+      "url" : "http://hl7.org/fhir/StructureDefinition/translation"
+    } ]
+  },
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2025-11-21T15:22:01.057547Z",
+  "effectivePeriod" : {
+    "start" : "2025-11-21T00:00:00Z"
+  },
+  "compose" : {
+    "inactive" : false,
+    "include" : [ {
+      "system" : "http://snomed.info/sct",
+      "version" : "international-edition",
+      "concept" : [ {
+        "code" : "439853000",
+        "display" : "Consent given for counceling",
+        "designation" : [ {
+          "language" : "et",
+          "value" : "Nõusolek nõustamiseks"
+        } ]
+      }, {
+        "code" : "425691002",
+        "display" : "Consent given for electronic record sharing",
+        "designation" : [ {
+          "language" : "et",
+          "value" : "Nõusolek elektrooniliste andmete jagamiseks"
+        } ]
+      }, {
+        "code" : "736814000",
+        "display" : "Consent given for observational study participation",
+        "designation" : [ {
+          "language" : "et",
+          "value" : "Nõusolek hoolduskoordinatsiooni programmis osalemiseks"
+        } ]
+      } ]
+    } ]
+  }
+}

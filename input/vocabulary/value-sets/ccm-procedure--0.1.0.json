@@ -1,0 +1,87 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "ccm-procedure--0.1.0",
+  "url" : "https://helex.org/fhir/ValueSet/ccm-procedure",
+  "version" : "0.1.0",
+  "name" : "CcmProcedure",
+  "title" : "CCM Procedure",
+  "_title" : {
+    "extension" : [ {
+      "extension" : [ {
+        "url" : "lang",
+        "valueCode" : "et"
+      }, {
+        "url" : "content",
+        "valueString" : "CCM Protseduur"
+      } ],
+      "url" : "http://hl7.org/fhir/StructureDefinition/translation"
+    } ]
+  },
+  "status" : "active",
+  "experimental" : true,
+  "date" : "2025-11-14T15:15:53.370046Z",
+  "publisher" : "HELEX",
+  "contact" : [ {
+    "telecom" : [ {
+      "system" : "url",
+      "value" : "http://helex.org/fhir"
+    }, {
+      "system" : "email",
+      "value" : "fhir@helex.org"
+    } ]
+  } ],
+  "description" : "Indicates the geographic location of a service.",
+  "effectivePeriod" : {
+    "start" : "2025-08-18T00:00:00Z"
+  },
+  "compose" : {
+    "inactive" : false,
+    "include" : [ {
+      "system" : "http://snomed.info/sct",
+      "version" : "international-edition",
+      "concept" : [ {
+        "code" : "711018006",
+        "display" : "Assessment of social support",
+        "designation" : [ {
+          "language" : "et",
+          "value" : "Sotsiaalse toe vajaduse hindamine"
+        } ]
+      }, {
+        "code" : "710242005",
+        "display" : "Consulting with home care service",
+        "designation" : [ {
+          "language" : "et",
+          "value" : "Koduhoolekandega konsulteerimine"
+        } ]
+      }, {
+        "code" : "171000001",
+        "display" : "Social conseling",
+        "designation" : [ {
+          "language" : "et",
+          "value" : "Sotsiaalne nõustamine"
+        } ]
+      }, {
+        "code" : "171014001",
+        "display" : "Medical counseling",
+        "designation" : [ {
+          "language" : "et",
+          "value" : "Tervisealane nõustamine"
+        } ]
+      }, {
+        "code" : "171001002",
+        "display" : "Benefits counseling",
+        "designation" : [ {
+          "language" : "et",
+          "value" : "Toetuste-teemaline nõustamine"
+        } ]
+      }, {
+        "code" : "410308005",
+        "display" : "Signs/symptoms - mental/emotional education, guidance, and counceling",
+        "designation" : [ {
+          "language" : "et",
+          "value" : "Vaimse ning emotsionaalse tervisega seotud sümptomite alane õpetus, juhendamine ja nõustamine"
+        } ]
+      } ]
+    } ]
+  }
+}

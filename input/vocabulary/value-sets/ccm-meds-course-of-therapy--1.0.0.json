@@ -1,0 +1,67 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "ccm-meds-course-of-therapy--1.0.0",
+  "language" : "en",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <a href=\"http://terminology.hl7.org/5.1.0/CodeSystem-medicationrequest-course-of-therapy.html\"><code>http://terminology.hl7.org/CodeSystem/medicationrequest-course-of-therapy</code></a></li></ul></div>"
+  },
+  "url" : "http://hl7.org/fhir/ValueSet/ccm-meds-course-of-therapy",
+  "identifier" : [ {
+    "system" : "urn:ietf:rfc:3986",
+    "value" : "urn:oid:2.16.840.1.113883.4.642.3.1326"
+  } ],
+  "version" : "1.0.0",
+  "name" : "MedicationRequestCourseOfTherapyCodes",
+  "title" : "CCM Meds Course of Therapy Codes",
+  "status" : "draft",
+  "experimental" : false,
+  "date" : "2025-10-31T12:36:54.268829Z",
+  "publisher" : "HELEX",
+  "contact" : [ {
+    "telecom" : [ {
+      "system" : "url",
+      "value" : "http://hl7.org/fhir"
+    } ]
+  } ],
+  "description" : "MedicationRequest Course of Therapy Codes",
+  "effectivePeriod" : {
+    "start" : "2025-10-27T00:00:00Z"
+  },
+  "compose" : {
+    "inactive" : false,
+    "include" : [ {
+      "system" : "http://terminology.hl7.org/CodeSystem/medicationrequest-course-of-therapy",
+      "version" : "1.0.1",
+      "concept" : [ {
+        "extension" : [ {
+          "url" : "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
+          "valueInteger" : 10
+        } ],
+        "code" : "acute",
+        "display" : "Fixed",
+        "designation" : [ {
+          "language" : "et",
+          "value" : "Fikseeritud"
+        }, {
+          "language" : "ru",
+          "value" : "Фиксированный"
+        } ]
+      }, {
+        "extension" : [ {
+          "url" : "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
+          "valueInteger" : 20
+        } ],
+        "code" : "seasonal",
+        "display" : "As needed",
+        "designation" : [ {
+          "language" : "ru",
+          "value" : "По необходимости"
+        }, {
+          "language" : "et",
+          "value" : "Vajadusel"
+        } ]
+      } ]
+    } ]
+  }
+}

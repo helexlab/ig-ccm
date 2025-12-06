@@ -1,0 +1,38 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "ccm-task-for-type--1.0.0",
+  "language" : "en",
+  "url" : "https://helex.org/fhir/ValueSet/ccm-task-for-type",
+  "version" : "1.0.0",
+  "versionAlgorithmString" : "semver",
+  "title" : "CCM Task For Type",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2025-11-01T14:19:11.632751Z",
+  "publisher" : "HELEX",
+  "effectivePeriod" : {
+    "start" : "2025-11-01T00:00:00Z"
+  },
+  "compose" : {
+    "inactive" : false,
+    "include" : [ {
+      "system" : "http://hl7.org/fhir/fhir-types",
+      "version" : "5.0.0",
+      "concept" : [ {
+        "extension" : [ {
+          "url" : "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
+          "valueInteger" : 10
+        } ],
+        "code" : "Patient",
+        "display" : "Patient",
+        "designation" : [ {
+          "language" : "et",
+          "value" : "Patsient"
+        }, {
+          "language" : "ru",
+          "value" : "Пациент"
+        } ]
+      } ]
+    } ]
+  }
+}

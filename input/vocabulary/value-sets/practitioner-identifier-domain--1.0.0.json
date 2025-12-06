@@ -1,0 +1,57 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "practitioner-identifier-domain--1.0.0",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet practitioner-identifier-domain</b></p><a name=\"practitioner-identifier-domain\"> </a><a name=\"hcpractitioner-identifier-domain\"> </a><ul><li>Include these codes as defined in <a href=\"CodeSystem-identifier-domain.html\"><code>https://fhir.ee/CodeSystem/identifier-domain</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-identifier-domain.html#identifier-domain-https.58.47.47fhir.46ee.47sid.47pid.47est.47ni\">https://fhir.ee/sid/pid/est/ni</a></td><td style=\"color: #cccccc\">Estonian personal national identification code</td><td>Eesti isikukood</td></tr><tr><td><a href=\"CodeSystem-identifier-domain.html#identifier-domain-https.58.47.47fhir.46ee.47sid.47pro.47est.47pho\">https://fhir.ee/sid/pro/est/pho</a></td><td style=\"color: #cccccc\">Healthcare professional official ID provided by The National Institute for Health Development</td><td>Tervishoiutöötaja TAM kood</td></tr></table></li></ul></div>"
+  },
+  "url" : "https://fhir.ee/ValueSet/practitioner-identifier-domain",
+  "version" : "1.0.0",
+  "name" : "EEBasePractitionerIdentifierDomain",
+  "title" : "Practitioner Identifier Domain",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2025-11-28T14:41:34.631771Z",
+  "publisher" : "HL7 Estonia",
+  "contact" : [ {
+    "name" : "HL7 Estonia",
+    "telecom" : [ {
+      "system" : "url",
+      "value" : "https://www.hl7.ee"
+    } ]
+  } ],
+  "description" : "Identifier systems acceptable for practitioner identification",
+  "effectivePeriod" : {
+    "start" : "2025-11-07T00:00:00Z"
+  },
+  "compose" : {
+    "inactive" : false,
+    "include" : [ {
+      "system" : "https://fhir.ee/CodeSystem/identifier-domain",
+      "version" : "1.0.0",
+      "concept" : [ {
+        "extension" : [ {
+          "url" : "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
+          "valueInteger" : 2
+        } ],
+        "code" : "https://fhir.ee/sid/pro/est/pho",
+        "display" : "Healthcare professional official ID provided by The National Institute for Health Development",
+        "designation" : [ {
+          "language" : "et",
+          "value" : "TAI ametlik tervishoiutöötaja ID"
+        } ]
+      }, {
+        "extension" : [ {
+          "url" : "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
+          "valueInteger" : 1
+        } ],
+        "code" : "https://fhir.ee/sid/pid/est/ni",
+        "display" : "Estonian personal national identification code",
+        "designation" : [ {
+          "language" : "et",
+          "value" : "Eesti isikukood"
+        } ]
+      } ]
+    } ]
+  }
+}

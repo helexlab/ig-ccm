@@ -1,0 +1,40 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "consent-provision-type--6.0.0",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet consent-provision-type</b></p><a name=\"consent-provision-type\"> </a><a name=\"hcconsent-provision-type\"> </a><ul><li>Include all codes defined in <a href=\"codesystem-consent-provision-type.html\"><code>http://hl7.org/fhir/consent-provision-type</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version &#x1F4E6;6.0.0-ballot3</span></li></ul></div>"
+  },
+  "url" : "http://hl7.org/fhir/ValueSet/consent-provision-type",
+  "identifier" : [ {
+    "system" : "urn:ietf:rfc:3986",
+    "value" : "urn:oid:2.16.840.1.113883.4.642.3.757"
+  } ],
+  "version" : "6.0.0",
+  "name" : "ConsentProvisionType",
+  "title" : "Consent Provision Type",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2025-12-01T21:47:05.485488Z",
+  "publisher" : "HL7 (FHIR Project)",
+  "contact" : [ {
+    "telecom" : [ {
+      "system" : "url",
+      "value" : "http://hl7.org/fhir"
+    }, {
+      "system" : "email",
+      "value" : "fhir@lists.hl7.org"
+    } ]
+  } ],
+  "description" : "How a rule statement is applied, such as adding additional consent or removing consent.",
+  "effectivePeriod" : {
+    "start" : "2025-11-21T00:00:00Z"
+  },
+  "compose" : {
+    "inactive" : false,
+    "include" : [ {
+      "system" : "http://hl7.org/fhir/consent-provision-type",
+      "version" : "6.0.0"
+    } ]
+  }
+}

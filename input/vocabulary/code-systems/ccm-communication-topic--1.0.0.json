@@ -1,0 +1,181 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "ccm-communication-topic--1.0.0",
+  "language" : "et",
+  "extension" : [ {
+    "url" : "http://hl7.org/fhir/StructureDefinition/cqf-knowledgeRepresentationLevel",
+    "valueCode" : "executable"
+  } ],
+  "url" : "https://helex.org/fhir/CodeSystem/ccm-communication-topic",
+  "version" : "1.0.0",
+  "versionAlgorithmString" : "semver",
+  "name" : "CCMCommunicationTopic",
+  "title" : "Teema",
+  "_title" : {
+    "extension" : [ {
+      "extension" : [ {
+        "url" : "lang",
+        "valueCode" : "en"
+      }, {
+        "url" : "content",
+        "valueString" : "Communication Topic"
+      } ],
+      "url" : "http://hl7.org/fhir/StructureDefinition/translation"
+    } ]
+  },
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2025-11-21T21:37:20.209844Z",
+  "publisher" : "HELEX",
+  "effectivePeriod" : {
+    "start" : "2025-10-21T00:00:00Z"
+  },
+  "caseSensitive" : false,
+  "content" : "complete",
+  "property" : [ {
+    "code" : "careplan-printout",
+    "description" : "Kas kasutada heaoluplaani väljatrükil?",
+    "type" : "boolean"
+  } ],
+  "concept" : [ {
+    "code" : "assessed-need-summary",
+    "display" : "Kokkuvõte hinnatud vajadusest",
+    "designation" : [ {
+      "language" : "en",
+      "use" : {
+        "code" : "display"
+      },
+      "value" : "Summary of assessed need"
+    } ],
+    "property" : [ {
+      "code" : "careplan-printout",
+      "valueBoolean" : false
+    } ]
+  }, {
+    "code" : "care-instructions",
+    "display" : "Hooldusjuhised",
+    "designation" : [ {
+      "language" : "en",
+      "use" : {
+        "code" : "display"
+      },
+      "value" : "Care instructions"
+    } ],
+    "property" : [ {
+      "code" : "careplan-printout",
+      "valueBoolean" : true
+    } ]
+  }, {
+    "code" : "care-pathway",
+    "display" : "Raviteekond",
+    "designation" : [ {
+      "language" : "en",
+      "use" : {
+        "code" : "display"
+      },
+      "value" : "Care pathway overview"
+    } ],
+    "property" : [ {
+      "code" : "careplan-printout",
+      "valueBoolean" : false
+    } ]
+  }, {
+    "code" : "emergency-situation",
+    "display" : "Juhul kui ...",
+    "designation" : [ {
+      "language" : "en",
+      "use" : {
+        "code" : "display"
+      },
+      "value" : "In case of emergency.."
+    } ],
+    "property" : [ {
+      "code" : "careplan-printout",
+      "valueBoolean" : true
+    } ]
+  }, {
+    "code" : "health-behaviour-advice",
+    "display" : "Tervisekäitumise soovitused",
+    "designation" : [ {
+      "language" : "en",
+      "use" : {
+        "code" : "display"
+      },
+      "value" : "Health behaviour recommendations"
+    } ],
+    "property" : [ {
+      "code" : "careplan-printout",
+      "valueBoolean" : true
+    } ]
+  }, {
+    "code" : "health-monitoring-plan",
+    "display" : "Tervisenäitajate jälgimise plaan",
+    "designation" : [ {
+      "language" : "en",
+      "use" : {
+        "code" : "display"
+      },
+      "value" : "Health indicator monitoring plan"
+    } ],
+    "property" : [ {
+      "code" : "careplan-printout",
+      "valueBoolean" : true
+    } ]
+  }, {
+    "code" : "planned-health-service",
+    "display" : "Planeeritud tervishoiuteenused",
+    "designation" : [ {
+      "language" : "en",
+      "use" : {
+        "code" : "display"
+      },
+      "value" : "Planned healthcare services"
+    } ],
+    "property" : [ {
+      "code" : "careplan-printout",
+      "valueBoolean" : true
+    } ]
+  }, {
+    "code" : "planned-social-services",
+    "display" : "Planeeritud sotsiaalteenused",
+    "designation" : [ {
+      "language" : "en",
+      "use" : {
+        "code" : "display"
+      },
+      "value" : "Planned social services"
+    } ],
+    "property" : [ {
+      "code" : "careplan-printout",
+      "valueBoolean" : true
+    } ]
+  }, {
+    "code" : "rehabilitation-instructions",
+    "display" : "Taastusravi juhised",
+    "designation" : [ {
+      "language" : "en",
+      "use" : {
+        "code" : "display"
+      },
+      "value" : "Rehabilitation instructions"
+    } ],
+    "property" : [ {
+      "code" : "careplan-printout",
+      "valueBoolean" : true
+    } ]
+  }, {
+    "code" : "situation-summary",
+    "display" : "Olukorrakirjeldus",
+    "designation" : [ {
+      "language" : "en",
+      "use" : {
+        "code" : "display"
+      },
+      "value" : "Situation summary"
+    } ],
+    "property" : [ {
+      "code" : "careplan-printout",
+      "valueBoolean" : false
+    } ]
+  } ]
+}

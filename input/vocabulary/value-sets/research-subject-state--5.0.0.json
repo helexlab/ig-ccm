@@ -1,0 +1,40 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "research-subject-state--5.0.0",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <a href=\"http://terminology.hl7.org/5.1.0/CodeSystem-research-subject-state.html\"><code>http://terminology.hl7.org/CodeSystem/research-subject-state</code></a></li></ul></div>"
+  },
+  "url" : "http://hl7.org/fhir/ValueSet/research-subject-state",
+  "identifier" : [ {
+    "system" : "urn:ietf:rfc:3986",
+    "value" : "urn:oid:2.16.840.1.113883.4.642.3.3131"
+  } ],
+  "version" : "5.0.0",
+  "name" : "ResearchSubjectState",
+  "title" : "Research Subject State",
+  "status" : "active",
+  "experimental" : true,
+  "date" : "2025-10-29T09:24:07.475171Z",
+  "publisher" : "HL7 (FHIR Project)",
+  "contact" : [ {
+    "telecom" : [ {
+      "system" : "url",
+      "value" : "http://hl7.org/fhir"
+    }, {
+      "system" : "email",
+      "value" : "fhir@lists.hl7.org"
+    } ]
+  } ],
+  "description" : "Indicates the progression of a study subject through a study.",
+  "effectivePeriod" : {
+    "start" : "2025-08-18T00:00:00Z"
+  },
+  "compose" : {
+    "inactive" : false,
+    "include" : [ {
+      "system" : "http://terminology.hl7.org/CodeSystem/research-subject-state",
+      "version" : "0.1.0"
+    } ]
+  }
+}

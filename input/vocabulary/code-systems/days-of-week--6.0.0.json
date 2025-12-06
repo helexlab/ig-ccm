@@ -1,0 +1,77 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "days-of-week--6.0.0",
+  "language" : "en",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem days-of-week</b></p><a name=\"days-of-week\"> </a><a name=\"hcdays-of-week\"> </a><p>This case-sensitive code system <code>http://hl7.org/fhir/days-of-week</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">mon<a name=\"days-of-week-mon\"> </a></td><td>Monday</td><td>Monday.</td></tr><tr><td style=\"white-space:nowrap\">tue<a name=\"days-of-week-tue\"> </a></td><td>Tuesday</td><td>Tuesday.</td></tr><tr><td style=\"white-space:nowrap\">wed<a name=\"days-of-week-wed\"> </a></td><td>Wednesday</td><td>Wednesday.</td></tr><tr><td style=\"white-space:nowrap\">thu<a name=\"days-of-week-thu\"> </a></td><td>Thursday</td><td>Thursday.</td></tr><tr><td style=\"white-space:nowrap\">fri<a name=\"days-of-week-fri\"> </a></td><td>Friday</td><td>Friday.</td></tr><tr><td style=\"white-space:nowrap\">sat<a name=\"days-of-week-sat\"> </a></td><td>Saturday</td><td>Saturday.</td></tr><tr><td style=\"white-space:nowrap\">sun<a name=\"days-of-week-sun\"> </a></td><td>Sunday</td><td>Sunday.</td></tr></table></div>"
+  },
+  "extension" : [ {
+    "url" : "http://hl7.org/fhir/StructureDefinition/cqf-knowledgeRepresentationLevel",
+    "valueCode" : "executable"
+  } ],
+  "url" : "http://hl7.org/fhir/days-of-week",
+  "identifier" : [ {
+    "system" : "urn:ietf:rfc:3986",
+    "value" : "urn:oid:2.16.840.1.113883.4.642.4.513"
+  }, {
+    "system" : "urn:ietf:rfc:3986",
+    "value" : "urn:oid:2.16.840.1.113883.4.642.1.507"
+  }, {
+    "system" : "urn:ietf:rfc:3986",
+    "value" : "urn:oid:2.16.840.1.113883.4.642.2.302"
+  } ],
+  "version" : "6.0.0",
+  "name" : "DaysOfWeek",
+  "title" : "Days Of Week",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2025-12-02T06:28:36.899317Z",
+  "publisher" : "HL7 International / Patient Administration",
+  "contact" : [ {
+    "telecom" : [ {
+      "system" : "url",
+      "value" : "http://www.hl7.org/Special/committees/fiwg"
+    } ]
+  }, {
+    "telecom" : [ {
+      "system" : "url",
+      "value" : "http://www.hl7.org/Special/committees/pafm"
+    } ]
+  } ],
+  "description" : "The days of the week.",
+  "effectivePeriod" : {
+    "start" : "2025-12-02T00:00:00Z"
+  },
+  "caseSensitive" : true,
+  "content" : "complete",
+  "concept" : [ {
+    "code" : "fri",
+    "display" : "Friday",
+    "definition" : "Friday."
+  }, {
+    "code" : "mon",
+    "display" : "Monday",
+    "definition" : "Monday."
+  }, {
+    "code" : "sat",
+    "display" : "Saturday",
+    "definition" : "Saturday."
+  }, {
+    "code" : "sun",
+    "display" : "Sunday",
+    "definition" : "Sunday."
+  }, {
+    "code" : "thu",
+    "display" : "Thursday",
+    "definition" : "Thursday."
+  }, {
+    "code" : "tue",
+    "display" : "Tuesday",
+    "definition" : "Tuesday."
+  }, {
+    "code" : "wed",
+    "display" : "Wednesday",
+    "definition" : "Wednesday."
+  } ]
+}

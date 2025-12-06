@@ -1,0 +1,79 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "contact-point-system--6.0.0",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet contact-point-system</b></p><a name=\"contact-point-system\"> </a><a name=\"hccontact-point-system\"> </a><a name=\"contact-point-system-en-US\"> </a><ul><li>Include all codes defined in <a href=\"codesystem-contact-point-system.html\"><code>http://hl7.org/fhir/contact-point-system</code></a></li></ul></div>"
+  },
+  "url" : "http://hl7.org/fhir/ValueSet/contact-point-system",
+  "identifier" : [ {
+    "system" : "urn:ietf:rfc:3986",
+    "value" : "urn:oid:2.16.840.1.113883.4.642.3.71"
+  } ],
+  "version" : "6.0.0",
+  "name" : "ContactPointSystem",
+  "title" : "ContactPointSystem",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2025-11-28T14:15:56.33848Z",
+  "publisher" : "HL7 International / FHIR Infrastructure",
+  "contact" : [ {
+    "telecom" : [ {
+      "system" : "url",
+      "value" : "http://hl7.org/fhir"
+    }, {
+      "system" : "email",
+      "value" : "fhir@lists.hl7.org"
+    } ]
+  }, {
+    "telecom" : [ {
+      "system" : "url",
+      "value" : "http://www.hl7.org/Special/committees/fiwg"
+    } ]
+  } ],
+  "description" : "Telecommunications form for contact point.",
+  "effectivePeriod" : {
+    "start" : "2024-12-01T00:00:00Z"
+  },
+  "compose" : {
+    "inactive" : false,
+    "include" : [ {
+      "system" : "http://hl7.org/fhir/contact-point-system",
+      "version" : "6.0.0",
+      "concept" : [ {
+        "extension" : [ {
+          "url" : "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
+          "valueInteger" : 1
+        } ],
+        "code" : "phone",
+        "display" : "Phone",
+        "designation" : [ {
+          "language" : "et",
+          "value" : "Telefon"
+        } ]
+      }, {
+        "extension" : [ {
+          "url" : "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
+          "valueInteger" : 2
+        } ],
+        "code" : "email",
+        "display" : "Email",
+        "designation" : [ {
+          "language" : "et",
+          "value" : "E-mail"
+        } ]
+      }, {
+        "extension" : [ {
+          "url" : "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
+          "valueInteger" : 3
+        } ],
+        "code" : "other",
+        "display" : "Other",
+        "designation" : [ {
+          "language" : "et",
+          "value" : "Muu"
+        } ]
+      } ]
+    } ]
+  }
+}

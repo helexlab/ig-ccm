@@ -1,0 +1,93 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "ccm-task-status--1.0.0",
+  "language" : "et",
+  "url" : "https://termx.org/fhir/ValueSet/ccm-task-status",
+  "version" : "1.0.0",
+  "versionAlgorithmString" : "semver",
+  "name" : "CCM Task Status",
+  "title" : "CCM Task Status",
+  "_title" : {
+    "extension" : [ {
+      "extension" : [ {
+        "url" : "lang",
+        "valueCode" : "en"
+      }, {
+        "url" : "content",
+        "valueString" : "CCM Task Status"
+      } ],
+      "url" : "http://hl7.org/fhir/StructureDefinition/translation"
+    } ]
+  },
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2025-11-07T17:34:37.264595Z",
+  "publisher" : "HELEX",
+  "effectivePeriod" : {
+    "start" : "2025-11-01T00:00:00Z"
+  },
+  "compose" : {
+    "inactive" : false,
+    "include" : [ {
+      "system" : "http://hl7.org/fhir/task-status",
+      "version" : "5.0.0",
+      "concept" : [ {
+        "extension" : [ {
+          "url" : "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
+          "valueInteger" : 30
+        } ],
+        "code" : "in-progress",
+        "display" : "In progress",
+        "designation" : [ {
+          "language" : "et",
+          "value" : "Teostamisel"
+        }, {
+          "language" : "ru",
+          "value" : "Исполняется"
+        } ]
+      }, {
+        "extension" : [ {
+          "url" : "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
+          "valueInteger" : 40
+        } ],
+        "code" : "completed",
+        "display" : "Done",
+        "designation" : [ {
+          "language" : "et",
+          "value" : "Teostatud"
+        }, {
+          "language" : "ru",
+          "value" : "Выполнен"
+        } ]
+      }, {
+        "extension" : [ {
+          "url" : "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
+          "valueInteger" : 50
+        } ],
+        "code" : "rejected",
+        "display" : "Rejected",
+        "designation" : [ {
+          "language" : "et",
+          "value" : "Katkestatud"
+        }, {
+          "language" : "ru",
+          "value" : "Отменён"
+        } ]
+      }, {
+        "extension" : [ {
+          "url" : "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
+          "valueInteger" : 10
+        } ],
+        "code" : "requested",
+        "display" : "Requested",
+        "designation" : [ {
+          "language" : "et",
+          "value" : "Planeerimisel"
+        }, {
+          "language" : "ru",
+          "value" : "Запланирован"
+        } ]
+      } ]
+    } ]
+  }
+}

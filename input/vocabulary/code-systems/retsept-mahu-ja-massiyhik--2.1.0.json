@@ -1,0 +1,2102 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "retsept-mahu-ja-massiyhik--2.1.0",
+  "language" : "et",
+  "extension" : [ {
+    "url" : "https://fhir.ee/StructureDefinition/version-description",
+    "valueString" : "Versioonis lisatud mõistetele tunnused (properties) UCUM notatsiooni, kehtivusaja alguse ja lõpu kohta ning kehtetut mõistet asendava mõiste kohta."
+  }, {
+    "url" : "http://hl7.org/fhir/StructureDefinition/cqf-knowledgeRepresentationLevel",
+    "valueCode" : "executable"
+  } ],
+  "url" : "https://fhir.ee/CodeSystem/retsept-mahu-ja-massiyhik",
+  "identifier" : [ {
+    "system" : "urn:ietf:rfc:3986",
+    "value" : "urn:oid:1.3.6.1.4.1.28284.6.2.2.56"
+  }, {
+    "type" : {
+      "coding" : [ {
+        "code" : "version"
+      } ]
+    },
+    "system" : "urn:ietf:rfc:3986",
+    "value" : "urn:oid:1.3.6.1.4.1.28284.6.2.2.56.2"
+  } ],
+  "version" : "2.1.0",
+  "versionAlgorithmString" : "semver",
+  "name" : "RetseptMahuJaMassiyhik",
+  "title" : "ER_Ühikud mahu- ja massiühikud",
+  "status" : "active",
+  "experimental" : false,
+  "publisher" : "TEHIK",
+  "contact" : [ {
+    "telecom" : [ {
+      "system" : "email",
+      "value" : "andmekorraldus@tehik.ee"
+    }, {
+      "system" : "url",
+      "value" : "https://tehik.ee/"
+    } ]
+  } ],
+  "description" : "Elektrooniline retsept (ER) - Loendi loomise aluseks on Sotsiaalministeeriumi määrus nr 30 \"Ravimite väljakirjutamise ja apteekidest väljastamise tingimused, Vabariigi Valitsuse määrus \"Retseptikeskuse asutamine ja retseptikeskuse põhimäärus\" ja analüüsidokument \"Digiretsepti realiseerimine SAP platvormil\" ver 7.1. Loend on kirjeldatud ka dokumendis \"Digiretsepti realiseerimine SAP platvormil. Retseptikeskuse teenused ja liidestumise juhend\", mis on kättesaadav RIA SVN-keskkonnas.",
+  "effectivePeriod" : {
+    "start" : "2025-07-25T00:00:00Z"
+  },
+  "author" : [ {
+    "name" : "Tervisekassa"
+  } ],
+  "caseSensitive" : false,
+  "content" : "complete",
+  "property" : [ {
+    "code" : "effectiveDate",
+    "uri" : "http://hl7.org/fhir/concept-properties#effectiveDate",
+    "description" : "Effective Date",
+    "type" : "dateTime"
+  }, {
+    "code" : "replacedByCode",
+    "uri" : "https://fhir.ee/CodeSystem/codesystem-concept-properties#replacedByCode",
+    "description" : "Asendav kood",
+    "type" : "code"
+  }, {
+    "code" : "retirementDate",
+    "uri" : "http://hl7.org/fhir/concept-properties#retirementDate",
+    "description" : "Retirement Date",
+    "type" : "dateTime"
+  }, {
+    "code" : "status",
+    "uri" : "http://hl7.org/fhir/concept-properties#status",
+    "description" : "Status",
+    "type" : "code"
+  }, {
+    "code" : "ucum",
+    "uri" : "https://fhir.ee/CodeSystem/codesystem-concept-properties#ucum",
+    "description" : "UCUM notatsioon",
+    "type" : "code"
+  } ],
+  "concept" : [ {
+    "code" : "%",
+    "display" : "%",
+    "designation" : [ {
+      "language" : "en",
+      "use" : {
+        "code" : "display"
+      },
+      "value" : "percent"
+    } ],
+    "property" : [ {
+      "code" : "status",
+      "valueCode" : "active"
+    }, {
+      "code" : "effectiveDate",
+      "valueDateTime" : "2010-01-01T00:00:00Z"
+    }, {
+      "code" : "ucum",
+      "valueCode" : "%"
+    } ]
+  }, {
+    "code" : "% W/V",
+    "display" : "% W/V",
+    "designation" : [ {
+      "language" : "en",
+      "use" : {
+        "code" : "display"
+      },
+      "value" : "weight per volume"
+    } ],
+    "property" : [ {
+      "code" : "status",
+      "valueCode" : "active"
+    }, {
+      "code" : "effectiveDate",
+      "valueDateTime" : "2010-01-01T00:00:00Z"
+    }, {
+      "code" : "ucum",
+      "valueCode" : "%{vol}"
+    } ]
+  }, {
+    "code" : "%W/W",
+    "display" : "%W/W",
+    "designation" : [ {
+      "language" : "en",
+      "use" : {
+        "code" : "display"
+      },
+      "value" : "percent by weight"
+    } ],
+    "property" : [ {
+      "code" : "status",
+      "valueCode" : "active"
+    }, {
+      "code" : "effectiveDate",
+      "valueDateTime" : "2010-01-01T00:00:00Z"
+    } ]
+  }, {
+    "code" : "1 MG/ML",
+    "display" : "1 MG/ML",
+    "designation" : [ {
+      "language" : "en",
+      "use" : {
+        "code" : "display"
+      },
+      "value" : "1 MG/ML"
+    } ],
+    "property" : [ {
+      "code" : "status",
+      "valueCode" : "active"
+    }, {
+      "code" : "effectiveDate",
+      "valueDateTime" : "2010-01-01T00:00:00Z"
+    } ]
+  }, {
+    "code" : "100G",
+    "display" : "100G",
+    "designation" : [ {
+      "language" : "en",
+      "use" : {
+        "code" : "display"
+      },
+      "value" : "100 grams"
+    } ],
+    "property" : [ {
+      "code" : "status",
+      "valueCode" : "active"
+    }, {
+      "code" : "effectiveDate",
+      "valueDateTime" : "2010-01-01T00:00:00Z"
+    } ]
+  }, {
+    "code" : "AD",
+    "display" : "AD",
+    "designation" : [ {
+      "language" : "en",
+      "use" : {
+        "code" : "display"
+      },
+      "value" : "AD"
+    } ],
+    "property" : [ {
+      "code" : "status",
+      "valueCode" : "active"
+    }, {
+      "code" : "effectiveDate",
+      "valueDateTime" : "2010-01-01T00:00:00Z"
+    } ]
+  }, {
+    "code" : "AD %",
+    "display" : "AD %",
+    "designation" : [ {
+      "language" : "en",
+      "use" : {
+        "code" : "display"
+      },
+      "value" : "AD %"
+    } ],
+    "property" : [ {
+      "code" : "status",
+      "valueCode" : "active"
+    }, {
+      "code" : "effectiveDate",
+      "valueDateTime" : "2010-01-01T00:00:00Z"
+    } ]
+  }, {
+    "code" : "AD % W/V",
+    "display" : "AD % W/V",
+    "designation" : [ {
+      "language" : "en",
+      "use" : {
+        "code" : "display"
+      },
+      "value" : "AD % W/V"
+    } ],
+    "property" : [ {
+      "code" : "status",
+      "valueCode" : "active"
+    }, {
+      "code" : "effectiveDate",
+      "valueDateTime" : "2010-01-01T00:00:00Z"
+    } ]
+  }, {
+    "code" : "AD 1 G",
+    "display" : "AD 1 G",
+    "designation" : [ {
+      "language" : "en",
+      "use" : {
+        "code" : "display"
+      },
+      "value" : "AD 1 G"
+    } ],
+    "property" : [ {
+      "code" : "status",
+      "valueCode" : "active"
+    }, {
+      "code" : "effectiveDate",
+      "valueDateTime" : "2010-01-01T00:00:00Z"
+    } ]
+  }, {
+    "code" : "AD 1 ML",
+    "display" : "AD 1 ML",
+    "designation" : [ {
+      "language" : "en",
+      "use" : {
+        "code" : "display"
+      },
+      "value" : "AD 1 ML"
+    } ],
+    "property" : [ {
+      "code" : "status",
+      "valueCode" : "active"
+    }, {
+      "code" : "effectiveDate",
+      "valueDateTime" : "2010-01-01T00:00:00Z"
+    } ]
+  }, {
+    "code" : "AD 100 %",
+    "display" : "AD 100 %",
+    "designation" : [ {
+      "language" : "en",
+      "use" : {
+        "code" : "display"
+      },
+      "value" : "AD 100 %"
+    } ],
+    "property" : [ {
+      "code" : "status",
+      "valueCode" : "active"
+    }, {
+      "code" : "effectiveDate",
+      "valueDateTime" : "2010-01-01T00:00:00Z"
+    } ]
+  }, {
+    "code" : "AD 1000 ML",
+    "display" : "AD 1000 ML",
+    "designation" : [ {
+      "language" : "en",
+      "use" : {
+        "code" : "display"
+      },
+      "value" : "AD 1000 ML"
+    } ],
+    "property" : [ {
+      "code" : "status",
+      "valueCode" : "active"
+    }, {
+      "code" : "effectiveDate",
+      "valueDateTime" : "2010-01-01T00:00:00Z"
+    } ]
+  }, {
+    "code" : "AD 100ML",
+    "display" : "AD 100ML",
+    "designation" : [ {
+      "language" : "en",
+      "use" : {
+        "code" : "display"
+      },
+      "value" : "AD 100ML"
+    } ],
+    "property" : [ {
+      "code" : "status",
+      "valueCode" : "active"
+    }, {
+      "code" : "effectiveDate",
+      "valueDateTime" : "2010-01-01T00:00:00Z"
+    } ]
+  }, {
+    "code" : "AD G",
+    "display" : "AD G",
+    "designation" : [ {
+      "language" : "en",
+      "use" : {
+        "code" : "display"
+      },
+      "value" : "AD G"
+    } ],
+    "property" : [ {
+      "code" : "status",
+      "valueCode" : "active"
+    }, {
+      "code" : "effectiveDate",
+      "valueDateTime" : "2010-01-01T00:00:00Z"
+    } ]
+  }, {
+    "code" : "AD MCG",
+    "display" : "AD MCG",
+    "designation" : [ {
+      "language" : "en",
+      "use" : {
+        "code" : "display"
+      },
+      "value" : "AD MCG"
+    } ],
+    "property" : [ {
+      "code" : "status",
+      "valueCode" : "active"
+    }, {
+      "code" : "effectiveDate",
+      "valueDateTime" : "2010-01-01T00:00:00Z"
+    } ]
+  }, {
+    "code" : "AD MCL",
+    "display" : "AD MCL",
+    "designation" : [ {
+      "language" : "en",
+      "use" : {
+        "code" : "display"
+      },
+      "value" : "AD MCL"
+    } ],
+    "property" : [ {
+      "code" : "status",
+      "valueCode" : "active"
+    }, {
+      "code" : "effectiveDate",
+      "valueDateTime" : "2010-01-01T00:00:00Z"
+    } ]
+  }, {
+    "code" : "AD MG",
+    "display" : "AD MG",
+    "designation" : [ {
+      "language" : "en",
+      "use" : {
+        "code" : "display"
+      },
+      "value" : "AD MG"
+    } ],
+    "property" : [ {
+      "code" : "status",
+      "valueCode" : "active"
+    }, {
+      "code" : "effectiveDate",
+      "valueDateTime" : "2010-01-01T00:00:00Z"
+    } ]
+  }, {
+    "code" : "AD MG/ML",
+    "display" : "AD MG/ML",
+    "designation" : [ {
+      "language" : "en",
+      "use" : {
+        "code" : "display"
+      },
+      "value" : "AD MG/ML"
+    } ],
+    "property" : [ {
+      "code" : "status",
+      "valueCode" : "active"
+    }, {
+      "code" : "effectiveDate",
+      "valueDateTime" : "2010-01-01T00:00:00Z"
+    } ]
+  }, {
+    "code" : "AD ML",
+    "display" : "AD ML",
+    "designation" : [ {
+      "language" : "en",
+      "use" : {
+        "code" : "display"
+      },
+      "value" : "AD ML"
+    } ],
+    "property" : [ {
+      "code" : "status",
+      "valueCode" : "active"
+    }, {
+      "code" : "effectiveDate",
+      "valueDateTime" : "2010-01-01T00:00:00Z"
+    } ]
+  }, {
+    "code" : "AD MMOL/L",
+    "display" : "AD MMOL/L",
+    "designation" : [ {
+      "language" : "en",
+      "use" : {
+        "code" : "display"
+      },
+      "value" : "AD MMOL/L"
+    } ],
+    "property" : [ {
+      "code" : "status",
+      "valueCode" : "active"
+    }, {
+      "code" : "effectiveDate",
+      "valueDateTime" : "2010-01-01T00:00:00Z"
+    } ]
+  }, {
+    "code" : "AD PH",
+    "display" : "AD PH",
+    "designation" : [ {
+      "language" : "en",
+      "use" : {
+        "code" : "display"
+      },
+      "value" : "AD PH"
+    } ],
+    "property" : [ {
+      "code" : "status",
+      "valueCode" : "active"
+    }, {
+      "code" : "effectiveDate",
+      "valueDateTime" : "2010-01-01T00:00:00Z"
+    } ]
+  }, {
+    "code" : "AD PH 4,5",
+    "display" : "AD PH 4,5",
+    "designation" : [ {
+      "language" : "en",
+      "use" : {
+        "code" : "display"
+      },
+      "value" : "AD PH 4,5"
+    } ],
+    "property" : [ {
+      "code" : "status",
+      "valueCode" : "active"
+    }, {
+      "code" : "effectiveDate",
+      "valueDateTime" : "2010-01-01T00:00:00Z"
+    } ]
+  }, {
+    "code" : "AMPULL",
+    "display" : "AMPULL",
+    "designation" : [ {
+      "language" : "en",
+      "use" : {
+        "code" : "display"
+      },
+      "value" : "ampoule(s)"
+    } ],
+    "property" : [ {
+      "code" : "status",
+      "valueCode" : "active"
+    }, {
+      "code" : "effectiveDate",
+      "valueDateTime" : "2010-01-01T00:00:00Z"
+    }, {
+      "code" : "ucum",
+      "valueCode" : "1{ampule}"
+    } ]
+  }, {
+    "code" : "ANNUS",
+    "display" : "ANNUS",
+    "designation" : [ {
+      "language" : "en",
+      "use" : {
+        "code" : "display"
+      },
+      "value" : "dosage(s)"
+    } ],
+    "property" : [ {
+      "code" : "status",
+      "valueCode" : "active"
+    }, {
+      "code" : "effectiveDate",
+      "valueDateTime" : "2023-03-31T00:00:00Z"
+    }, {
+      "code" : "ucum",
+      "valueCode" : "1{dose}"
+    } ]
+  }, {
+    "code" : "ANNUST",
+    "display" : "ANNUST",
+    "property" : [ {
+      "code" : "status",
+      "valueCode" : "retired"
+    }, {
+      "code" : "effectiveDate",
+      "valueDateTime" : "2010-01-01T00:00:00Z"
+    }, {
+      "code" : "replacedByCode",
+      "valueCode" : "ANNUS"
+    }, {
+      "code" : "retirementDate",
+      "valueDateTime" : "2023-03-31T00:00:00Z"
+    }, {
+      "code" : "ucum",
+      "valueCode" : "1{dose}"
+    } ]
+  }, {
+    "code" : "ANTI-XA",
+    "display" : "ANTI-XA",
+    "designation" : [ {
+      "language" : "en",
+      "use" : {
+        "code" : "display"
+      },
+      "value" : "anti-Xa"
+    } ],
+    "property" : [ {
+      "code" : "status",
+      "valueCode" : "active"
+    }, {
+      "code" : "effectiveDate",
+      "valueDateTime" : "2010-01-01T00:00:00Z"
+    }, {
+      "code" : "ucum",
+      "valueCode" : "[ANTI'XA'U]"
+    } ]
+  }, {
+    "code" : "ANTIGEENI ÜHIK",
+    "display" : "ANTIGEENI ÜHIK",
+    "designation" : [ {
+      "language" : "en",
+      "use" : {
+        "code" : "display"
+      },
+      "value" : "antigen unit(s)"
+    } ],
+    "property" : [ {
+      "code" : "status",
+      "valueCode" : "active"
+    }, {
+      "code" : "effectiveDate",
+      "valueDateTime" : "2010-01-01T00:00:00Z"
+    }, {
+      "code" : "ucum",
+      "valueCode" : "[D'ag'U]"
+    } ]
+  }, {
+    "code" : "BOU",
+    "display" : "BOU",
+    "designation" : [ {
+      "language" : "en",
+      "use" : {
+        "code" : "display"
+      },
+      "value" : "billion units"
+    } ],
+    "property" : [ {
+      "code" : "status",
+      "valueCode" : "active"
+    }, {
+      "code" : "effectiveDate",
+      "valueDateTime" : "2010-01-01T00:00:00Z"
+    } ]
+  }, {
+    "code" : "CCID50",
+    "display" : "CCID50",
+    "designation" : [ {
+      "language" : "en",
+      "use" : {
+        "code" : "display"
+      },
+      "value" : "50% cell culture infectious dose"
+    } ],
+    "property" : [ {
+      "code" : "status",
+      "valueCode" : "active"
+    }, {
+      "code" : "effectiveDate",
+      "valueDateTime" : "2010-01-01T00:00:00Z"
+    }, {
+      "code" : "ucum",
+      "valueCode" : "[CCID_50]"
+    } ]
+  }, {
+    "code" : "CENTILITER",
+    "display" : "CENTILITER",
+    "designation" : [ {
+      "language" : "en",
+      "use" : {
+        "code" : "display"
+      },
+      "value" : "centiliter(s)"
+    } ],
+    "property" : [ {
+      "code" : "status",
+      "valueCode" : "active"
+    }, {
+      "code" : "effectiveDate",
+      "valueDateTime" : "2010-01-01T00:00:00Z"
+    }, {
+      "code" : "ucum",
+      "valueCode" : "cL"
+    } ]
+  }, {
+    "code" : "CM",
+    "display" : "CM",
+    "designation" : [ {
+      "language" : "en",
+      "use" : {
+        "code" : "display"
+      },
+      "value" : "centimeter(s)"
+    } ],
+    "property" : [ {
+      "code" : "status",
+      "valueCode" : "active"
+    }, {
+      "code" : "effectiveDate",
+      "valueDateTime" : "2010-01-01T00:00:00Z"
+    }, {
+      "code" : "ucum",
+      "valueCode" : "cm"
+    } ]
+  }, {
+    "code" : "CM2",
+    "display" : "CM2",
+    "designation" : [ {
+      "language" : "en",
+      "use" : {
+        "code" : "display"
+      },
+      "value" : "square centimeter(s)"
+    } ],
+    "property" : [ {
+      "code" : "status",
+      "valueCode" : "active"
+    }, {
+      "code" : "effectiveDate",
+      "valueDateTime" : "2010-01-01T00:00:00Z"
+    }, {
+      "code" : "ucum",
+      "valueCode" : "cm2"
+    } ]
+  }, {
+    "code" : "CM3",
+    "display" : "CM3",
+    "designation" : [ {
+      "language" : "en",
+      "use" : {
+        "code" : "display"
+      },
+      "value" : "cubic centimeter(s)"
+    } ],
+    "property" : [ {
+      "code" : "status",
+      "valueCode" : "active"
+    }, {
+      "code" : "effectiveDate",
+      "valueDateTime" : "2010-01-01T00:00:00Z"
+    }, {
+      "code" : "ucum",
+      "valueCode" : "cm3"
+    } ]
+  }, {
+    "code" : "CUBIC FOOT",
+    "display" : "CUBIC FOOT",
+    "designation" : [ {
+      "language" : "en",
+      "use" : {
+        "code" : "display"
+      },
+      "value" : "cubic foot"
+    } ],
+    "property" : [ {
+      "code" : "status",
+      "valueCode" : "active"
+    }, {
+      "code" : "effectiveDate",
+      "valueDateTime" : "2010-01-01T00:00:00Z"
+    }, {
+      "code" : "ucum",
+      "valueCode" : "[cft_i]"
+    } ]
+  }, {
+    "code" : "D-ANTIGEENI ÜHIK",
+    "display" : "D-ANTIGEENI ÜHIK",
+    "designation" : [ {
+      "language" : "en",
+      "use" : {
+        "code" : "display"
+      },
+      "value" : "d-antigen unit(s)"
+    } ],
+    "property" : [ {
+      "code" : "status",
+      "valueCode" : "active"
+    }, {
+      "code" : "effectiveDate",
+      "valueDateTime" : "2010-01-01T00:00:00Z"
+    } ]
+  }, {
+    "code" : "DOOS",
+    "display" : "DOOS",
+    "designation" : [ {
+      "language" : "en",
+      "use" : {
+        "code" : "display"
+      },
+      "value" : "dose(s)"
+    } ],
+    "property" : [ {
+      "code" : "status",
+      "valueCode" : "active"
+    }, {
+      "code" : "effectiveDate",
+      "valueDateTime" : "2010-01-01T00:00:00Z"
+    }, {
+      "code" : "ucum",
+      "valueCode" : "1{dose}"
+    } ]
+  }, {
+    "code" : "EL.U",
+    "display" : "EL.U",
+    "designation" : [ {
+      "language" : "en",
+      "use" : {
+        "code" : "display"
+      },
+      "value" : "ELISA unit(s)"
+    } ],
+    "property" : [ {
+      "code" : "status",
+      "valueCode" : "active"
+    }, {
+      "code" : "effectiveDate",
+      "valueDateTime" : "2010-01-01T00:00:00Z"
+    }, {
+      "code" : "ucum",
+      "valueCode" : "[ELU]"
+    } ]
+  }, {
+    "code" : "ELISA ÜHIK",
+    "display" : "ELISA ÜHIK",
+    "designation" : [ {
+      "language" : "en",
+      "use" : {
+        "code" : "display"
+      },
+      "value" : "ELISA unit(s)"
+    } ],
+    "property" : [ {
+      "code" : "status",
+      "valueCode" : "active"
+    }, {
+      "code" : "effectiveDate",
+      "valueDateTime" : "2010-01-01T00:00:00Z"
+    }, {
+      "code" : "ucum",
+      "valueCode" : "[ELU]"
+    } ]
+  }, {
+    "code" : "G",
+    "display" : "G",
+    "designation" : [ {
+      "language" : "en",
+      "use" : {
+        "code" : "display"
+      },
+      "value" : "gram(s)"
+    } ],
+    "property" : [ {
+      "code" : "status",
+      "valueCode" : "active"
+    }, {
+      "code" : "effectiveDate",
+      "valueDateTime" : "2010-01-01T00:00:00Z"
+    }, {
+      "code" : "ucum",
+      "valueCode" : "g"
+    } ]
+  }, {
+    "code" : "G/1000ML",
+    "display" : "G/1000ML",
+    "designation" : [ {
+      "language" : "en",
+      "use" : {
+        "code" : "display"
+      },
+      "value" : "gram(s) per 1000 milliliter"
+    } ],
+    "property" : [ {
+      "code" : "status",
+      "valueCode" : "active"
+    }, {
+      "code" : "effectiveDate",
+      "valueDateTime" : "2010-01-01T00:00:00Z"
+    }, {
+      "code" : "ucum",
+      "valueCode" : "g/(1000.mL)"
+    } ]
+  }, {
+    "code" : "G/100G",
+    "display" : "G/100G",
+    "designation" : [ {
+      "language" : "en",
+      "use" : {
+        "code" : "display"
+      },
+      "value" : "gram(s) per 100 gram"
+    } ],
+    "property" : [ {
+      "code" : "status",
+      "valueCode" : "active"
+    }, {
+      "code" : "effectiveDate",
+      "valueDateTime" : "2010-01-01T00:00:00Z"
+    }, {
+      "code" : "ucum",
+      "valueCode" : "g/(100.g)"
+    } ]
+  }, {
+    "code" : "G/100ML",
+    "display" : "G/100ML",
+    "designation" : [ {
+      "language" : "en",
+      "use" : {
+        "code" : "display"
+      },
+      "value" : "gram(s) per 100 milliliter"
+    } ],
+    "property" : [ {
+      "code" : "status",
+      "valueCode" : "active"
+    }, {
+      "code" : "effectiveDate",
+      "valueDateTime" : "2010-01-01T00:00:00Z"
+    }, {
+      "code" : "ucum",
+      "valueCode" : "g/(100.mL)"
+    } ]
+  }, {
+    "code" : "G/20ML",
+    "display" : "G/20ML",
+    "designation" : [ {
+      "language" : "en",
+      "use" : {
+        "code" : "display"
+      },
+      "value" : "gram(s) per 20 milliliter"
+    } ],
+    "property" : [ {
+      "code" : "status",
+      "valueCode" : "active"
+    }, {
+      "code" : "effectiveDate",
+      "valueDateTime" : "2010-01-01T00:00:00Z"
+    }, {
+      "code" : "ucum",
+      "valueCode" : "g/(20.mL)"
+    } ]
+  }, {
+    "code" : "G/50ML",
+    "display" : "G/50ML",
+    "designation" : [ {
+      "language" : "en",
+      "use" : {
+        "code" : "display"
+      },
+      "value" : "gram(s) per 50 milliliter"
+    } ],
+    "property" : [ {
+      "code" : "status",
+      "valueCode" : "active"
+    }, {
+      "code" : "effectiveDate",
+      "valueDateTime" : "2010-01-01T00:00:00Z"
+    }, {
+      "code" : "ucum",
+      "valueCode" : "g/(50.mL)"
+    } ]
+  }, {
+    "code" : "G/5ML",
+    "display" : "G/5ML",
+    "designation" : [ {
+      "language" : "en",
+      "use" : {
+        "code" : "display"
+      },
+      "value" : "gram(s) per 5 milliliter"
+    } ],
+    "property" : [ {
+      "code" : "status",
+      "valueCode" : "active"
+    }, {
+      "code" : "effectiveDate",
+      "valueDateTime" : "2010-01-01T00:00:00Z"
+    }, {
+      "code" : "ucum",
+      "valueCode" : "g/(5.mL)"
+    } ]
+  }, {
+    "code" : "G/ML",
+    "display" : "G/ML",
+    "designation" : [ {
+      "language" : "en",
+      "use" : {
+        "code" : "display"
+      },
+      "value" : "gram(s) per milliliter"
+    } ],
+    "property" : [ {
+      "code" : "status",
+      "valueCode" : "active"
+    }, {
+      "code" : "effectiveDate",
+      "valueDateTime" : "2010-01-01T00:00:00Z"
+    }, {
+      "code" : "ucum",
+      "valueCode" : "g/mL"
+    } ]
+  }, {
+    "code" : "GBQ",
+    "display" : "GBQ",
+    "designation" : [ {
+      "language" : "en",
+      "use" : {
+        "code" : "display"
+      },
+      "value" : "gigabecquerel(s)"
+    } ],
+    "property" : [ {
+      "code" : "status",
+      "valueCode" : "active"
+    }, {
+      "code" : "effectiveDate",
+      "valueDateTime" : "2010-01-01T00:00:00Z"
+    }, {
+      "code" : "ucum",
+      "valueCode" : "GBq"
+    } ]
+  }, {
+    "code" : "GRAMM",
+    "display" : "GRAMM",
+    "designation" : [ {
+      "language" : "en",
+      "use" : {
+        "code" : "display"
+      },
+      "value" : "gram(s)"
+    } ],
+    "property" : [ {
+      "code" : "status",
+      "valueCode" : "active"
+    }, {
+      "code" : "effectiveDate",
+      "valueDateTime" : "2010-01-01T00:00:00Z"
+    }, {
+      "code" : "ucum",
+      "valueCode" : "g"
+    } ]
+  }, {
+    "code" : "H",
+    "display" : "H",
+    "designation" : [ {
+      "language" : "en",
+      "use" : {
+        "code" : "display"
+      },
+      "value" : "hour(s)"
+    } ],
+    "property" : [ {
+      "code" : "status",
+      "valueCode" : "active"
+    }, {
+      "code" : "effectiveDate",
+      "valueDateTime" : "2010-01-01T00:00:00Z"
+    }, {
+      "code" : "ucum",
+      "valueCode" : "h"
+    } ]
+  }, {
+    "code" : "IR",
+    "display" : "IR",
+    "designation" : [ {
+      "language" : "en",
+      "use" : {
+        "code" : "display"
+      },
+      "value" : "index of reactivity"
+    } ],
+    "property" : [ {
+      "code" : "status",
+      "valueCode" : "active"
+    }, {
+      "code" : "effectiveDate",
+      "valueDateTime" : "2010-01-01T00:00:00Z"
+    }, {
+      "code" : "ucum",
+      "valueCode" : "[IR]"
+    } ]
+  }, {
+    "code" : "KANISTER",
+    "display" : "KANISTER",
+    "designation" : [ {
+      "language" : "en",
+      "use" : {
+        "code" : "display"
+      },
+      "value" : "canister(s)"
+    } ],
+    "property" : [ {
+      "code" : "status",
+      "valueCode" : "active"
+    }, {
+      "code" : "effectiveDate",
+      "valueDateTime" : "2010-01-01T00:00:00Z"
+    }, {
+      "code" : "ucum",
+      "valueCode" : "1{canister}"
+    } ]
+  }, {
+    "code" : "KAPSEL",
+    "display" : "KAPSEL",
+    "designation" : [ {
+      "language" : "en",
+      "use" : {
+        "code" : "display"
+      },
+      "value" : "capsule(s)"
+    } ],
+    "property" : [ {
+      "code" : "status",
+      "valueCode" : "active"
+    }, {
+      "code" : "effectiveDate",
+      "valueDateTime" : "2010-01-01T00:00:00Z"
+    }, {
+      "code" : "ucum",
+      "valueCode" : "1{capsule}"
+    } ]
+  }, {
+    "code" : "KATSUTIT",
+    "display" : "KATSUTIT",
+    "designation" : [ {
+      "language" : "en",
+      "use" : {
+        "code" : "display"
+      },
+      "value" : "test-tube(s)"
+    } ],
+    "property" : [ {
+      "code" : "status",
+      "valueCode" : "active"
+    }, {
+      "code" : "effectiveDate",
+      "valueDateTime" : "2010-01-01T00:00:00Z"
+    }, {
+      "code" : "ucum",
+      "valueCode" : "1{tube}"
+    } ]
+  }, {
+    "code" : "KG",
+    "display" : "KG",
+    "designation" : [ {
+      "language" : "en",
+      "use" : {
+        "code" : "display"
+      },
+      "value" : "kilogram(s)"
+    } ],
+    "property" : [ {
+      "code" : "status",
+      "valueCode" : "active"
+    }, {
+      "code" : "effectiveDate",
+      "valueDateTime" : "2010-01-01T00:00:00Z"
+    }, {
+      "code" : "ucum",
+      "valueCode" : "kg"
+    } ]
+  }, {
+    "code" : "KILOTONNE",
+    "display" : "KILOTONNE",
+    "designation" : [ {
+      "language" : "en",
+      "use" : {
+        "code" : "display"
+      },
+      "value" : "kiloton(s)"
+    } ],
+    "property" : [ {
+      "code" : "status",
+      "valueCode" : "active"
+    }, {
+      "code" : "effectiveDate",
+      "valueDateTime" : "2010-01-01T00:00:00Z"
+    }, {
+      "code" : "ucum",
+      "valueCode" : "kt"
+    } ]
+  }, {
+    "code" : "KOMPLEKT",
+    "display" : "KOMPLEKT",
+    "designation" : [ {
+      "language" : "en",
+      "use" : {
+        "code" : "display"
+      },
+      "value" : "kit(s)"
+    } ],
+    "property" : [ {
+      "code" : "status",
+      "valueCode" : "active"
+    }, {
+      "code" : "effectiveDate",
+      "valueDateTime" : "2010-01-01T00:00:00Z"
+    }, {
+      "code" : "ucum",
+      "valueCode" : "1{kit}"
+    } ]
+  }, {
+    "code" : "KONTEINER",
+    "display" : "KONTEINER",
+    "designation" : [ {
+      "language" : "en",
+      "use" : {
+        "code" : "display"
+      },
+      "value" : "container(s)"
+    } ],
+    "property" : [ {
+      "code" : "status",
+      "valueCode" : "active"
+    }, {
+      "code" : "effectiveDate",
+      "valueDateTime" : "2010-01-01T00:00:00Z"
+    }, {
+      "code" : "ucum",
+      "valueCode" : "1{container}"
+    } ]
+  }, {
+    "code" : "KOTT",
+    "display" : "KOTT",
+    "designation" : [ {
+      "language" : "en",
+      "use" : {
+        "code" : "display"
+      },
+      "value" : "bag(s)"
+    } ],
+    "property" : [ {
+      "code" : "status",
+      "valueCode" : "active"
+    }, {
+      "code" : "effectiveDate",
+      "valueDateTime" : "2010-01-01T00:00:00Z"
+    }, {
+      "code" : "ucum",
+      "valueCode" : "1{bag}"
+    } ]
+  }, {
+    "code" : "L",
+    "display" : "L",
+    "designation" : [ {
+      "language" : "en",
+      "use" : {
+        "code" : "display"
+      },
+      "value" : "liter(s)"
+    } ],
+    "property" : [ {
+      "code" : "status",
+      "valueCode" : "active"
+    }, {
+      "code" : "effectiveDate",
+      "valueDateTime" : "2010-01-01T00:00:00Z"
+    }, {
+      "code" : "ucum",
+      "valueCode" : "L"
+    } ]
+  }, {
+    "code" : "LD50",
+    "display" : "LD50",
+    "designation" : [ {
+      "language" : "en",
+      "use" : {
+        "code" : "display"
+      },
+      "value" : "lethal dose 50 -median concentration of a toxicant that will kill 50% of the test animals within a designated period"
+    } ],
+    "property" : [ {
+      "code" : "status",
+      "valueCode" : "active"
+    }, {
+      "code" : "effectiveDate",
+      "valueDateTime" : "2010-01-01T00:00:00Z"
+    } ]
+  }, {
+    "code" : "LRÜ",
+    "display" : "LRÜ",
+    "designation" : [ {
+      "language" : "en",
+      "use" : {
+        "code" : "display"
+      },
+      "value" : "LRÜ"
+    } ],
+    "property" : [ {
+      "code" : "status",
+      "valueCode" : "active"
+    }, {
+      "code" : "effectiveDate",
+      "valueDateTime" : "2010-01-01T00:00:00Z"
+    } ]
+  }, {
+    "code" : "MBQ",
+    "display" : "MBQ",
+    "designation" : [ {
+      "language" : "en",
+      "use" : {
+        "code" : "display"
+      },
+      "value" : "megabecquerel(s)"
+    } ],
+    "property" : [ {
+      "code" : "status",
+      "valueCode" : "active"
+    }, {
+      "code" : "effectiveDate",
+      "valueDateTime" : "2010-01-01T00:00:00Z"
+    }, {
+      "code" : "ucum",
+      "valueCode" : "MBq"
+    } ]
+  }, {
+    "code" : "MCG",
+    "display" : "MCG",
+    "designation" : [ {
+      "language" : "en",
+      "use" : {
+        "code" : "display"
+      },
+      "value" : "microgram(s)"
+    } ],
+    "property" : [ {
+      "code" : "status",
+      "valueCode" : "active"
+    }, {
+      "code" : "effectiveDate",
+      "valueDateTime" : "2010-01-01T00:00:00Z"
+    }, {
+      "code" : "ucum",
+      "valueCode" : "ug"
+    } ]
+  }, {
+    "code" : "MCG/0,5ML",
+    "display" : "MCG/0,5ML",
+    "designation" : [ {
+      "language" : "en",
+      "use" : {
+        "code" : "display"
+      },
+      "value" : "microgram(s) per 0,5 milliliter"
+    } ],
+    "property" : [ {
+      "code" : "status",
+      "valueCode" : "active"
+    }, {
+      "code" : "effectiveDate",
+      "valueDateTime" : "2010-01-01T00:00:00Z"
+    }, {
+      "code" : "ucum",
+      "valueCode" : "ug/(1/2.mL)"
+    } ]
+  }, {
+    "code" : "MCG/ANNUSES",
+    "display" : "MCG/ANNUSES",
+    "designation" : [ {
+      "language" : "en",
+      "use" : {
+        "code" : "display"
+      },
+      "value" : "microgram(s) per dose"
+    } ],
+    "property" : [ {
+      "code" : "status",
+      "valueCode" : "active"
+    }, {
+      "code" : "effectiveDate",
+      "valueDateTime" : "2010-01-01T00:00:00Z"
+    } ]
+  }, {
+    "code" : "MCG/CM2",
+    "display" : "MCG/CM2",
+    "designation" : [ {
+      "language" : "en",
+      "use" : {
+        "code" : "display"
+      },
+      "value" : "microgram(s) per square centimeter"
+    } ],
+    "property" : [ {
+      "code" : "status",
+      "valueCode" : "active"
+    }, {
+      "code" : "effectiveDate",
+      "valueDateTime" : "2010-01-01T00:00:00Z"
+    }, {
+      "code" : "ucum",
+      "valueCode" : "ug/cm2"
+    } ]
+  }, {
+    "code" : "MCG/ML",
+    "display" : "MCG/ML",
+    "designation" : [ {
+      "language" : "en",
+      "use" : {
+        "code" : "display"
+      },
+      "value" : "microgram(s) per milliliter"
+    } ],
+    "property" : [ {
+      "code" : "status",
+      "valueCode" : "active"
+    }, {
+      "code" : "effectiveDate",
+      "valueDateTime" : "2010-01-01T00:00:00Z"
+    }, {
+      "code" : "ucum",
+      "valueCode" : "ug/mL"
+    } ]
+  }, {
+    "code" : "MCG/VIAALIS",
+    "display" : "MCG/VIAALIS",
+    "designation" : [ {
+      "language" : "en",
+      "use" : {
+        "code" : "display"
+      },
+      "value" : "microgram(s) per vial"
+    } ],
+    "property" : [ {
+      "code" : "status",
+      "valueCode" : "active"
+    }, {
+      "code" : "effectiveDate",
+      "valueDateTime" : "2010-01-01T00:00:00Z"
+    } ]
+  }, {
+    "code" : "MCI",
+    "display" : "MCI",
+    "property" : [ {
+      "code" : "status",
+      "valueCode" : "active"
+    }, {
+      "code" : "effectiveDate",
+      "valueDateTime" : "2010-01-01T00:00:00Z"
+    }, {
+      "code" : "ucum",
+      "valueCode" : "uCi"
+    } ]
+  }, {
+    "code" : "MCL",
+    "display" : "MCL",
+    "designation" : [ {
+      "language" : "en",
+      "use" : {
+        "code" : "display"
+      },
+      "value" : "microliter(s)"
+    } ],
+    "property" : [ {
+      "code" : "status",
+      "valueCode" : "active"
+    }, {
+      "code" : "effectiveDate",
+      "valueDateTime" : "2010-01-01T00:00:00Z"
+    }, {
+      "code" : "ucum",
+      "valueCode" : "uL"
+    } ]
+  }, {
+    "code" : "MCL/G",
+    "display" : "MCL/G",
+    "designation" : [ {
+      "language" : "en",
+      "use" : {
+        "code" : "display"
+      },
+      "value" : "microliter(s) per gram"
+    } ],
+    "property" : [ {
+      "code" : "status",
+      "valueCode" : "active"
+    }, {
+      "code" : "effectiveDate",
+      "valueDateTime" : "2010-01-01T00:00:00Z"
+    }, {
+      "code" : "ucum",
+      "valueCode" : "uL/g"
+    } ]
+  }, {
+    "code" : "MG",
+    "display" : "MG",
+    "designation" : [ {
+      "language" : "en",
+      "use" : {
+        "code" : "display"
+      },
+      "value" : "milligram(s)"
+    } ],
+    "property" : [ {
+      "code" : "status",
+      "valueCode" : "active"
+    }, {
+      "code" : "effectiveDate",
+      "valueDateTime" : "2010-01-01T00:00:00Z"
+    }, {
+      "code" : "ucum",
+      "valueCode" : "mg"
+    } ]
+  }, {
+    "code" : "MG+MCG",
+    "display" : "MG+MCG",
+    "designation" : [ {
+      "language" : "en",
+      "use" : {
+        "code" : "display"
+      },
+      "value" : "milligram(s) + microgram(s)"
+    } ],
+    "property" : [ {
+      "code" : "status",
+      "valueCode" : "active"
+    }, {
+      "code" : "effectiveDate",
+      "valueDateTime" : "2010-01-01T00:00:00Z"
+    } ]
+  }, {
+    "code" : "MG/100G",
+    "display" : "MG/100G",
+    "designation" : [ {
+      "language" : "en",
+      "use" : {
+        "code" : "display"
+      },
+      "value" : "milligram(s) per 100 gram"
+    } ],
+    "property" : [ {
+      "code" : "status",
+      "valueCode" : "active"
+    }, {
+      "code" : "effectiveDate",
+      "valueDateTime" : "2010-01-01T00:00:00Z"
+    }, {
+      "code" : "ucum",
+      "valueCode" : "mg/(100.g)"
+    } ]
+  }, {
+    "code" : "MG/10ML",
+    "display" : "MG/10ML",
+    "designation" : [ {
+      "language" : "en",
+      "use" : {
+        "code" : "display"
+      },
+      "value" : "milligram(s) per 10 milliliter"
+    } ],
+    "property" : [ {
+      "code" : "status",
+      "valueCode" : "active"
+    }, {
+      "code" : "effectiveDate",
+      "valueDateTime" : "2010-01-01T00:00:00Z"
+    }, {
+      "code" : "ucum",
+      "valueCode" : "mg/(10.mL)"
+    } ]
+  }, {
+    "code" : "MG/20ML",
+    "display" : "MG/20ML",
+    "designation" : [ {
+      "language" : "en",
+      "use" : {
+        "code" : "display"
+      },
+      "value" : "milligram(s) per 20 milliliter"
+    } ],
+    "property" : [ {
+      "code" : "status",
+      "valueCode" : "active"
+    }, {
+      "code" : "effectiveDate",
+      "valueDateTime" : "2010-01-01T00:00:00Z"
+    }, {
+      "code" : "ucum",
+      "valueCode" : "mg/(20.mL)"
+    } ]
+  }, {
+    "code" : "MG/5ML",
+    "display" : "MG/5ML",
+    "designation" : [ {
+      "language" : "en",
+      "use" : {
+        "code" : "display"
+      },
+      "value" : "milligram(s) per 5 milliliter"
+    } ],
+    "property" : [ {
+      "code" : "status",
+      "valueCode" : "active"
+    }, {
+      "code" : "effectiveDate",
+      "valueDateTime" : "2010-01-01T00:00:00Z"
+    }, {
+      "code" : "ucum",
+      "valueCode" : "mg/(5.mL)"
+    } ]
+  }, {
+    "code" : "MG/ANNUSES",
+    "display" : "MG/ANNUSES",
+    "designation" : [ {
+      "language" : "en",
+      "use" : {
+        "code" : "display"
+      },
+      "value" : "milligram(s) per dose"
+    } ],
+    "property" : [ {
+      "code" : "status",
+      "valueCode" : "active"
+    }, {
+      "code" : "effectiveDate",
+      "valueDateTime" : "2010-01-01T00:00:00Z"
+    } ]
+  }, {
+    "code" : "MG/G",
+    "display" : "MG/G",
+    "designation" : [ {
+      "language" : "en",
+      "use" : {
+        "code" : "display"
+      },
+      "value" : "milligram(s) per gram"
+    } ],
+    "property" : [ {
+      "code" : "status",
+      "valueCode" : "active"
+    }, {
+      "code" : "effectiveDate",
+      "valueDateTime" : "2010-01-01T00:00:00Z"
+    }, {
+      "code" : "ucum",
+      "valueCode" : "mg/g"
+    } ]
+  }, {
+    "code" : "MG/ML",
+    "display" : "MG/ML",
+    "designation" : [ {
+      "language" : "en",
+      "use" : {
+        "code" : "display"
+      },
+      "value" : "milligram(s) per milliliter"
+    } ],
+    "property" : [ {
+      "code" : "status",
+      "valueCode" : "active"
+    }, {
+      "code" : "effectiveDate",
+      "valueDateTime" : "2010-01-01T00:00:00Z"
+    }, {
+      "code" : "ucum",
+      "valueCode" : "mg/mL"
+    } ]
+  }, {
+    "code" : "MG/TABLETIS",
+    "display" : "MG/TABLETIS",
+    "designation" : [ {
+      "language" : "en",
+      "use" : {
+        "code" : "display"
+      },
+      "value" : "milligram(s) per tablet"
+    } ],
+    "property" : [ {
+      "code" : "status",
+      "valueCode" : "active"
+    }, {
+      "code" : "effectiveDate",
+      "valueDateTime" : "2010-01-01T00:00:00Z"
+    } ]
+  }, {
+    "code" : "MILJTÜ",
+    "display" : "MILJTÜ",
+    "designation" : [ {
+      "language" : "en",
+      "use" : {
+        "code" : "display"
+      },
+      "value" : "million units"
+    } ],
+    "property" : [ {
+      "code" : "status",
+      "valueCode" : "active"
+    }, {
+      "code" : "effectiveDate",
+      "valueDateTime" : "2010-01-01T00:00:00Z"
+    }, {
+      "code" : "ucum",
+      "valueCode" : "10*6"
+    } ]
+  }, {
+    "code" : "ML",
+    "display" : "ML",
+    "designation" : [ {
+      "language" : "en",
+      "use" : {
+        "code" : "display"
+      },
+      "value" : "milliliter(s)"
+    } ],
+    "property" : [ {
+      "code" : "status",
+      "valueCode" : "active"
+    }, {
+      "code" : "effectiveDate",
+      "valueDateTime" : "2010-01-01T00:00:00Z"
+    }, {
+      "code" : "ucum",
+      "valueCode" : "mL"
+    } ]
+  }, {
+    "code" : "ML/20ML",
+    "display" : "ML/20ML",
+    "designation" : [ {
+      "language" : "en",
+      "use" : {
+        "code" : "display"
+      },
+      "value" : "milliliter(s) per 20 milliliter"
+    } ],
+    "property" : [ {
+      "code" : "status",
+      "valueCode" : "active"
+    }, {
+      "code" : "effectiveDate",
+      "valueDateTime" : "2010-01-01T00:00:00Z"
+    }, {
+      "code" : "ucum",
+      "valueCode" : "mL/(20.mL)"
+    } ]
+  }, {
+    "code" : "ML/5ML",
+    "display" : "ML/5ML",
+    "designation" : [ {
+      "language" : "en",
+      "use" : {
+        "code" : "display"
+      },
+      "value" : "milliliter(s) per 5 milliliter"
+    } ],
+    "property" : [ {
+      "code" : "status",
+      "valueCode" : "active"
+    }, {
+      "code" : "effectiveDate",
+      "valueDateTime" : "2010-01-01T00:00:00Z"
+    }, {
+      "code" : "ucum",
+      "valueCode" : "mL/(5.mL)"
+    } ]
+  }, {
+    "code" : "MMOL",
+    "display" : "MMOL",
+    "designation" : [ {
+      "language" : "en",
+      "use" : {
+        "code" : "display"
+      },
+      "value" : "millimole(s)"
+    } ],
+    "property" : [ {
+      "code" : "status",
+      "valueCode" : "active"
+    }, {
+      "code" : "effectiveDate",
+      "valueDateTime" : "2010-01-01T00:00:00Z"
+    }, {
+      "code" : "ucum",
+      "valueCode" : "mmol"
+    } ]
+  }, {
+    "code" : "MMOL/L",
+    "display" : "MMOL/L",
+    "designation" : [ {
+      "language" : "en",
+      "use" : {
+        "code" : "display"
+      },
+      "value" : "millimole(s) per liter"
+    } ],
+    "property" : [ {
+      "code" : "status",
+      "valueCode" : "active"
+    }, {
+      "code" : "effectiveDate",
+      "valueDateTime" : "2010-01-01T00:00:00Z"
+    }, {
+      "code" : "ucum",
+      "valueCode" : "mmol/L"
+    } ]
+  }, {
+    "code" : "MOL/L",
+    "display" : "MOL/L",
+    "designation" : [ {
+      "language" : "en",
+      "use" : {
+        "code" : "display"
+      },
+      "value" : "mole(s) per liter"
+    } ],
+    "property" : [ {
+      "code" : "status",
+      "valueCode" : "active"
+    }, {
+      "code" : "effectiveDate",
+      "valueDateTime" : "2010-01-01T00:00:00Z"
+    }, {
+      "code" : "ucum",
+      "valueCode" : "mol/L"
+    } ]
+  }, {
+    "code" : "MÕÕTANNUS",
+    "display" : "MÕÕTANNUS",
+    "designation" : [ {
+      "language" : "en",
+      "use" : {
+        "code" : "display"
+      },
+      "value" : "actuation(s)"
+    } ],
+    "property" : [ {
+      "code" : "status",
+      "valueCode" : "active"
+    }, {
+      "code" : "effectiveDate",
+      "valueDateTime" : "2023-03-31T00:00:00Z"
+    }, {
+      "code" : "ucum",
+      "valueCode" : "1{actuation}"
+    } ]
+  }, {
+    "code" : "PFU",
+    "display" : "PFU",
+    "designation" : [ {
+      "language" : "en",
+      "use" : {
+        "code" : "display"
+      },
+      "value" : "plaque forming unit(s)"
+    } ],
+    "property" : [ {
+      "code" : "status",
+      "valueCode" : "active"
+    }, {
+      "code" : "effectiveDate",
+      "valueDateTime" : "2010-01-01T00:00:00Z"
+    }, {
+      "code" : "ucum",
+      "valueCode" : "[PFU]"
+    } ]
+  }, {
+    "code" : "PPM",
+    "display" : "PPM",
+    "designation" : [ {
+      "language" : "en",
+      "use" : {
+        "code" : "display"
+      },
+      "value" : "parts per million"
+    } ],
+    "property" : [ {
+      "code" : "status",
+      "valueCode" : "active"
+    }, {
+      "code" : "effectiveDate",
+      "valueDateTime" : "2010-01-01T00:00:00Z"
+    }, {
+      "code" : "ucum",
+      "valueCode" : "[ppm]"
+    } ]
+  }, {
+    "code" : "PUDEL",
+    "display" : "PUDEL",
+    "designation" : [ {
+      "language" : "en",
+      "use" : {
+        "code" : "display"
+      },
+      "value" : "bottle(s)"
+    } ],
+    "property" : [ {
+      "code" : "status",
+      "valueCode" : "active"
+    }, {
+      "code" : "effectiveDate",
+      "valueDateTime" : "2010-01-01T00:00:00Z"
+    }, {
+      "code" : "ucum",
+      "valueCode" : "1{bottle}"
+    } ]
+  }, {
+    "code" : "PURK",
+    "display" : "PURK",
+    "designation" : [ {
+      "language" : "en",
+      "use" : {
+        "code" : "display"
+      },
+      "value" : "jar(s)"
+    } ],
+    "property" : [ {
+      "code" : "status",
+      "valueCode" : "active"
+    }, {
+      "code" : "effectiveDate",
+      "valueDateTime" : "2010-01-01T00:00:00Z"
+    }, {
+      "code" : "ucum",
+      "valueCode" : "1{jar}"
+    } ]
+  }, {
+    "code" : "RÜ",
+    "display" : "RÜ",
+    "designation" : [ {
+      "language" : "en",
+      "use" : {
+        "code" : "display"
+      },
+      "value" : "international unit(s)"
+    } ],
+    "property" : [ {
+      "code" : "status",
+      "valueCode" : "active"
+    }, {
+      "code" : "effectiveDate",
+      "valueDateTime" : "2010-01-01T00:00:00Z"
+    }, {
+      "code" : "ucum",
+      "valueCode" : "[IU]"
+    } ]
+  }, {
+    "code" : "SÜSTAL",
+    "display" : "SÜSTAL",
+    "designation" : [ {
+      "language" : "en",
+      "use" : {
+        "code" : "display"
+      },
+      "value" : "injection syringe(s)"
+    } ],
+    "property" : [ {
+      "code" : "status",
+      "valueCode" : "active"
+    }, {
+      "code" : "effectiveDate",
+      "valueDateTime" : "2010-01-01T00:00:00Z"
+    }, {
+      "code" : "ucum",
+      "valueCode" : "1{syringe}"
+    } ]
+  }, {
+    "code" : "TABL",
+    "display" : "TABLETTI",
+    "designation" : [ {
+      "language" : "en",
+      "use" : {
+        "code" : "display"
+      },
+      "value" : "tablet(s)"
+    } ],
+    "property" : [ {
+      "code" : "status",
+      "valueCode" : "active"
+    }, {
+      "code" : "effectiveDate",
+      "valueDateTime" : "2010-01-01T00:00:00Z"
+    }, {
+      "code" : "ucum",
+      "valueCode" : "1{tbl}"
+    } ]
+  }, {
+    "code" : "TILKA",
+    "display" : "TILKA",
+    "designation" : [ {
+      "language" : "en",
+      "use" : {
+        "code" : "display"
+      },
+      "value" : "drop(s)"
+    } ],
+    "property" : [ {
+      "code" : "status",
+      "valueCode" : "active"
+    }, {
+      "code" : "effectiveDate",
+      "valueDateTime" : "2010-01-01T00:00:00Z"
+    }, {
+      "code" : "ucum",
+      "valueCode" : "[drp]"
+    } ]
+  }, {
+    "code" : "TK",
+    "display" : "TÜKK",
+    "designation" : [ {
+      "language" : "en",
+      "use" : {
+        "code" : "display"
+      },
+      "value" : "piece(s)"
+    } ],
+    "property" : [ {
+      "code" : "status",
+      "valueCode" : "active"
+    }, {
+      "code" : "effectiveDate",
+      "valueDateTime" : "2010-01-01T00:00:00Z"
+    }, {
+      "code" : "ucum",
+      "valueCode" : "1"
+    } ]
+  }, {
+    "code" : "TÜ",
+    "display" : "TOIMEAINE ÜHIK",
+    "designation" : [ {
+      "language" : "en",
+      "use" : {
+        "code" : "display"
+      },
+      "value" : "unit(s)"
+    } ],
+    "property" : [ {
+      "code" : "status",
+      "valueCode" : "active"
+    }, {
+      "code" : "effectiveDate",
+      "valueDateTime" : "2010-01-01T00:00:00Z"
+    }, {
+      "code" : "ucum",
+      "valueCode" : "1"
+    } ]
+  }, {
+    "code" : "US GALLON",
+    "display" : "US GALLON",
+    "designation" : [ {
+      "language" : "en",
+      "use" : {
+        "code" : "display"
+      },
+      "value" : "USA gallon(s)"
+    } ],
+    "property" : [ {
+      "code" : "status",
+      "valueCode" : "active"
+    }, {
+      "code" : "effectiveDate",
+      "valueDateTime" : "2010-01-01T00:00:00Z"
+    }, {
+      "code" : "ucum",
+      "valueCode" : "[gal_us]"
+    } ]
+  }, {
+    "code" : "US POUND",
+    "display" : "US POUND",
+    "designation" : [ {
+      "language" : "en",
+      "use" : {
+        "code" : "display"
+      },
+      "value" : "USA pound(s)"
+    } ],
+    "property" : [ {
+      "code" : "status",
+      "valueCode" : "active"
+    }, {
+      "code" : "effectiveDate",
+      "valueDateTime" : "2010-01-01T00:00:00Z"
+    }, {
+      "code" : "ucum",
+      "valueCode" : "[lb_av]"
+    } ]
+  }, {
+    "code" : "VIAAL",
+    "display" : "VIAAL",
+    "designation" : [ {
+      "language" : "en",
+      "use" : {
+        "code" : "display"
+      },
+      "value" : "vial(s)"
+    } ],
+    "property" : [ {
+      "code" : "status",
+      "valueCode" : "active"
+    }, {
+      "code" : "effectiveDate",
+      "valueDateTime" : "2010-01-01T00:00:00Z"
+    }, {
+      "code" : "ucum",
+      "valueCode" : "1{vial}"
+    } ]
+  }, {
+    "code" : "X10ASTMES8",
+    "display" : "X10ASTMES8",
+    "designation" : [ {
+      "language" : "en",
+      "use" : {
+        "code" : "display"
+      },
+      "value" : "x10^8"
+    } ],
+    "property" : [ {
+      "code" : "status",
+      "valueCode" : "active"
+    }, {
+      "code" : "effectiveDate",
+      "valueDateTime" : "2010-01-01T00:00:00Z"
+    }, {
+      "code" : "ucum",
+      "valueCode" : "10*8"
+    } ]
+  }, {
+    "code" : "X10ASTMES9",
+    "display" : "X10ASTMES9",
+    "designation" : [ {
+      "language" : "en",
+      "use" : {
+        "code" : "display"
+      },
+      "value" : "x10^9"
+    } ],
+    "property" : [ {
+      "code" : "status",
+      "valueCode" : "active"
+    }, {
+      "code" : "effectiveDate",
+      "valueDateTime" : "2010-01-01T00:00:00Z"
+    }, {
+      "code" : "ucum",
+      "valueCode" : "10*9"
+    } ]
+  }, {
+    "code" : "YH",
+    "display" : "YH",
+    "designation" : [ {
+      "language" : "en",
+      "use" : {
+        "code" : "display"
+      },
+      "value" : "unit(s)"
+    } ],
+    "property" : [ {
+      "code" : "status",
+      "valueCode" : "active"
+    }, {
+      "code" : "effectiveDate",
+      "valueDateTime" : "2010-01-01T00:00:00Z"
+    }, {
+      "code" : "ucum",
+      "valueCode" : "1{units}"
+    } ]
+  }, {
+    "code" : "ÜHIK",
+    "display" : "ÜHIK",
+    "designation" : [ {
+      "language" : "en",
+      "use" : {
+        "code" : "display"
+      },
+      "value" : "unit(s)"
+    } ],
+    "property" : [ {
+      "code" : "status",
+      "valueCode" : "active"
+    }, {
+      "code" : "effectiveDate",
+      "valueDateTime" : "2010-01-01T00:00:00Z"
+    }, {
+      "code" : "ucum",
+      "valueCode" : "1{units}"
+    } ]
+  } ]
+}

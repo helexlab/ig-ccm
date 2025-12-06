@@ -1,0 +1,122 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "goal-category--1.0.0",
+  "language" : "et",
+  "extension" : [ {
+    "url" : "http://hl7.org/fhir/StructureDefinition/cqf-knowledgeRepresentationLevel",
+    "valueCode" : "executable"
+  } ],
+  "url" : "https://helex.org/fhir/CodeSystem/goal-category",
+  "version" : "1.0.0",
+  "versionAlgorithmString" : "semver",
+  "name" : "GoalCategory",
+  "title" : "Eesmärgi kategooria",
+  "_title" : {
+    "extension" : [ {
+      "extension" : [ {
+        "url" : "lang",
+        "valueCode" : "en"
+      }, {
+        "url" : "content",
+        "valueString" : "Goal category"
+      } ],
+      "url" : "http://hl7.org/fhir/StructureDefinition/translation"
+    } ]
+  },
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2025-11-01T13:30:28.196181Z",
+  "publisher" : "HELEX",
+  "effectivePeriod" : {
+    "start" : "2025-09-27T00:00:00Z"
+  },
+  "caseSensitive" : false,
+  "content" : "complete",
+  "property" : [ {
+    "code" : "conceptOrder",
+    "uri" : "http://hl7.org/fhir/StructureDefinition/codesystem-conceptOrder",
+    "description" : "Concept Order",
+    "type" : "integer"
+  } ],
+  "concept" : [ {
+    "code" : "holistic",
+    "display" : "Holistiline",
+    "designation" : [ {
+      "language" : "en",
+      "use" : {
+        "code" : "display"
+      },
+      "value" : "Holistic"
+    }, {
+      "language" : "ru",
+      "use" : {
+        "code" : "display"
+      },
+      "value" : "Холистическая"
+    } ],
+    "property" : [ {
+      "code" : "conceptOrder",
+      "valueInteger" : 20
+    } ]
+  }, {
+    "code" : "indicator",
+    "display" : "Tervisenäitajad",
+    "designation" : [ {
+      "language" : "en",
+      "use" : {
+        "code" : "display"
+      },
+      "value" : "Health indicators"
+    }, {
+      "language" : "ru",
+      "use" : {
+        "code" : "display"
+      },
+      "value" : "Показатели здоровья"
+    } ],
+    "property" : [ {
+      "code" : "conceptOrder",
+      "valueInteger" : 40
+    } ]
+  }, {
+    "code" : "social",
+    "display" : "Sotsiaalne",
+    "designation" : [ {
+      "language" : "en",
+      "use" : {
+        "code" : "display"
+      },
+      "value" : "Social"
+    }, {
+      "language" : "ru",
+      "use" : {
+        "code" : "display"
+      },
+      "value" : "Социальная"
+    } ],
+    "property" : [ {
+      "code" : "conceptOrder",
+      "valueInteger" : 30
+    } ]
+  }, {
+    "code" : "treatment",
+    "display" : "Ravieesmärk",
+    "designation" : [ {
+      "language" : "en",
+      "use" : {
+        "code" : "display"
+      },
+      "value" : "Treatment"
+    }, {
+      "language" : "ru",
+      "use" : {
+        "code" : "display"
+      },
+      "value" : "Лечебная"
+    } ],
+    "property" : [ {
+      "code" : "conceptOrder",
+      "valueInteger" : 10
+    } ]
+  } ]
+}

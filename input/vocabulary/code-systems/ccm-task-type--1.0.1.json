@@ -1,0 +1,305 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "ccm-task-type--1.0.1",
+  "language" : "et",
+  "extension" : [ {
+    "url" : "http://hl7.org/fhir/StructureDefinition/cqf-knowledgeRepresentationLevel",
+    "valueCode" : "executable"
+  } ],
+  "url" : "https://helex.org/fhir/CodeSystem/ccm-task-type",
+  "version" : "1.0.1",
+  "name" : "CcmTaskType",
+  "title" : "CCM Task Type",
+  "_title" : {
+    "extension" : [ {
+      "extension" : [ {
+        "url" : "lang",
+        "valueCode" : "en"
+      }, {
+        "url" : "content",
+        "valueString" : "CCM Task Type"
+      } ],
+      "url" : "http://hl7.org/fhir/StructureDefinition/translation"
+    } ]
+  },
+  "status" : "draft",
+  "experimental" : false,
+  "date" : "2025-11-08T08:11:17.441826Z",
+  "publisher" : "HELEX",
+  "effectivePeriod" : {
+    "start" : "2025-11-06T00:00:00Z"
+  },
+  "caseSensitive" : false,
+  "content" : "complete",
+  "property" : [ {
+    "code" : "conceptOrder",
+    "uri" : "http://hl7.org/fhir/StructureDefinition/codesystem-conceptOrder",
+    "description" : "Concept Order",
+    "type" : "integer"
+  }, {
+    "code" : "printout",
+    "description" : "Show on printout",
+    "type" : "boolean"
+  } ],
+  "concept" : [ {
+    "code" : "assessment",
+    "display" : "Hindamine",
+    "designation" : [ {
+      "language" : "en",
+      "use" : {
+        "code" : "display"
+      },
+      "value" : "Assessment"
+    } ]
+  }, {
+    "code" : "benefit-request",
+    "display" : "Toetuse või teenuse taotlemine",
+    "designation" : [ {
+      "language" : "en",
+      "use" : {
+        "code" : "display"
+      },
+      "value" : "Request for benefit or service"
+    } ]
+  }, {
+    "code" : "caregiver-meeting",
+    "display" : "Kohtumine pereliikme või hooldajaga",
+    "designation" : [ {
+      "language" : "en",
+      "use" : {
+        "code" : "display"
+      },
+      "value" : "Meeting with a caregiver"
+    } ]
+  }, {
+    "code" : "careplan-add",
+    "display" : "Heaoluplaani koostamine",
+    "designation" : [ {
+      "language" : "en",
+      "use" : {
+        "code" : "display"
+      },
+      "value" : "Create Care Plan"
+    } ]
+  }, {
+    "code" : "careplan-edit",
+    "display" : "Heaoluplaani muutmine",
+    "designation" : [ {
+      "language" : "en",
+      "use" : {
+        "code" : "display"
+      },
+      "value" : "Update Care Plan"
+    } ]
+  }, {
+    "code" : "communication-support",
+    "display" : "Tugi ja suhtlus",
+    "designation" : [ {
+      "language" : "en",
+      "use" : {
+        "code" : "display"
+      },
+      "value" : "Support and communication"
+    } ]
+  }, {
+    "code" : "consent-management",
+    "display" : "Nõusoleku haldamine",
+    "designation" : [ {
+      "language" : "en",
+      "use" : {
+        "code" : "display"
+      },
+      "value" : "Consent management"
+    } ]
+  }, {
+    "code" : "councelling",
+    "display" : "Nõustamine",
+    "designation" : [ {
+      "language" : "en",
+      "use" : {
+        "code" : "display"
+      },
+      "value" : "Councelling"
+    } ]
+  }, {
+    "code" : "create-tasks",
+    "display" : "Tegevuskava (ülesannete) koostamine",
+    "designation" : [ {
+      "language" : "en",
+      "use" : {
+        "code" : "display"
+      },
+      "value" : "Create task list"
+    } ]
+  }, {
+    "code" : "crisis-intervention",
+    "display" : "Kriisiolukorra sekkumine",
+    "designation" : [ {
+      "language" : "en",
+      "use" : {
+        "code" : "display"
+      },
+      "value" : "Intervention in a crisis situation"
+    } ]
+  }, {
+    "code" : "daily-support",
+    "display" : "Igapäevaeluga toimetuleku tugi",
+    "designation" : [ {
+      "language" : "en",
+      "use" : {
+        "code" : "display"
+      },
+      "value" : "Daily living support"
+    } ]
+  }, {
+    "code" : "device-arrangement",
+    "display" : "Hooldus- või abivahendite korraldus",
+    "designation" : [ {
+      "language" : "en",
+      "use" : {
+        "code" : "display"
+      },
+      "value" : "Arrangement of care or assistive devices"
+    } ]
+  }, {
+    "code" : "end-service",
+    "display" : "Teenuse lõpetamine",
+    "designation" : [ {
+      "language" : "en",
+      "use" : {
+        "code" : "display"
+      },
+      "value" : "End Care Plan Service"
+    } ]
+  }, {
+    "code" : "feedback",
+    "display" : "Tagasisidestamine",
+    "designation" : [ {
+      "language" : "en",
+      "use" : {
+        "code" : "display"
+      },
+      "value" : "Feedback"
+    } ]
+  }, {
+    "code" : "handover",
+    "display" : "Teenuse üleandmine",
+    "designation" : [ {
+      "language" : "en",
+      "use" : {
+        "code" : "display"
+      },
+      "value" : "Service Handover"
+    } ]
+  }, {
+    "code" : "health-check",
+    "display" : "Tervise jälgimine",
+    "designation" : [ {
+      "language" : "en",
+      "use" : {
+        "code" : "display"
+      },
+      "value" : "Health check"
+    } ]
+  }, {
+    "code" : "home-visit",
+    "display" : "Kodukülastus",
+    "designation" : [ {
+      "language" : "en",
+      "use" : {
+        "code" : "display"
+      },
+      "value" : "Home visit"
+    } ]
+  }, {
+    "code" : "meeting",
+    "display" : "Koosolek",
+    "designation" : [ {
+      "language" : "en",
+      "use" : {
+        "code" : "display"
+      },
+      "value" : "Meeting"
+    } ]
+  }, {
+    "code" : "mental-support",
+    "display" : "Vaimse tervise toetamine",
+    "designation" : [ {
+      "language" : "en",
+      "use" : {
+        "code" : "display"
+      },
+      "value" : "Mental health support"
+    } ]
+  }, {
+    "code" : "notification",
+    "display" : "Teavitus",
+    "designation" : [ {
+      "language" : "en",
+      "use" : {
+        "code" : "display"
+      },
+      "value" : "Notification"
+    } ]
+  }, {
+    "code" : "print",
+    "display" : "Printimine",
+    "designation" : [ {
+      "language" : "en",
+      "use" : {
+        "code" : "display"
+      },
+      "value" : "Print"
+    } ]
+  }, {
+    "code" : "referral-to-expert",
+    "display" : "Spetsialisti juurde suunamine",
+    "designation" : [ {
+      "language" : "en",
+      "use" : {
+        "code" : "display"
+      },
+      "value" : "Referral to an expert"
+    } ]
+  }, {
+    "code" : "support",
+    "display" : "Tugitegevus",
+    "designation" : [ {
+      "language" : "en",
+      "use" : {
+        "code" : "display"
+      },
+      "value" : "Support"
+    } ]
+  }, {
+    "code" : "transport",
+    "display" : "Transpordi korraldamine",
+    "designation" : [ {
+      "language" : "en",
+      "use" : {
+        "code" : "display"
+      },
+      "value" : "Arrange transportation"
+    } ]
+  }, {
+    "code" : "treatment-followup",
+    "display" : "Meditsiinilise ravi jälgimine",
+    "designation" : [ {
+      "language" : "en",
+      "use" : {
+        "code" : "display"
+      },
+      "value" : "Treatment follow-up"
+    } ]
+  }, {
+    "code" : "validation",
+    "display" : "Valideerimine",
+    "designation" : [ {
+      "language" : "en",
+      "use" : {
+        "code" : "display"
+      },
+      "value" : "Validation"
+    } ]
+  } ]
+}

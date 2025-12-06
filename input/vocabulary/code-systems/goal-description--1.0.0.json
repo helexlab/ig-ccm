@@ -1,0 +1,182 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "goal-description--1.0.0",
+  "language" : "et",
+  "extension" : [ {
+    "url" : "http://hl7.org/fhir/StructureDefinition/cqf-knowledgeRepresentationLevel",
+    "valueCode" : "executable"
+  } ],
+  "url" : "https://helex.org/fhir/CodeSystem/goal-description",
+  "version" : "1.0.0",
+  "versionAlgorithmString" : "semver",
+  "name" : "GoalDescription",
+  "title" : "Eesmärgi kirjeldus",
+  "_title" : {
+    "extension" : [ {
+      "extension" : [ {
+        "url" : "lang",
+        "valueCode" : "en"
+      }, {
+        "url" : "content",
+        "valueString" : "Goal description"
+      } ],
+      "url" : "http://hl7.org/fhir/StructureDefinition/translation"
+    } ]
+  },
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2025-12-04T20:13:16.273706Z",
+  "publisher" : "HELEX",
+  "effectivePeriod" : {
+    "start" : "2025-09-27T00:00:00Z"
+  },
+  "caseSensitive" : false,
+  "content" : "complete",
+  "property" : [ {
+    "code" : "category",
+    "type" : "Coding"
+  }, {
+    "code" : "conceptOrder",
+    "uri" : "http://hl7.org/fhir/StructureDefinition/codesystem-conceptOrder",
+    "description" : "Concept Order",
+    "type" : "integer"
+  }, {
+    "code" : "indicator",
+    "type" : "Coding"
+  } ],
+  "concept" : [ {
+    "code" : "ccm-indicators",
+    "display" : "Tervisenäitajad",
+    "designation" : [ {
+      "language" : "en",
+      "use" : {
+        "code" : "display"
+      },
+      "value" : "Health indicators"
+    }, {
+      "language" : "ru",
+      "use" : {
+        "code" : "display"
+      },
+      "value" : "Показатели здоровья"
+    } ],
+    "property" : [ {
+      "code" : "category",
+      "valueCoding" : {
+        "system" : "goal-category",
+        "code" : "indicator"
+      }
+    }, {
+      "code" : "conceptOrder",
+      "valueInteger" : 40
+    }, {
+      "code" : "indicator",
+      "valueCoding" : {
+        "system" : "goal-target-measure",
+        "code" : "bmi"
+      }
+    }, {
+      "code" : "indicator",
+      "valueCoding" : {
+        "system" : "goal-target-measure",
+        "code" : "alcohol-use"
+      }
+    }, {
+      "code" : "indicator",
+      "valueCoding" : {
+        "system" : "goal-target-measure",
+        "code" : "ldl-cholesterol"
+      }
+    }, {
+      "code" : "indicator",
+      "valueCoding" : {
+        "system" : "goal-target-measure",
+        "code" : "bp-diastolic"
+      }
+    }, {
+      "code" : "indicator",
+      "valueCoding" : {
+        "system" : "goal-target-measure",
+        "code" : "bp-systolic"
+      }
+    } ]
+  }, {
+    "code" : "community-activity",
+    "display" : "Sotsiaalsed eesmärgid",
+    "designation" : [ {
+      "language" : "en",
+      "use" : {
+        "code" : "display"
+      },
+      "value" : "Social goals"
+    }, {
+      "language" : "ru",
+      "use" : {
+        "code" : "display"
+      },
+      "value" : "Социальные цели"
+    } ],
+    "property" : [ {
+      "code" : "category",
+      "valueCoding" : {
+        "system" : "goal-category",
+        "code" : "social"
+      }
+    }, {
+      "code" : "conceptOrder",
+      "valueInteger" : 30
+    } ]
+  }, {
+    "code" : "physical-activity",
+    "display" : "Ravieesmärk",
+    "designation" : [ {
+      "language" : "en",
+      "use" : {
+        "code" : "display"
+      },
+      "value" : "Treatment goals"
+    }, {
+      "language" : "ru",
+      "use" : {
+        "code" : "display"
+      },
+      "value" : "Цель лечения"
+    } ],
+    "property" : [ {
+      "code" : "category",
+      "valueCoding" : {
+        "system" : "goal-category",
+        "code" : "treatment"
+      }
+    }, {
+      "code" : "conceptOrder",
+      "valueInteger" : 10
+    } ]
+  }, {
+    "code" : "preparing-meals",
+    "display" : "Holistilised eesmärgid",
+    "designation" : [ {
+      "language" : "en",
+      "use" : {
+        "code" : "display"
+      },
+      "value" : "Holistic goals"
+    }, {
+      "language" : "ru",
+      "use" : {
+        "code" : "display"
+      },
+      "value" : "Холистическая цель"
+    } ],
+    "property" : [ {
+      "code" : "category",
+      "valueCoding" : {
+        "system" : "goal-category",
+        "code" : "holistic"
+      }
+    }, {
+      "code" : "conceptOrder",
+      "valueInteger" : 20
+    } ]
+  } ]
+}

@@ -1,0 +1,36 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "ccm-task-type--1.0.0",
+  "language" : "et",
+  "url" : "https://helex.org/fhir/ValueSet/ccm-task-type",
+  "version" : "1.0.0",
+  "versionAlgorithmString" : "semver",
+  "name" : "CcmTaskType",
+  "title" : "CCM Task Type",
+  "_title" : {
+    "extension" : [ {
+      "extension" : [ {
+        "url" : "lang",
+        "valueCode" : "en"
+      }, {
+        "url" : "content",
+        "valueString" : "CCM Task Type"
+      } ],
+      "url" : "http://hl7.org/fhir/StructureDefinition/translation"
+    } ]
+  },
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2025-11-14T15:07:27.151368Z",
+  "publisher" : "HELEX",
+  "effectivePeriod" : {
+    "start" : "2025-11-01T00:00:00Z"
+  },
+  "compose" : {
+    "inactive" : false,
+    "include" : [ {
+      "system" : "https://helex.org/fhir/CodeSystem/ccm-task-type",
+      "version" : "1.0.1"
+    } ]
+  }
+}

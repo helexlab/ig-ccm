@@ -1,0 +1,72 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "ccm-care-team-participant-role--1.0.0",
+  "language" : "en",
+  "extension" : [ {
+    "url" : "http://hl7.org/fhir/StructureDefinition/cqf-knowledgeRepresentationLevel",
+    "valueCode" : "executable"
+  } ],
+  "url" : "https://helex.org/fhir/CodeSystem/ccm-care-team-participant-role",
+  "version" : "1.0.0",
+  "versionAlgorithmString" : "semver",
+  "name" : "CcmCareTeamParticipantRole",
+  "title" : "CCM care team participant role",
+  "status" : "draft",
+  "experimental" : false,
+  "date" : "2025-11-15T17:27:34.483735Z",
+  "publisher" : "HELEX",
+  "effectivePeriod" : {
+    "start" : "2025-11-15T00:00:00Z"
+  },
+  "caseSensitive" : false,
+  "content" : "complete",
+  "concept" : [ {
+    "code" : "care-manager",
+    "display" : "Care manager",
+    "designation" : [ {
+      "language" : "et",
+      "use" : {
+        "code" : "display"
+      },
+      "value" : "Tervisejuht"
+    }, {
+      "language" : "ru",
+      "use" : {
+        "code" : "display"
+      },
+      "value" : "Руководитель команды"
+    } ]
+  }, {
+    "code" : "collaborator",
+    "display" : "Collaborator",
+    "designation" : [ {
+      "language" : "et",
+      "use" : {
+        "code" : "display"
+      },
+      "value" : "Kaastöötaja"
+    }, {
+      "language" : "ru",
+      "use" : {
+        "code" : "display"
+      },
+      "value" : "Соавтор"
+    } ]
+  }, {
+    "code" : "member",
+    "display" : "Team member",
+    "designation" : [ {
+      "language" : "et",
+      "use" : {
+        "code" : "display"
+      },
+      "value" : "Meeskonna liige"
+    }, {
+      "language" : "ru",
+      "use" : {
+        "code" : "display"
+      },
+      "value" : "Участник komandy"
+    } ]
+  } ]
+}

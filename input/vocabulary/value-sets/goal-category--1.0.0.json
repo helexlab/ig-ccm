@@ -1,0 +1,37 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "goal-category--1.0.0",
+  "language" : "en",
+  "url" : "https://helex.org/fhir/ValueSet/goal-category",
+  "version" : "1.0.0",
+  "versionAlgorithmString" : "semver",
+  "name" : "GoalCategory",
+  "title" : "Goal category",
+  "_title" : {
+    "extension" : [ {
+      "extension" : [ {
+        "url" : "lang",
+        "valueCode" : "et"
+      }, {
+        "url" : "content",
+        "valueString" : "Eesmärgi kategooria"
+      } ],
+      "url" : "http://hl7.org/fhir/StructureDefinition/translation"
+    } ]
+  },
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2025-10-29T22:57:19.363397Z",
+  "publisher" : "HELEX",
+  "effectivePeriod" : {
+    "start" : "2025-09-27T00:00:00Z"
+  },
+  "compose" : {
+    "inactive" : true,
+    "include" : [ {
+      "system" : "https://helex.org/fhir/CodeSystem/goal-category",
+      "version" : "1.0.0"
+    } ],
+    "property" : [ "display", "conceptOrder" ]
+  }
+}

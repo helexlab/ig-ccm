@@ -1,0 +1,44 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "care-planning-suitability--1.0.0",
+  "language" : "en",
+  "url" : "https://helex.org/fhir/ValueSet/care-planning-suitability",
+  "version" : "1.0.0",
+  "versionAlgorithmString" : "semver",
+  "title" : "Care Planning Suitability",
+  "status" : "draft",
+  "experimental" : false,
+  "date" : "2025-11-25T17:01:50.194949Z",
+  "publisher" : "HELEX",
+  "effectivePeriod" : {
+    "start" : "2025-11-25T00:00:00Z"
+  },
+  "compose" : {
+    "inactive" : false,
+    "include" : [ {
+      "system" : "http://snomed.info/sct",
+      "version" : "international-edition",
+      "concept" : [ {
+        "code" : "714975004",
+        "display" : "Unsuitable for advance care planning",
+        "designation" : [ {
+          "language" : "et",
+          "value" : "Ei sobi osalemiseks programmis"
+        }, {
+          "language" : "ru",
+          "value" : "Не подходит для участия в программе"
+        } ]
+      }, {
+        "code" : "1137426009",
+        "display" : "Able to participate in care planning",
+        "designation" : [ {
+          "language" : "et",
+          "value" : "Sobib osalemiseks programmis"
+        }, {
+          "language" : "ru",
+          "value" : "Подходит для участия в программе"
+        } ]
+      } ]
+    } ]
+  }
+}

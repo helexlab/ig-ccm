@@ -1,0 +1,76 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "ccm-event-timing--1.0.0",
+  "language" : "en",
+  "url" : "https://helex.org/fhir/ValueSet/ccm-event-timing",
+  "version" : "1.0.0",
+  "versionAlgorithmString" : "semver",
+  "title" : "CCM Event Timing",
+  "status" : "draft",
+  "experimental" : false,
+  "date" : "2025-10-27T22:57:27.780225Z",
+  "publisher" : "HELEX",
+  "effectivePeriod" : {
+    "start" : "2025-10-27T00:00:00Z"
+  },
+  "compose" : {
+    "inactive" : false,
+    "include" : [ {
+      "system" : "http://hl7.org/fhir/event-timing",
+      "version" : "6.0.0",
+      "concept" : [ {
+        "extension" : [ {
+          "url" : "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
+          "valueInteger" : 10
+        } ],
+        "code" : "MORN",
+        "designation" : [ {
+          "language" : "et",
+          "value" : "Hommik"
+        }, {
+          "language" : "ru",
+          "value" : "Утро"
+        } ]
+      }, {
+        "extension" : [ {
+          "url" : "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
+          "valueInteger" : 20
+        } ],
+        "code" : "NOON",
+        "designation" : [ {
+          "language" : "ru",
+          "value" : "День"
+        }, {
+          "language" : "et",
+          "value" : "Lõuna"
+        } ]
+      }, {
+        "extension" : [ {
+          "url" : "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
+          "valueInteger" : 30
+        } ],
+        "code" : "EVE",
+        "designation" : [ {
+          "language" : "et",
+          "value" : "Õhtu"
+        }, {
+          "language" : "ru",
+          "value" : "Вечер"
+        } ]
+      }, {
+        "extension" : [ {
+          "url" : "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
+          "valueInteger" : 40
+        } ],
+        "code" : "NIGHT",
+        "designation" : [ {
+          "language" : "ru",
+          "value" : "Ночь"
+        }, {
+          "language" : "et",
+          "value" : "Öö"
+        } ]
+      } ]
+    } ]
+  }
+}

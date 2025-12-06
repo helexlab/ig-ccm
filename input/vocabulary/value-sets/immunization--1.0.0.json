@@ -1,0 +1,77 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "immunization--1.0.0",
+  "url" : "https://fhir.ee/ValueSet/immunization",
+  "version" : "1.0.0",
+  "versionAlgorithmString" : "semver",
+  "title" : "Immunization",
+  "_title" : {
+    "extension" : [ {
+      "extension" : [ {
+        "url" : "lang",
+        "valueCode" : "et"
+      }, {
+        "url" : "content",
+        "valueString" : "Vaktsiinid"
+      } ],
+      "url" : "http://hl7.org/fhir/StructureDefinition/translation"
+    } ]
+  },
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2025-11-21T08:38:00.40634Z",
+  "publisher" : "SNOMED CT",
+  "effectivePeriod" : {
+    "start" : "2025-11-21T00:00:00Z"
+  },
+  "compose" : {
+    "inactive" : false,
+    "include" : [ {
+      "system" : "http://snomed.info/sct",
+      "version" : "international-edition",
+      "concept" : [ {
+        "code" : "1156257007",
+        "display" : "COVID-19 immunization",
+        "designation" : [ {
+          "language" : "et",
+          "value" : "COVID-19 vaktsiin"
+        } ]
+      }, {
+        "code" : "86198006",
+        "display" : "Influenza immunization",
+        "designation" : [ {
+          "language" : "et",
+          "value" : "Gripi vaktsiin"
+        } ]
+      }, {
+        "code" : "76668005",
+        "display" : "Diphtheria immunization",
+        "designation" : [ {
+          "language" : "et",
+          "value" : "Difteeria vaktsiin"
+        } ]
+      }, {
+        "code" : "127786006",
+        "display" : "Tetanus immunization",
+        "designation" : [ {
+          "language" : "et",
+          "value" : "Teetanuse vaktsiin"
+        } ]
+      }, {
+        "code" : "12866006",
+        "display" : "Pneumococcal immunization",
+        "designation" : [ {
+          "language" : "et",
+          "value" : "Pneumokokk-infektsiooni vaktsiin"
+        } ]
+      }, {
+        "code" : "281658005",
+        "display" : "Tick-borne encephalitis vaccination",
+        "designation" : [ {
+          "language" : "et",
+          "value" : "Puukentsefaliidi vaktsiin"
+        } ]
+      } ]
+    } ]
+  }
+}

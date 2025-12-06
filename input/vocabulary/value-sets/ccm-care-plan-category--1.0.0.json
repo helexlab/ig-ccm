@@ -1,0 +1,47 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "ccm-care-plan-category--1.0.0",
+  "url" : "https://helex.org/fhir/ValueSet/ccm-care-plan-category",
+  "version" : "1.0.0",
+  "name" : "CcmCarePlanCategory",
+  "title" : "CCM Care Plan Category",
+  "_title" : {
+    "extension" : [ {
+      "extension" : [ {
+        "url" : "lang",
+        "valueCode" : "et"
+      }, {
+        "url" : "content",
+        "valueString" : "CCM Heaoluplaani Kategooria"
+      } ],
+      "url" : "http://hl7.org/fhir/StructureDefinition/translation"
+    } ]
+  },
+  "status" : "draft",
+  "experimental" : true,
+  "date" : "2025-10-27T20:52:48.447504Z",
+  "publisher" : "HELEX",
+  "description" : "CCM codes indicating the category a care plan falls within project.",
+  "copyright" : "This resource includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyright of the International Health Terminology Standards Development Organisation (IHTSDO). Implementers of these specifications must have the appropriate SNOMED CT Affiliate license - for more information contact http://www.snomed.org/snomed-ct/get-snomed-ct or info@snomed.org",
+  "effectivePeriod" : {
+    "start" : "2025-10-07T00:00:00Z"
+  },
+  "compose" : {
+    "inactive" : false,
+    "include" : [ {
+      "system" : "http://snomed.info/sct",
+      "version" : "international-edition",
+      "concept" : [ {
+        "code" : "734163000",
+        "display" : "Care Plan",
+        "designation" : [ {
+          "language" : "et",
+          "value" : "Heaoluplaan"
+        }, {
+          "language" : "ru",
+          "value" : "План ухода"
+        } ]
+      } ]
+    } ]
+  }
+}

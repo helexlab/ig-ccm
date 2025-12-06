@@ -1,0 +1,40 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "request-priority--5.0.0",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <a href=\"codesystem-request-priority.html\"><code>http://hl7.org/fhir/request-priority</code></a></li></ul></div>"
+  },
+  "url" : "http://hl7.org/fhir/ValueSet/request-priority",
+  "identifier" : [ {
+    "system" : "urn:ietf:rfc:3986",
+    "value" : "urn:oid:2.16.840.1.113883.4.642.3.115"
+  } ],
+  "version" : "5.0.0",
+  "name" : "RequestPriority",
+  "title" : "RequestPriority",
+  "status" : "active",
+  "experimental" : true,
+  "date" : "2025-11-30T20:23:45.055914Z",
+  "publisher" : "HL7 (FHIR Project)",
+  "contact" : [ {
+    "telecom" : [ {
+      "system" : "url",
+      "value" : "http://hl7.org/fhir"
+    }, {
+      "system" : "email",
+      "value" : "fhir@lists.hl7.org"
+    } ]
+  } ],
+  "description" : "Identifies the level of importance to be assigned to actioning the request.",
+  "effectivePeriod" : {
+    "start" : "2024-12-01T00:00:00Z"
+  },
+  "compose" : {
+    "inactive" : false,
+    "include" : [ {
+      "system" : "http://hl7.org/fhir/request-priority",
+      "version" : "5.0.0"
+    } ]
+  }
+}

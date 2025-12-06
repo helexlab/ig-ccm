@@ -1,0 +1,40 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "research-study-party-role--5.0.0",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <a href=\"codesystem-research-study-party-role.html\"><code>http://hl7.org/fhir/research-study-party-role</code></a></li></ul></div>"
+  },
+  "url" : "http://hl7.org/fhir/ValueSet/research-study-party-role",
+  "identifier" : [ {
+    "system" : "urn:ietf:rfc:3986",
+    "value" : "urn:oid:2.16.840.1.113883.4.642.3.3075"
+  } ],
+  "version" : "5.0.0",
+  "name" : "ResearchStudyPartyRole",
+  "title" : "Research Study Party Role",
+  "status" : "active",
+  "experimental" : true,
+  "date" : "2025-11-04T14:47:26.158687Z",
+  "publisher" : "HL7 (FHIR Project)",
+  "contact" : [ {
+    "telecom" : [ {
+      "system" : "url",
+      "value" : "http://hl7.org/fhir"
+    }, {
+      "system" : "email",
+      "value" : "fhir@lists.hl7.org"
+    } ]
+  } ],
+  "description" : "This is a ResearchStudy's party role.",
+  "effectivePeriod" : {
+    "start" : "2025-08-19T00:00:00Z"
+  },
+  "compose" : {
+    "inactive" : false,
+    "include" : [ {
+      "system" : "http://hl7.org/fhir/research-study-party-role",
+      "version" : "5.0.0"
+    } ]
+  }
+}

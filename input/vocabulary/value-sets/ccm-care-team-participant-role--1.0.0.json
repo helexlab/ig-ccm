@@ -1,0 +1,36 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "ccm-care-team-participant-role--1.0.0",
+  "language" : "et",
+  "url" : "https://helex.org/fhir/ValueSet/ccm-care-team-participant-role",
+  "version" : "1.0.0",
+  "versionAlgorithmString" : "semver",
+  "name" : "CcmCareTeamParticipantRole",
+  "title" : "CCM care team participant role",
+  "_title" : {
+    "extension" : [ {
+      "extension" : [ {
+        "url" : "lang",
+        "valueCode" : "en"
+      }, {
+        "url" : "content",
+        "valueString" : "CCM care team participant role"
+      } ],
+      "url" : "http://hl7.org/fhir/StructureDefinition/translation"
+    } ]
+  },
+  "status" : "draft",
+  "experimental" : false,
+  "date" : "2025-11-15T17:31:21.684105Z",
+  "publisher" : "HELEX",
+  "effectivePeriod" : {
+    "start" : "2025-11-15T00:00:00Z"
+  },
+  "compose" : {
+    "inactive" : true,
+    "include" : [ {
+      "system" : "https://helex.org/fhir/CodeSystem/ccm-care-team-participant-role",
+      "version" : "1.0.0"
+    } ]
+  }
+}

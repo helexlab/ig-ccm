@@ -1,0 +1,73 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "limitations--1.0.1",
+  "extension" : [ {
+    "url" : "http://hl7.org/fhir/StructureDefinition/cqf-knowledgeRepresentationLevel",
+    "valueCode" : "executable"
+  } ],
+  "url" : "https://fhir.ee/CodeSystem/limitations",
+  "version" : "1.0.1",
+  "title" : "Limitations",
+  "_title" : {
+    "extension" : [ {
+      "extension" : [ {
+        "url" : "lang",
+        "valueCode" : "et"
+      }, {
+        "url" : "content",
+        "valueString" : "Piirangud"
+      } ],
+      "url" : "http://hl7.org/fhir/StructureDefinition/translation"
+    } ]
+  },
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2025-11-30T13:58:02.723681Z",
+  "publisher" : "HELEX",
+  "effectivePeriod" : {
+    "start" : "2025-11-30T00:00:00Z"
+  },
+  "caseSensitive" : false,
+  "content" : "complete",
+  "concept" : [ {
+    "code" : "cognitive",
+    "display" : "Cognitive limitations",
+    "designation" : [ {
+      "language" : "et",
+      "use" : {
+        "code" : "display"
+      },
+      "value" : "Kognitiivsed piirangud"
+    } ]
+  }, {
+    "code" : "physical",
+    "display" : "Physical limitations",
+    "designation" : [ {
+      "language" : "et",
+      "use" : {
+        "code" : "display"
+      },
+      "value" : "Füüsilised piirangud"
+    } ]
+  }, {
+    "code" : "psychological",
+    "display" : "Psychological limitations",
+    "designation" : [ {
+      "language" : "et",
+      "use" : {
+        "code" : "display"
+      },
+      "value" : "Psühholoogilised piirangud"
+    } ]
+  }, {
+    "code" : "social",
+    "display" : "Social limitations",
+    "designation" : [ {
+      "language" : "et",
+      "use" : {
+        "code" : "display"
+      },
+      "value" : "Sotsiaalsed piirangud"
+    } ]
+  } ]
+}

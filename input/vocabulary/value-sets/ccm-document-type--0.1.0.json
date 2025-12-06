@@ -1,0 +1,66 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "ccm-document-type--0.1.0",
+  "url" : "https://helex.org/fhir/ValueSet/ccm-document-type",
+  "version" : "0.1.0",
+  "name" : "CcmDocumentType",
+  "title" : "CCM Document Type",
+  "_title" : {
+    "extension" : [ {
+      "extension" : [ {
+        "url" : "lang",
+        "valueCode" : "et"
+      }, {
+        "url" : "content",
+        "valueString" : "CCM Dokumendi Tüüp"
+      } ],
+      "url" : "http://hl7.org/fhir/StructureDefinition/translation"
+    } ]
+  },
+  "status" : "active",
+  "experimental" : true,
+  "date" : "2025-10-29T11:32:54.161142Z",
+  "publisher" : "HELEX",
+  "contact" : [ {
+    "telecom" : [ {
+      "system" : "url",
+      "value" : "http://helex.org/fhir"
+    }, {
+      "system" : "email",
+      "value" : "fhir@helex.org"
+    } ]
+  } ],
+  "description" : "Indicates the type of a document.",
+  "effectivePeriod" : {
+    "start" : "2025-08-18T00:00:00Z"
+  },
+  "compose" : {
+    "inactive" : false,
+    "include" : [ {
+      "system" : "https://fhir.ee/CodeSystem/ads-adr-id",
+      "version" : "1.0.0",
+      "concept" : [ {
+        "code" : "59284-0",
+        "display" : "Consent Document",
+        "designation" : [ {
+          "language" : "et",
+          "value" : "Nõusoleku dokument"
+        } ]
+      }, {
+        "code" : "18841-7",
+        "display" : "Hospital consultations Document",
+        "designation" : [ {
+          "language" : "et",
+          "value" : "Konsultatsiooni dokument"
+        } ]
+      }, {
+        "code" : "69723-5",
+        "display" : "Patient Health Questionnaire (PHQ) [Reported]",
+        "designation" : [ {
+          "language" : "et",
+          "value" : "Patsiendi tervise küsimustik"
+        } ]
+      } ]
+    } ]
+  }
+}

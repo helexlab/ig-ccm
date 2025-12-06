@@ -1,0 +1,73 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "ccm-procedure-category--0.1.0",
+  "url" : "https://helex.org/fhir/ValueSet/ccm-procedure-category",
+  "version" : "0.1.0",
+  "name" : "CcmProcedureCategory",
+  "title" : "CCM Procedure Category",
+  "_title" : {
+    "extension" : [ {
+      "extension" : [ {
+        "url" : "lang",
+        "valueCode" : "et"
+      }, {
+        "url" : "content",
+        "valueString" : "Protseduuri Kategooria"
+      } ],
+      "url" : "http://hl7.org/fhir/StructureDefinition/translation"
+    } ]
+  },
+  "status" : "active",
+  "experimental" : true,
+  "date" : "2025-11-06T14:28:18.238984Z",
+  "publisher" : "HELEX",
+  "contact" : [ {
+    "telecom" : [ {
+      "system" : "url",
+      "value" : "http://helex.org/fhir"
+    }, {
+      "system" : "email",
+      "value" : "fhir@helex.org"
+    } ]
+  } ],
+  "description" : "Indicates the procedures used in CCM.",
+  "effectivePeriod" : {
+    "start" : "2025-08-18T00:00:00Z"
+  },
+  "compose" : {
+    "inactive" : false,
+    "include" : [ {
+      "system" : "http://snomed.info/sct",
+      "version" : "international-edition",
+      "concept" : [ {
+        "code" : "409063005",
+        "display" : "Counselling",
+        "designation" : [ {
+          "language" : "et",
+          "value" : "Nõustamine"
+        } ]
+      }, {
+        "code" : "409073007",
+        "display" : "Education",
+        "designation" : [ {
+          "language" : "et",
+          "value" : "Hariduslik tegevus"
+        } ]
+      }, {
+        "code" : "410606002",
+        "display" : "Social service procedure",
+        "designation" : [ {
+          "language" : "et",
+          "value" : "Sotsiaalteenuse toiming"
+        } ]
+      }, {
+        "code" : "122869004",
+        "display" : "Measurement",
+        "designation" : [ {
+          "language" : "et",
+          "value" : "Mõõtmine"
+        } ]
+      } ]
+    } ]
+  }
+}

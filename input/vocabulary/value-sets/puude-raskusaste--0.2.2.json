@@ -1,0 +1,45 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "puude-raskusaste--0.2.2",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet puude-raskusaste</b></p><a name=\"puude-raskusaste\"> </a><a name=\"hcpuude-raskusaste\"> </a><a name=\"puude-raskusaste-en-US\"> </a><ul><li>Include all codes defined in <a href=\"CodeSystem-puude-raskusaste.html\"><code>https://fhir.ee/CodeSystem/puude-raskusaste</code></a></li></ul></div>"
+  },
+  "url" : "https://fhir.ee/ValueSet/puude-raskusaste",
+  "version" : "0.2.2",
+  "name" : "DisabilityLevel",
+  "title" : "Disability level",
+  "_title" : {
+    "extension" : [ {
+      "extension" : [ {
+        "url" : "lang",
+        "valueCode" : "et"
+      }, {
+        "url" : "content",
+        "valueString" : "Puude raskusaste"
+      } ],
+      "url" : "http://hl7.org/fhir/StructureDefinition/translation"
+    } ]
+  },
+  "status" : "active",
+  "experimental" : false,
+  "publisher" : "HL7 Estonia",
+  "contact" : [ {
+    "name" : "HL7 Estonia",
+    "telecom" : [ {
+      "system" : "url",
+      "value" : "https://www.hl7.ee"
+    } ]
+  } ],
+  "description" : "The level of disability",
+  "effectivePeriod" : {
+    "start" : "2025-09-27T00:00:00Z"
+  },
+  "compose" : {
+    "inactive" : false,
+    "include" : [ {
+      "system" : "https://fhir.ee/CodeSystem/puude-raskusaste",
+      "version" : "0.2.2"
+    } ]
+  }
+}

@@ -1,0 +1,79 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "ccm-participant-role--1.0.0",
+  "language" : "et",
+  "url" : "https://helex.org/fhir/ValueSet/ccm-participant-role",
+  "version" : "1.0.0",
+  "versionAlgorithmString" : "semver",
+  "name" : "CcmParticipantRole",
+  "title" : "CCM Roll",
+  "_title" : {
+    "extension" : [ {
+      "extension" : [ {
+        "url" : "lang",
+        "valueCode" : "en"
+      }, {
+        "url" : "content",
+        "valueString" : "CCM participant role"
+      } ],
+      "url" : "http://hl7.org/fhir/StructureDefinition/translation"
+    } ]
+  },
+  "status" : "draft",
+  "experimental" : false,
+  "date" : "2025-11-09T14:24:50.787122Z",
+  "publisher" : "HELEX",
+  "effectivePeriod" : {
+    "start" : "2025-10-07T00:00:00Z"
+  },
+  "compose" : {
+    "inactive" : false,
+    "include" : [ {
+      "system" : "http://snomed.info/sct",
+      "version" : "international-edition",
+      "concept" : [ {
+        "extension" : [ {
+          "url" : "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
+          "valueInteger" : 30
+        } ],
+        "code" : "223366009",
+        "display" : "Collaborator",
+        "designation" : [ {
+          "language" : "et",
+          "value" : "Kaastöötaja"
+        }, {
+          "language" : "ru",
+          "value" : "Соавтор"
+        } ]
+      }, {
+        "extension" : [ {
+          "url" : "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
+          "valueInteger" : 10
+        } ],
+        "code" : "303133007",
+        "display" : "Responsible medical officer",
+        "designation" : [ {
+          "language" : "et",
+          "value" : "Vastutav tervisejuht"
+        }, {
+          "language" : "ru",
+          "value" : "Ответственный за здоровье"
+        } ]
+      }, {
+        "extension" : [ {
+          "url" : "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
+          "valueInteger" : 40
+        } ],
+        "code" : "224610007",
+        "display" : "Team member",
+        "designation" : [ {
+          "language" : "et",
+          "value" : "Meeskonnaliige"
+        }, {
+          "language" : "ru",
+          "value" : "Член команды"
+        } ]
+      } ]
+    } ]
+  }
+}

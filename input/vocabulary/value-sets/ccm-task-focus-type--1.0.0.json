@@ -1,0 +1,67 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "ccm-task-focus-type--1.0.0",
+  "language" : "en",
+  "url" : "https://helex.org/fhir/ValueSet/ccm-task-focus-type",
+  "version" : "1.0.0",
+  "versionAlgorithmString" : "semver",
+  "name" : "CcmTaskFocusType",
+  "title" : "CCM Task Focus Type",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2025-11-01T14:24:51.768728Z",
+  "publisher" : "HELEX",
+  "effectivePeriod" : {
+    "start" : "2025-11-01T00:00:00Z"
+  },
+  "compose" : {
+    "inactive" : false,
+    "include" : [ {
+      "system" : "http://hl7.org/fhir/fhir-types",
+      "version" : "5.0.0",
+      "concept" : [ {
+        "extension" : [ {
+          "url" : "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
+          "valueInteger" : 10
+        } ],
+        "code" : "ResearchSubject",
+        "display" : "Research subject",
+        "designation" : [ {
+          "language" : "et",
+          "value" : "Abivajaja"
+        }, {
+          "language" : "ru",
+          "value" : "Нуждающийся в помощи"
+        } ]
+      }, {
+        "extension" : [ {
+          "url" : "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
+          "valueInteger" : 20
+        } ],
+        "code" : "CarePlan",
+        "display" : "Care plan",
+        "designation" : [ {
+          "language" : "et",
+          "value" : "Raviplaan"
+        }, {
+          "language" : "ru",
+          "value" : "Лечебный план"
+        } ]
+      }, {
+        "extension" : [ {
+          "url" : "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder",
+          "valueInteger" : 30
+        } ],
+        "code" : "Procedure",
+        "display" : "Procedure",
+        "designation" : [ {
+          "language" : "et",
+          "value" : "Protseduur"
+        }, {
+          "language" : "ru",
+          "value" : "Процедура"
+        } ]
+      } ]
+    } ]
+  }
+}

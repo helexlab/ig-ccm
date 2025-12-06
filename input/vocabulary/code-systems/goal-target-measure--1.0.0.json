@@ -1,0 +1,235 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "goal-target-measure--1.0.0",
+  "language" : "et",
+  "extension" : [ {
+    "url" : "http://hl7.org/fhir/StructureDefinition/cqf-knowledgeRepresentationLevel",
+    "valueCode" : "executable"
+  } ],
+  "url" : "https://helex.org/fhir/CodeSystem/goal-target-measure",
+  "version" : "1.0.0",
+  "versionAlgorithmString" : "semver",
+  "name" : "GoalTargetMeasure",
+  "title" : "Eesmärgi mõõdik",
+  "_title" : {
+    "extension" : [ {
+      "extension" : [ {
+        "url" : "lang",
+        "valueCode" : "en"
+      }, {
+        "url" : "content",
+        "valueString" : "Goal target measure"
+      } ],
+      "url" : "http://hl7.org/fhir/StructureDefinition/translation"
+    } ]
+  },
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2025-11-01T13:30:53.455291Z",
+  "publisher" : "HELEX",
+  "effectivePeriod" : {
+    "start" : "2025-09-27T00:00:00Z"
+  },
+  "caseSensitive" : false,
+  "content" : "complete",
+  "property" : [ {
+    "code" : "code",
+    "description" : "Code",
+    "type" : "string"
+  }, {
+    "code" : "comparator",
+    "description" : "Comparator",
+    "type" : "string"
+  }, {
+    "code" : "conceptOrder",
+    "uri" : "http://hl7.org/fhir/StructureDefinition/codesystem-conceptOrder",
+    "description" : "Concept Order",
+    "type" : "integer"
+  }, {
+    "code" : "system",
+    "description" : "System URL",
+    "type" : "string"
+  }, {
+    "code" : "type",
+    "description" : "Type",
+    "type" : "string"
+  }, {
+    "code" : "unit",
+    "description" : "Unit",
+    "type" : "string"
+  }, {
+    "code" : "valueset",
+    "description" : "Value set",
+    "type" : "string"
+  } ],
+  "concept" : [ {
+    "code" : "alcohol-use",
+    "display" : "Alkoholi tarvitamine",
+    "designation" : [ {
+      "language" : "en",
+      "use" : {
+        "code" : "display"
+      },
+      "value" : "Alcohol use"
+    }, {
+      "language" : "ru",
+      "use" : {
+        "code" : "display"
+      },
+      "value" : "Употребление алкоголя"
+    } ],
+    "property" : [ {
+      "code" : "code",
+      "valueString" : "74013-4"
+    }, {
+      "code" : "comparator",
+      "valueString" : "<="
+    }, {
+      "code" : "conceptOrder",
+      "valueInteger" : 180
+    }, {
+      "code" : "system",
+      "valueString" : "http://loinc.org"
+    }, {
+      "code" : "type",
+      "valueString" : "integer"
+    }, {
+      "code" : "unit",
+      "valueString" : "{alcohol unit}/d"
+    } ]
+  }, {
+    "code" : "bmi",
+    "display" : "Kehamassiindeks",
+    "designation" : [ {
+      "language" : "en",
+      "use" : {
+        "code" : "display"
+      },
+      "value" : "Body mass index"
+    }, {
+      "language" : "ru",
+      "use" : {
+        "code" : "display"
+      },
+      "value" : "Индекс массы тела"
+    } ],
+    "property" : [ {
+      "code" : "code",
+      "valueString" : "39156-5"
+    }, {
+      "code" : "conceptOrder",
+      "valueInteger" : 170
+    }, {
+      "code" : "system",
+      "valueString" : "http://loinc.org"
+    }, {
+      "code" : "type",
+      "valueString" : "range"
+    }, {
+      "code" : "unit",
+      "valueString" : "kg/m2"
+    } ]
+  }, {
+    "code" : "bp-diastolic",
+    "display" : "Diastoolne vererõhk",
+    "designation" : [ {
+      "language" : "en",
+      "use" : {
+        "code" : "display"
+      },
+      "value" : "Diastolic blood pressure"
+    }, {
+      "language" : "ru",
+      "use" : {
+        "code" : "display"
+      },
+      "value" : "Диастолическое артериальное давление"
+    } ],
+    "property" : [ {
+      "code" : "code",
+      "valueString" : "271650006"
+    }, {
+      "code" : "comparator",
+      "valueString" : "<="
+    }, {
+      "code" : "conceptOrder",
+      "valueInteger" : 120
+    }, {
+      "code" : "system",
+      "valueString" : "http://snomed.org/sct"
+    }, {
+      "code" : "type",
+      "valueString" : "integer"
+    } ]
+  }, {
+    "code" : "bp-systolic",
+    "display" : "Süstoolne vererõhk",
+    "designation" : [ {
+      "language" : "en",
+      "use" : {
+        "code" : "display"
+      },
+      "value" : "Systolic blood pressure"
+    }, {
+      "language" : "ru",
+      "use" : {
+        "code" : "display"
+      },
+      "value" : "Систолическое артериальное давление"
+    } ],
+    "property" : [ {
+      "code" : "code",
+      "valueString" : "271649006"
+    }, {
+      "code" : "comparator",
+      "valueString" : "<="
+    }, {
+      "code" : "conceptOrder",
+      "valueInteger" : 110
+    }, {
+      "code" : "system",
+      "valueString" : "http://snomed.org/sct"
+    }, {
+      "code" : "type",
+      "valueString" : "integer"
+    }, {
+      "code" : "unit",
+      "valueString" : "mmHg"
+    } ]
+  }, {
+    "code" : "ldl-cholesterol",
+    "display" : "LDL-kolesterool",
+    "designation" : [ {
+      "language" : "en",
+      "use" : {
+        "code" : "display"
+      },
+      "value" : "Cholesterol in LDL"
+    }, {
+      "language" : "ru",
+      "use" : {
+        "code" : "display"
+      },
+      "value" : "Холестерин ЛПНП"
+    } ],
+    "property" : [ {
+      "code" : "code",
+      "valueString" : "2089-1"
+    }, {
+      "code" : "comparator",
+      "valueString" : "<="
+    }, {
+      "code" : "conceptOrder",
+      "valueInteger" : 150
+    }, {
+      "code" : "system",
+      "valueString" : "http://loinc.org"
+    }, {
+      "code" : "type",
+      "valueString" : "integer"
+    }, {
+      "code" : "unit",
+      "valueString" : "mg/dL"
+    } ]
+  } ]
+}
