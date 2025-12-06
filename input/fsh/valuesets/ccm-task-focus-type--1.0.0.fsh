@@ -1,5 +1,3 @@
-Alias: $fhir-types = http://hl7.org/fhir/fhir-types
-
 ValueSet: CcmTaskFocusType
 Id: ccm-task-focus-type--1.0.0
 Title: "CCM Task Focus Type"
@@ -13,24 +11,24 @@ Title: "CCM Task Focus Type"
 * ^publisher = "HELEX"
 * ^effectivePeriod.start = "2025-11-01T00:00:00Z"
 * ^compose.inactive = false
-* $fhir-types#ResearchSubject "Research subject"
-* $fhir-types#ResearchSubject ^extension.url = "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder"
-* $fhir-types#ResearchSubject ^extension.valueInteger = 10
-* $fhir-types#ResearchSubject ^designation[0].language = #et
-* $fhir-types#ResearchSubject ^designation[=].value = "Abivajaja"
-* $fhir-types#ResearchSubject ^designation[+].language = #ru
-* $fhir-types#ResearchSubject ^designation[=].value = "Нуждающийся в помощи"
-* $fhir-types#CarePlan "Care plan"
-* $fhir-types#CarePlan ^extension.url = "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder"
-* $fhir-types#CarePlan ^extension.valueInteger = 20
-* $fhir-types#CarePlan ^designation[0].language = #et
-* $fhir-types#CarePlan ^designation[=].value = "Raviplaan"
-* $fhir-types#CarePlan ^designation[+].language = #ru
-* $fhir-types#CarePlan ^designation[=].value = "Лечебный план"
-* $fhir-types#Procedure "Procedure"
-* $fhir-types#Procedure ^extension.url = "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder"
-* $fhir-types#Procedure ^extension.valueInteger = 30
-* $fhir-types#Procedure ^designation[0].language = #et
-* $fhir-types#Procedure ^designation[=].value = "Protseduur"
-* $fhir-types#Procedure ^designation[+].language = #ru
-* $fhir-types#Procedure ^designation[=].value = "Процедура"
+* FHIRTypes#ResearchSubject "Research subject"
+* FHIRTypes#ResearchSubject ^extension.url = "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder"
+* FHIRTypes#ResearchSubject ^extension.valueInteger = 10
+* FHIRTypes#ResearchSubject ^designation[0].language = #et
+* FHIRTypes#ResearchSubject ^designation[=].value = "Abivajaja"
+* FHIRTypes#ResearchSubject ^designation[+].language = #ru
+* FHIRTypes#ResearchSubject ^designation[=].value = "Нуждающийся в помощи"
+* FHIRTypes#CarePlan "Care plan"
+* FHIRTypes#CarePlan ^extension.url = "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder"
+* FHIRTypes#CarePlan ^extension.valueInteger = 20
+* FHIRTypes#CarePlan ^designation[0].language = #et
+* FHIRTypes#CarePlan ^designation[=].value = "Raviplaan"
+* FHIRTypes#CarePlan ^designation[+].language = #ru
+* FHIRTypes#CarePlan ^designation[=].value = "Лечебный план"
+* FHIRTypes#Procedure "Procedure"
+* FHIRTypes#Procedure ^extension.url = "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder"
+* FHIRTypes#Procedure ^extension.valueInteger = 30
+* FHIRTypes#Procedure ^designation[0].language = #et
+* FHIRTypes#Procedure ^designation[=].value = "Protseduur"
+* FHIRTypes#Procedure ^designation[+].language = #ru
+* FHIRTypes#Procedure ^designation[=].value = "Процедура"

@@ -1,5 +1,3 @@
-Alias: $fhir-types = http://hl7.org/fhir/fhir-types
-
 ValueSet: CcmTaskForType100
 Id: ccm-task-for-type--1.0.0
 Title: "CCM Task For Type"
@@ -13,10 +11,10 @@ Title: "CCM Task For Type"
 * ^publisher = "HELEX"
 * ^effectivePeriod.start = "2025-11-01T00:00:00Z"
 * ^compose.inactive = false
-* $fhir-types#Patient "Patient"
-* $fhir-types#Patient ^extension.url = "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder"
-* $fhir-types#Patient ^extension.valueInteger = 10
-* $fhir-types#Patient ^designation[0].language = #et
-* $fhir-types#Patient ^designation[=].value = "Patsient"
-* $fhir-types#Patient ^designation[+].language = #ru
-* $fhir-types#Patient ^designation[=].value = "Пациент"
+* FHIRTypes#Patient "Patient"
+* FHIRTypes#Patient ^extension.url = "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder"
+* FHIRTypes#Patient ^extension.valueInteger = 10
+* FHIRTypes#Patient ^designation[0].language = #et
+* FHIRTypes#Patient ^designation[=].value = "Patsient"
+* FHIRTypes#Patient ^designation[+].language = #ru
+* FHIRTypes#Patient ^designation[=].value = "Пациент"
